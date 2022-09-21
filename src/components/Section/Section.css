@@ -1,0 +1,87 @@
+.section-container {
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  transition: 750ms all linear;
+}
+
+.hidden {
+  filter: blur(5px);
+  transform: translateY(-2em);
+  opacity: 0;
+}
+
+.section {
+  width: 100%;
+}
+
+.section-heading {
+  color: var(--accent-clr);
+  display: flex;
+  align-items: center;
+  font-size: 1.5em;
+}
+
+.section-heading-text {
+  width: fit-content;
+}
+
+.section-heading-text h2 {
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 0.05em solid var(--secondary-clr);
+}
+
+.animation {
+  animation: type 750ms steps(40, end) forwards, blink 1.25s step-end infinite;
+}
+
+@keyframes blink {
+  to,
+  from {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: var(--secondary-clr);
+  }
+}
+
+@keyframes type {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.section-heading-rule {
+  opacity: 0;
+  flex: 1;
+  height: 0.05em;
+  border-radius: 0.025em;
+  margin-left: 1em;
+  background: linear-gradient(90deg, var(--accent-clr), var(--secondary-clr));
+}
+
+.section-heading-rule.animation {
+  animation: rule 600ms ease-in-out 750ms forwards;
+}
+
+@keyframes rule {
+  from {
+    flex: 0;
+  }
+
+  to {
+    flex: 1;
+    opacity: 1;
+  }
+}
+
+.section p {
+  margin: 1em 0;
+  font-size: 1.1em;
+}

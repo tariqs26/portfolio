@@ -1,0 +1,13 @@
+.link {
+  text-decoration: none;
+  color: var(--link-clr);
+  background: linear-gradient(90deg, var(--accent-clr), var(--secondary-clr));
+  background-size: 0 0.1em;
+  background-repeat: no-repeat;
+  background-position: left bottom;
+  transition: background-size 0.3s;
+}
+
+.link:hover {
+  background-size: 100% 0.1em;
+}
