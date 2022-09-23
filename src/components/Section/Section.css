@@ -33,7 +33,7 @@
 }
 
 .animation {
-  animation: type 750ms steps(40, end) forwards, blink 1.25s step-end infinite;
+  animation: type 750ms steps(40, end) forwards, blink 1s step-end 4 forwards;
 }
 
 @keyframes blink {
