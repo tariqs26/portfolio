@@ -10,10 +10,10 @@ export default function Navbar() {
   return (
     <nav className="nav">
       <a href="#intro">
-        <LogoIcon className="nav-logo" />
+        <LogoIcon className="nav-logo nav-icon" />
       </a>
       <ul className="nav-links">
-        <li className="nav-link">
+        <li className="nav-link" >
           <a href="#about" className="link">
             About
           </a>

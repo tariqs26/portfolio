@@ -21,6 +21,15 @@
 
 .nav-icon {
   height: 2.1em;
+  width:2.1em;
+  opacity: 0;
+  transition: filter 150ms ease-in-out;
+  animation: nav-link-fade 0.5s ease-in-out forwards;
+}
+
+.nav-icon:hover {
+  filter : brightness(1.2);
+  cursor : pointer;
 }
 
 .nav-icon.clr-scheme {
@@ -33,18 +42,10 @@
   transform: rotate(180deg);
 }
 
-.nav-icon:hover {
-  filter : brightness(1.2);
-  cursor : pointer;
-}
-
 .nav-logo {
-  width:2.1em;
-  height:2.1em;  
   background: linear-gradient(90deg, var(--secondary-clr) 0%, var(--accent-clr) 100%);
   padding:0.25em;
   border-radius: 0.5em;
-  transition: filter 150ms ease-in-out;
 }
 
 .nav-logo:hover{
@@ -54,4 +55,24 @@
 
 .nav-link {
   list-style: none;
+  opacity: 0;
+  animation : nav-link-fade 0.5s ease-in-out 0.5s forwards;
+}
+
+.nav-link:nth-child(2) {
+  animation-delay: 0.75s;
+}
+
+.nav-link:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes nav-link-fade {
+  from {
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
