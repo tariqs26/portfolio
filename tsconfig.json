@@ -2,11 +2,17 @@
     "compilerOptions": {
         "module": "commonjs",
         "moduleResolution": "node",
+        "sourceMap": true,
         "target": "es6",
         "jsx": "react-jsx",
-        "baseUrl": "./src",
     },
     "include": [
-        "index.tsx"
-    ]
+        "./index.tsx"
+    ],
+    "exclude": [
+        "node_modules",
+        "build",
+        "scripts",
+        "webpack"
+      ]
 }

@@ -1,5 +1,6 @@
-import Section from "components/Section/Section";
-import Link from "components/Link/Link";
+import React from "react";
+import Section from "../Section/Section";
+import Link from "../Link/Link";
 
 export default function About() {
   return (

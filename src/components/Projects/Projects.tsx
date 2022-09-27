@@ -1,5 +1,6 @@
-import Link from "components/Link/Link";
-import Section from "components/Section/Section";
+import React from "react";
+import Link from "../Link/Link";
+import Section from "../Section/Section";
 
 export default function Projects() {
   return (
