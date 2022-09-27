@@ -28,8 +28,8 @@ export default function App() {
       },
       { threshold: 0.5 }
     );
-    document
-      .querySelector("main")
+
+  mainRef.current
       .querySelectorAll(".section-container")
       .forEach((section) => {
         observer.observe(section);
@@ -49,3 +49,5 @@ export default function App() {
     </div>
   );
 }
+
+
