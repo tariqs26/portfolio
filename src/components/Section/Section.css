@@ -2,17 +2,20 @@
   min-height: 70vh;
   display: flex;
   align-items: center;
-  transition: 750ms all linear;
-}
-
-.hidden {
-  filter: blur(5px);
-  transform: translateY(-2em);
-  opacity: 0;
 }
 
 .section {
   width: 100%;
+}
+
+.hidden {
+  filter: blur(5px);
+  transform: translateY(-1.5em);
+  opacity: 0;
+}
+
+.section-content {
+  transition: 750ms 800ms all linear;
 }
 
 .section-heading {
@@ -20,6 +23,11 @@
   display: flex;
   align-items: center;
   font-size: 1.5em;
+  transition: 750ms all linear;
+}
+
+.section-heading.hidden {
+  transform : none;
 }
 
 .section-heading-text {
@@ -67,7 +75,7 @@
 }
 
 .section-heading-rule.animation {
-  animation: rule 600ms ease-in-out 750ms forwards;
+  animation: rule 600ms ease-in-out 600ms forwards;
 }
 
 @keyframes rule {

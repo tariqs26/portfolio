@@ -14,28 +14,24 @@ export default function App() {
       (entries) => {
         entries.forEach((entry) => {
           const section = entry.target;
+          const sectionContent = section.querySelector(".section-content");
+          const sectionText = section.querySelector(".section-heading");
           const sectionTextH2 = section.querySelector(".section-heading h2");
           const sectionRule = section.querySelector(".section-heading-rule");
-          const sectionText = section.querySelector(".section-heading");
           if (entry.isIntersecting) {
-            section.classList.remove("hidden");
-            setTimeout(() => {
-              sectionText.classList.remove("hidden");
-              for (let element of [sectionTextH2, sectionRule])
-                element.classList.add("animation");
-            }, 300);
+            for (let elem of [sectionContent, sectionText])
+              elem.classList.remove("hidden");
+            for (let element of [sectionTextH2, sectionRule])
+              element.classList.add("animation");
           }
         });
       },
       { threshold: 0.5 }
     );
-    document
-      .querySelector("main")
+
+  mainRef.current
       .querySelectorAll(".section-container")
       .forEach((section) => {
-        section.classList.add("hidden");
-        const sectionText = section.querySelector(".section-heading");
-        sectionText && sectionText.classList.add("hidden");
         observer.observe(section);
       });
   }, [mainRef]);
@@ -53,3 +49,5 @@ export default function App() {
     </div>
   );
 }
+
+
