@@ -41,15 +41,14 @@
 .nav-logo {
   width:2.1em;
   height:2.1em;  
-  background: linear-gradient(90deg, #ff00ff 0%, #ff0000 100%);
+  background: linear-gradient(90deg, var(--secondary-clr) 0%, var(--accent-clr) 100%);
   padding:0.25em;
   border-radius: 0.5em;
   transition: filter 150ms ease-in-out;
 }
 
 .nav-logo:hover{
-  filter : saturate(1.25);
-  
+  filter : brightness(1.2);
   cursor:pointer;
 }
 

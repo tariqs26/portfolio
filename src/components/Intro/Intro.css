@@ -1,27 +1,26 @@
 #intro .section {
   display: flex;
-  gap: 1em;
+  gap : 2em;
 }
 
 .intro-screen {
   background-color: rgb(22, 21, 21);
   border: 2px solid var(--accent-clr);
-  width: 100%;
   border-radius: 0.2rem;
   padding: 1em;
+
 }
 
 .intro-heading {
-  color: var(--secondary-clr);
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(90deg, var(--secondary-clr) 0%, var(--accent-clr) 100%);
+  width:fit-content;
   font-size: 3.5rem;
 }
 
 .intro-subheading {
-  color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(90deg, var(--secondary-clr) 0%, var(--accent-clr) 100%);
-  width: fit-content;
-
+  color : var(--secondary-clr);
   font-size: 3.2rem;
 }
 
@@ -31,11 +30,11 @@
 }
 
 .intro-btn {
+  border: 2px solid var(--accent-clr);
+  border-radius: 0.2rem;
+  padding: 0.5rem 1rem;
   background: transparent;
   color: inherit;
-  border: 2px solid var(--accent-clr);
-  padding: 0.5rem 1rem;
-  border-radius: 0.2rem;
   font-size: 1.1rem;
   transition: all 200ms ease-in-out;
 }
