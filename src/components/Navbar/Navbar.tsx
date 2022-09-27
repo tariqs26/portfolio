@@ -13,7 +13,7 @@ export default function Navbar() {
         <LogoIcon className="nav-logo nav-icon" />
       </a>
       <ul className="nav-links">
-        <li className="nav-link" >
+        <li className="nav-link">
           <a href="#about" className="link">
             About
           </a>

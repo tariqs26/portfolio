@@ -1,27 +1,29 @@
 #intro .section {
   display: flex;
-  gap : 2em;
+  gap: 2em;
 }
 
-.intro-screen {
-  background-color: rgb(22, 21, 21);
-  border: 2px solid var(--accent-clr);
-  border-radius: 0.2rem;
-  padding: 1em;
-
+.intro {
+  opacity: 0;
+  animation: intro-fade 500ms 1.5s ease-in-out forwards;
 }
 
 .intro-heading {
   color: transparent;
   background-clip: text;
-  background-image: linear-gradient(90deg, var(--secondary-clr) 0%, var(--accent-clr) 100%);
-  width:fit-content;
-  font-size: 3.5rem;
+  background-image: linear-gradient(
+    135deg,
+    var(--secondary-clr) 0%,
+    var(--accent-clr) 100%
+  );
+  width: fit-content;
+  font-weight: normal;
+  font-size: 4em;
 }
 
 .intro-subheading {
-  color : var(--secondary-clr);
-  font-size: 3.2rem;
+  color: var(--secondary-clr);
+  font-size: 4em;
 }
 
 .intro-btn:nth-of-type(2) {
@@ -53,4 +55,26 @@
 .intro-greet:hover {
   cursor: unset;
   border-color: var(--accent-clr);
+}
+
+.intro p {
+  width: 90%;
+}
+
+/* .intro-screen {
+  background-color: rgb(22, 21, 21);
+  border: 2px solid var(--accent-clr);
+  border-radius: 0.2rem;
+  padding: 1em;
+
+} */
+
+@keyframes intro-fade {
+  0% {
+    transform: translateY(0.4em);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }

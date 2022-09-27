@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "../Link/Link";
 import "./Intro.css";
 
 export default function Intro() {
@@ -7,22 +8,23 @@ export default function Intro() {
       <section className="section">
         <div className="intro">
           <button className="intro-greet intro-btn">
-            Greetings! I'm
+            Hi, I'm
             <div className="greet-icon"></div>
           </button>
           <h1 className="intro-heading">Saad Tariq</h1>
           <h2 className="intro-subheading">Web Developer</h2>
           <div className="intro-links"></div>
           <div className="content">
-            Computer science student at McMaster with an interest in all things
-            web development.
+            <p>
+              Computer science student at <Link href="">McMaster University</Link> with an interest in all
+              things web development.
+            </p>
           </div>
-          <button className="intro-btn">View Projects</button>
           <button className="intro-btn">View resume</button>
         </div>
-        <div className="intro-screen">
+        {/* <div className="intro-screen">
           console.log("Hello World!"); TODO: make screen simulate coding
-        </div>
+        </div> */}
       </section>
     </div>
   );

@@ -43,9 +43,10 @@
 }
 
 .nav-logo {
-  background: linear-gradient(90deg, var(--secondary-clr) 0%, var(--accent-clr) 100%);
+  background: linear-gradient(135deg, var(--secondary-clr) 0%, var(--accent-clr) 100%);
   padding:0.25em;
   border-radius: 0.5em;
+  box-shadow: 0 0 0.5em 0.1em rgb(9, 9, 9);
 }
 
 .nav-logo:hover{

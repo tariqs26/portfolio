@@ -1,5 +1,5 @@
 .section-container {
-  min-height: 70vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
 }
@@ -8,14 +8,15 @@
   width: 100%;
 }
 
+.section p {
+  margin: 1em 0;
+  font-size: 1.15em;
+}
+
 .hidden {
   filter: blur(5px);
   transform: translateY(-1.2em);
   opacity: 0;
-}
-
-.section-content {
-  transition: 600ms 900ms all linear;
 }
 
 .section-heading {
@@ -23,7 +24,7 @@
   display: flex;
   align-items: center;
   font-size: 1.5em;
-  transition: 750ms all linear;
+  transition: 600ms all linear;
 }
 
 .section-heading.hidden {
@@ -41,7 +42,7 @@
 }
 
 .animation {
-  animation: type 750ms steps(40, end) forwards, blink 1s step-end 4 forwards;
+  animation: type 600ms steps(40, end) forwards, blink 0.8s step-end 4 forwards;
 }
 
 @keyframes blink {
@@ -89,7 +90,6 @@
   }
 }
 
-.section p {
-  margin: 1em 0;
-  font-size: 1.1em;
+.section-content {
+  transition: 600ms 900ms all linear;
 }
