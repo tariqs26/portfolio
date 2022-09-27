@@ -10,12 +10,12 @@
 
 .hidden {
   filter: blur(5px);
-  transform: translateY(-1.5em);
+  transform: translateY(-1.2em);
   opacity: 0;
 }
 
 .section-content {
-  transition: 750ms 800ms all linear;
+  transition: 750ms 900ms all linear;
 }
 
 .section-heading {
@@ -27,7 +27,7 @@
 }
 
 .section-heading.hidden {
-  transform : none;
+  transform : translateY(-0.8em);
 }
 
 .section-heading-text {

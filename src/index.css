@@ -7,8 +7,8 @@
   box-sizing: border-box;
   --primary-bg: hsl(218, 80%, 9%);
   --primary-clr : hsl(0, 20%, 81%);
-  --secondary-clr: hsl(218, 80%, 70%);
-  --accent-clr: hsl(35, 75%, 45%);
+  --secondary-clr: hsl(300, 100%, 50%);
+  --accent-clr: #ff5100;
   --link-clr : hsl(0, 0%, 100%);
 
   font-family: "Work Sans", sans-serif;
