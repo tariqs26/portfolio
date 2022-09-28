@@ -6,10 +6,10 @@
   padding: 0;
   box-sizing: border-box;
   --primary-bg: hsl(218, 80%, 9%);
-  --primary-clr : hsl(0, 20%, 81%);
+  --primary-clr: hsl(0, 20%, 81%);
   --secondary-clr: hsl(233, 100%, 70%);
   --accent-clr: hsl(19, 61%, 55%);
-  --link-clr : hsl(0, 0%, 100%);
+  --link-clr: hsl(0, 0%, 100%);
 
   font-family: "Work Sans", sans-serif;
 }
@@ -25,6 +25,44 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: hidden;
+  animation: overflow 1s 1.5s ease-in-out forwards;
+}
+
+@keyframes overflow {
+  to {
+    overflow-y: scroll;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 0.6em;
+  display: block;
+  background-color: var(--primary-bg);
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  border-radius: 0.5em;
+  height: 0;
+  background-color: var(--secondary-clr);
+}
+
+body::-webkit-scrollbar-track-piece:end {
+  background: transparent;
+  margin-bottom: 1em;
+}
+
+body::-webkit-scrollbar-track-piece:start {
+  background: transparent;
+  margin-top: 1em;
 }
 
 code {
