@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import useAnimations from "./hooks/useAnimations";
 import Navbar from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
@@ -9,6 +9,12 @@ import Contact from "./components/Contact/Contact";
 import "./App.css";
 
 export default function App() {
+  useEffect(() => {
+    window.onbeforeunload = () => {
+      window.scrollTo(0, 0);
+    }
+  }, [])
+  
   const mainRef = useAnimations();
   return (
     <div className="App">

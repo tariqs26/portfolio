@@ -23,12 +23,14 @@ export default function useAnimations() {
       { threshold: 0.6 }
     );
 
-    mainRef.current &&
-      (mainRef.current as HTMLElement)
-        .querySelectorAll(".section-container")
-        .forEach((section) => {
-          observer.observe(section);
-        });
+    setTimeout(() => {
+      mainRef.current &&
+        (mainRef.current as HTMLElement)
+          .querySelectorAll(".section-container")
+          .forEach((section) => {
+            observer.observe(section);
+          });
+    }, 1000);
   }, [mainRef]);
 
   return mainRef;
