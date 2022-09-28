@@ -23,7 +23,7 @@
   opacity: 0;
   animation: nav-link-fade 0.5s ease-in-out forwards;
   display: flex;
-  padding:0.2em;
+  padding: 0.2em;
   border-radius: 50%;
   transition: background-color 200ms ease-in-out;
 }
@@ -54,11 +54,12 @@
   );
   padding: 0.25em;
   border-radius: 0.5em;
-  box-shadow: 0 0 0.5em 0.1em rgb(9, 9, 9);
+  box-shadow: 0 0 0.2em 0.1em var(--primary-bg);
+  outline: 0.1em solid black;
 }
 
 .nav-logo:hover {
-  filter: brightness(1.2);
+  filter: brightness(1.1);
   cursor: pointer;
 }
 
