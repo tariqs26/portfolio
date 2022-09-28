@@ -1,6 +1,7 @@
 .link {
   text-decoration: none;
   color: var(--link-clr);
+  font-size : 1.15rem;
   background: linear-gradient(90deg, var(--accent-clr), var(--secondary-clr));
   background-size: 0 0.1em;
   background-repeat: no-repeat;
