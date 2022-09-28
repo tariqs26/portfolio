@@ -55,6 +55,7 @@
   border-radius: 1rem;
   border-bottom-left-radius: 0;
   width: fit-content;
+  margin-bottom : 1rem;
 }
 
 .intro-greet::selection {
@@ -78,8 +79,8 @@
 }
 
 .intro-links svg {
-  height: 2.2rem;
-  width: 2.2rem;
+  height: 2rem;
+  width: 2rem;
   fill : var(--primary-clr);
   transition: all 200ms ease-in-out;
 }
@@ -87,4 +88,5 @@
 .intro-links svg:hover {
   cursor: pointer;
   fill : var(--link-clr);
+  transform: translateY(-0.2rem);
 }
