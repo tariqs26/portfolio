@@ -10,9 +10,7 @@ import "./App.css";
 
 export default function App() {
   useEffect(() => {
-    window.onbeforeunload = () => {
-      window.scrollTo(0, 0);
-    }
+    window.location.href = "/#"
   }, [])
   
   const mainRef = useAnimations();
