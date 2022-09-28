@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import LogoIcon from "./LogoIcon";
 import DarkIcon from "./DarkIcon";
+import LightIcon from "./LightIcon";
 
 import "./Navbar.css";
 
@@ -29,10 +30,13 @@ export default function Navbar() {
           </a>
         </li>
       </ul>
-      <DarkIcon
-        onClick={() => setDarkMode(!darkMode)}
-        addition={!darkMode ? " rotate" : ""}
-      />
+      <div className="nav-icon-container">
+      {!darkMode ? (
+        <DarkIcon onClick={() => setDarkMode(true)} />
+      ) : (
+        <LightIcon onClick={() => setDarkMode(false)} />
+      )}
+      </div>
     </nav>
   );
 }

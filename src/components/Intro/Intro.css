@@ -8,6 +8,16 @@
   animation: intro-fade 500ms 1.5s ease-in-out forwards;
 }
 
+@keyframes intro-fade {
+  0% {
+    transform: translateY(0.4em);
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .intro-heading {
   color: transparent;
   background-clip: text;
@@ -47,6 +57,10 @@
   width: fit-content;
 }
 
+.intro-greet::selection {
+  background: var(--primary-bg);
+}
+
 .intro-btn:hover {
   cursor: pointer;
   border-color: var(--secondary-clr);
@@ -57,10 +71,6 @@
   border-color: var(--accent-clr);
 }
 
-.intro p {
-  width: 90%;
-}
-
 /* .intro-screen {
   background-color: rgb(22, 21, 21);
   border: 2px solid var(--accent-clr);
@@ -68,13 +78,3 @@
   padding: 1em;
 
 } */
-
-@keyframes intro-fade {
-  0% {
-    transform: translateY(0.4em);
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
