@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "../Link/Link";
+import { LinkedInIcon, GitHubIcon } from "./Icons";
 import "./Intro.css";
 
 export default function Intro() {
@@ -13,18 +14,31 @@ export default function Intro() {
           </button>
           <h1 className="intro-heading">Saad Tariq</h1>
           <h2 className="intro-subheading">Web Developer</h2>
-          <div className="intro-links"></div>
+          <div className="intro-links">
+            <a
+              href="https://github.com/tariqs26"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <GitHubIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/in/saad-tariq-cs/"
+              rel="noreferrer"
+              target="_blank"
+            >
+              <LinkedInIcon />
+            </a>
+          </div>
           <div className="content">
             <p>
-              Computer science student at <Link href="">McMaster University</Link> with an interest in all
+              Computer science student at{" "}
+              <Link href="">McMaster University</Link> with an interest in all
               things web development.
             </p>
           </div>
           <button className="intro-btn">View resume</button>
         </div>
-        {/* <div className="intro-screen">
-          console.log("Hello World!"); TODO: make screen simulate coding
-        </div> */}
       </section>
     </div>
   );

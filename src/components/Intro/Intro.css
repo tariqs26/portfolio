@@ -70,3 +70,21 @@
   cursor: unset;
   border-color: var(--accent-clr);
 }
+
+.intro-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.intro-links svg {
+  height: 2.2rem;
+  width: 2.2rem;
+  fill : var(--primary-clr);
+  transition: all 200ms ease-in-out;
+}
+
+.intro-links svg:hover {
+  cursor: pointer;
+  fill : var(--link-clr);
+}
