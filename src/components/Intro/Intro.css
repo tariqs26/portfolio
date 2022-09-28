@@ -33,7 +33,7 @@
 
 .intro-subheading {
   color: var(--secondary-clr);
-  font-size: 4em;
+  font-size: 3.8em;
 }
 
 .intro-btn:nth-of-type(2) {
@@ -79,8 +79,8 @@
 }
 
 .intro-links svg {
-  height: 2rem;
-  width: 2rem;
+  height: 1.8rem;
+  width: 1.8rem;
   fill : var(--primary-clr);
   transition: all 200ms ease-in-out;
 }
