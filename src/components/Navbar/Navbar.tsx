@@ -1,8 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import LogoIcon from "./LogoIcon";
-import DarkIcon from "./DarkIcon";
-import LightIcon from "./LightIcon";
+import { LogoIcon, DarkIcon, LightIcon } from "./Icons";
 
 import "./Navbar.css";
 
