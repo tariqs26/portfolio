@@ -12,8 +12,8 @@
 /build
 
 # misc
-# .vscode/
 *.png
+/.vscode
 .DS_Store
 .env.local
 .env.development.local
