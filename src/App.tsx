@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import useAnimations from "./hooks/useAnimations";
 import Navbar from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
@@ -14,11 +14,12 @@ export default function App() {
   }, [])
   
   const mainRef = useAnimations();
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className="App">
-      <Navbar />
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
       <main className="main" ref={mainRef}>
-        <Intro />
+        <Intro darkMode={darkMode}/>
         <About />
         <Projects />
         <Contact />

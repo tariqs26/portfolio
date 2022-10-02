@@ -6,17 +6,17 @@
   padding: 0;
   box-sizing: border-box;
   --primary-bg: hsl(218, 80%, 9%);
-  --primary-clr: hsl(0, 20%, 81%);
+  --primary-clr: hsl(0, 22%, 86%);
   --secondary-clr: hsl(233, 100%, 70%);
   --accent-clr: hsl(19, 61%, 55%);
   --link-clr: hsl(0, 0%, 100%);
-
   font-family: "Work Sans", sans-serif;
 }
 
 .light {
-  --primary-bg: hsl(0, 0%, 100%);
-  --primary-clr: hsl(0, 0%, 40%);
+  --primary-bg: hsl(0, 48%, 92%);
+  --primary-clr: hsl(0, 4%, 28%);
+  --secondary-clr: hsl(233, 100%, 40%);
   --accent-clr: hsl(35, 75%, 45%);
   --link-clr: hsl(0, 0%, 0%);
 }

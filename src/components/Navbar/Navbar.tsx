@@ -1,11 +1,9 @@
 import React from "react";
-import { useState } from "react";
 import { LogoIcon, DarkIcon, LightIcon } from "./Icons";
 
 import "./Navbar.css";
 
-export default function Navbar() {
-  const [darkMode, setDarkMode] = useState(true);
+export default function Navbar({ darkMode, setDarkMode }) {
   return (
     <nav className="nav">
       <a href="#intro">

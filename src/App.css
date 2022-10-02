@@ -2,6 +2,7 @@
   min-height: 100vh;
   background: var(--primary-bg);
   color: var(--primary-clr);
+  transition : background-color 0.5s ease;
 }
 
 .main {
