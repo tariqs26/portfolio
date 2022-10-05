@@ -10,16 +10,23 @@ import "./App.css";
 
 export default function App() {
   useEffect(() => {
-    window.location.href = "/#"
-  }, [])
-  
+    window.location.href = "/#";
+  }, []);
+
+  const [darkMode, setDarkMode] = useState(false);
+  const setDarkModeHandler = (darkMode : boolean) => {
+    setDarkMode(darkMode);
+    const root = document.querySelector(":root");
+    darkMode && root?.classList.add("light");
+    !darkMode  && root?.classList.remove("light");
+  };
+
   const mainRef = useAnimations();
-  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className="App">
-      <Navbar darkMode={darkMode} setDarkMode={setDarkMode}/>
+      <Navbar darkMode={darkMode} setDarkMode={setDarkModeHandler} />
       <main className="main" ref={mainRef}>
-        <Intro darkMode={darkMode}/>
+        <Intro darkMode={darkMode} />
         <About />
         <Projects />
         <Contact />

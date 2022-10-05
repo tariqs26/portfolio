@@ -8,7 +8,7 @@
   margin-bottom: 1rem;
   z-index: 1;
   align-items: center;
-  box-shadow: 0 1px 0.2em 0.1em rgb(9, 9, 9);
+  box-shadow: 0 1px 0.2em 0.1em var(--box-shadow-clr);
 }
 
 .nav-links {
@@ -52,10 +52,12 @@
     var(--secondary-clr) 0%,
     var(--accent-clr) 100%
   );
+  fill : var(--primary-bg);
   padding: 0.25em;
   border-radius: 0.5em;
-  box-shadow: 0 0 0.2em 0.1em var(--primary-bg);
-  outline: 0.1em solid black;
+  outline: 0.1em solid var(--primary-bg);
+  transition: 500ms ease-in-out;
+  transition-property : fill, outline, filter;
 }
 
 .nav-logo:hover {

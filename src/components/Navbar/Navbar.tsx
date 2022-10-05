@@ -27,10 +27,10 @@ export default function Navbar({ darkMode, setDarkMode }) {
         </li>
       </ul>
       <div className="nav-icon-container">
-      {!darkMode ? (
-        <DarkIcon onClick={() => setDarkMode(true)} />
+      {darkMode ? (
+        <DarkIcon onClick={() => setDarkMode(false)} />
       ) : (
-        <LightIcon onClick={() => setDarkMode(false)} />
+        <LightIcon onClick={() => setDarkMode(true)} mode={darkMode} />
       )}
       </div>
     </nav>

@@ -1,24 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: 500ms ease-in-out;
+  transition-property: background-color, color, box-shadow;
+  font-family: "Work Sans", sans-serif;
+}
+
+:root {
   --primary-bg: hsl(218, 80%, 9%);
   --primary-clr: hsl(0, 22%, 86%);
   --secondary-clr: hsl(233, 100%, 70%);
   --accent-clr: hsl(19, 61%, 55%);
   --link-clr: hsl(0, 0%, 100%);
-  font-family: "Work Sans", sans-serif;
+  --box-shadow-clr : hsl(0, 0%, 0%);
 }
 
 .light {
-  --primary-bg: hsl(0, 48%, 92%);
-  --primary-clr: hsl(0, 4%, 28%);
-  --secondary-clr: hsl(233, 100%, 40%);
-  --accent-clr: hsl(35, 75%, 45%);
+  --primary-bg: hsl(0, 18%, 95%);
+  --primary-clr: hsl(0, 2%, 30%);
+  --secondary-clr: hsl(233, 100%, 45%);
+  --accent-clr: hsl(19, 61%, 50%);
   --link-clr: hsl(0, 0%, 0%);
+  --box-shadow-clr : hsl(0, 0%, 40%);
 }
 
 html {
