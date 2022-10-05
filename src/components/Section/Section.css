@@ -29,7 +29,7 @@
 }
 
 .section-heading.hidden {
-  transform : translateY(-0.8em);
+  transform : none;
 }
 
 .section-heading-text {
@@ -70,8 +70,7 @@
 .section-heading-rule {
   opacity: 0;
   flex: 1;
-  height: 0.05em;
-  border-radius: 0.025em;
+  height: 0.05rem;
   margin-left: 1em;
   background: linear-gradient(90deg, var(--accent-clr), var(--secondary-clr));
 }
