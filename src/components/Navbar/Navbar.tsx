@@ -1,13 +1,12 @@
 import React from "react";
 import { LogoIcon, DarkIcon, LightIcon } from "./Icons";
-
 import "./Navbar.css";
 
 export default function Navbar({ darkMode, setDarkMode }) {
   return (
     <nav className="nav">
       <a href="#intro">
-        <LogoIcon className="nav-logo nav-icon" />
+        <LogoIcon/>
       </a>
       <ul className="nav-links">
         <li className="nav-link">
@@ -30,7 +29,7 @@ export default function Navbar({ darkMode, setDarkMode }) {
       {darkMode ? (
         <DarkIcon onClick={() => setDarkMode(false)} />
       ) : (
-        <LightIcon onClick={() => setDarkMode(true)} mode={darkMode} />
+        <LightIcon onClick={() => setDarkMode(true)} />
       )}
       </div>
     </nav>

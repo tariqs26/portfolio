@@ -1,3 +1,7 @@
+#intro.section-container {
+  min-height: 85vh;
+}
+
 #intro .section {
   display: flex;
   gap: 2em;
@@ -37,11 +41,6 @@
   font-weight: 500;
 }
 
-.intro-btn:nth-of-type(2) {
-  margin-top: 1rem;
-  margin-right: 1rem;
-}
-
 .intro-btn {
   border: 2px solid var(--accent-clr);
   border-radius: 0.2rem;
@@ -51,6 +50,14 @@
   font-size: 1.1rem;
   transition: border-color 200ms ease-in-out;
 }
+.intro-btn:nth-of-type(2) {
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+.intro-btn:hover {
+  cursor: pointer;
+  border-color: var(--secondary-clr);
+}
 
 .intro-greet {
   border-radius: 1rem;
@@ -58,16 +65,9 @@
   width: fit-content;
   margin-bottom : 1rem;
 }
-
 .intro-greet::selection {
   background: var(--primary-bg);
 }
-
-.intro-btn:hover {
-  cursor: pointer;
-  border-color: var(--secondary-clr);
-}
-
 .intro-greet:hover {
   cursor: unset;
   border-color: var(--accent-clr);
@@ -85,7 +85,6 @@
   fill : var(--primary-clr);
   transition: transform 200ms ease-in-out, fill 500ms ease-in-out;
 }
-
 .intro-links svg:hover {
   cursor: pointer;
   fill : var(--link-clr);

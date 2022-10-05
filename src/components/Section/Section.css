@@ -24,8 +24,8 @@
   display: flex;
   align-items: center;
   font-size: 1.5em;
-  transition: 600ms all linear;
   font-weight: 500;
+  transition: 600ms all linear;
 }
 
 .section-heading.hidden {

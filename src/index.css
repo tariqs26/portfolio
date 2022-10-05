@@ -70,7 +70,3 @@ body::-webkit-scrollbar-track-piece:start {
   background: transparent;
   margin-top: 1em;
 }
-
-code {
-  font-family: "Roboto Mono", monospace;
-}

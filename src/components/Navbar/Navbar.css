@@ -2,32 +2,23 @@
   position: sticky;
   top: 0;
   display: flex;
+  align-items: center;
   width: 100%;
   padding: 1em 2em;
-  background-color: var(--primary-bg);
   margin-bottom: 1rem;
-  z-index: 1;
-  align-items: center;
+  background-color: var(--primary-bg);
   box-shadow: 0 1px 0.2em 0.1em var(--box-shadow-clr);
-}
-
-.nav-links {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  flex: 3;
-  font-size: 1.1em;
+  z-index: 1;
 }
 
 .nav-icon-container {
   opacity: 0;
-  animation: nav-link-fade 0.5s ease-in-out forwards;
   display: flex;
   padding: 0.2em;
   border-radius: 50%;
+  animation: nav-link-fade 0.5s ease-in-out forwards;
   transition: background-color 200ms ease-in-out;
 }
-
 .nav-icon-container:hover {
   cursor: pointer;
   background-color: rgba(163, 163, 219, 0.408);
@@ -40,13 +31,13 @@
 }
 
 .nav-icon.clr-scheme {
-  transition: 0.5s;
   fill: var(--link-clr);
+  stroke : var(--link-clr);
+  transition: 0.5s;
 }
 
 .nav-logo {
   opacity: 0;
-  animation: nav-link-fade 0.5s ease-in-out forwards;
   background: linear-gradient(
     135deg,
     var(--secondary-clr) 0%,
@@ -56,13 +47,21 @@
   padding: 0.25em;
   border-radius: 0.5em;
   outline: 0.1em solid var(--primary-bg);
+  animation: nav-link-fade 0.5s ease-in-out forwards;
   transition: 500ms ease-in-out;
   transition-property : fill, outline, filter;
 }
-
 .nav-logo:hover {
   filter: brightness(1.2);
   cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  flex: 3;
+  font-size: 1.1em;
 }
 
 .nav-link {
@@ -70,11 +69,9 @@
   opacity: 0;
   animation: nav-link-fade 0.5s ease-in-out 0.5s forwards;
 }
-
 .nav-link:nth-child(2) {
   animation-delay: 0.75s;
 }
-
 .nav-link:nth-child(3) {
   animation-delay: 1s;
 }

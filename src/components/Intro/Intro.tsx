@@ -3,7 +3,7 @@ import Link from "../Link/Link";
 import { LinkedInIcon, GitHubIcon } from "./Icons";
 import "./Intro.css";
 
-export default function Intro({ darkMode }) {
+export default function Intro() {
   return (
     <div className="section-container" id="intro">
       <section className="section">
