@@ -70,3 +70,8 @@ body::-webkit-scrollbar-track-piece:start {
   background: transparent;
   margin-top: 1em;
 }
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

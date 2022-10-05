@@ -6,7 +6,7 @@ export default function About() {
     <Section heading={"About me"}>
       <p>Hi There!</p>
       <p>
-        I'm Saad Tariq, a computer science student at{" "}
+        I'm Saad Tariq, a computer science student at
         McMaster University in my second year. I have
         experience with front-end web development but I'am looking to expand my
         knowledge towards back-end development.
@@ -16,8 +16,8 @@ export default function About() {
         full-stack camp site review app.
       </p>
       <p>
-        I have experience with HTML, CSS, Javascript, React, Node.js, Express,
-        MongoDB, and Git.
+        I have experience with <code>HTML, CSS, Javascript, React, Node.js, Express,
+        MongoDB, and Git.</code>
       </p>
     </Section>
   );
