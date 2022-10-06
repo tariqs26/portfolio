@@ -5,18 +5,18 @@ import "./Navbar.css";
 export default function Navbar({ darkMode, setDarkMode }) {
   const [pos, setPos] = React.useState(0);
   
-  const handleScroll = () => {
-    setPos(window.scrollY);
-  };
+  
   useEffect(() => {
+    const handleScroll = () => {
+      (pos === 0 || window.scrollY === 0) && setPos(window.scrollY);
+    };
     window.addEventListener("scroll", handleScroll);
-
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, []);
+  }, [pos]);
 
-  useEffect(() => {
+  useEffect(() => {    
     if (pos > 0) document.querySelector(".nav")?.classList.add("nav-shadow");
     else document.querySelector(".nav")?.classList.remove("nav-shadow");
   }, [pos]);
