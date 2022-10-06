@@ -7,8 +7,13 @@
   padding: 1em 2em;
   margin-bottom: 1rem;
   background-color: var(--primary-bg);
-  box-shadow: 0 1px 0.2em 0.1em var(--box-shadow-clr);
+  transition: 500ms ease-in-out;
+  transition-property : background-color, box-shadow;
   z-index: 1;
+}
+
+.nav-shadow {
+  box-shadow: 0 3px 0.5em 0.1em var(--box-shadow-clr);
 }
 
 .nav-icon-container {

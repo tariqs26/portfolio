@@ -14,9 +14,9 @@ export default function useAnimations() {
 
           if (entry.isIntersecting) {
             for (let elem of [sectionContent, sectionText])
-              elem!.classList.remove("hidden");
+              elem && elem.classList.remove("hidden");
             for (let elem of [sectionTextH2, sectionRule])
-              elem!.classList.add("animation");
+              elem && elem.classList.add("animation");
           }
         });
       },

@@ -4,8 +4,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: 500ms ease-in-out;
-  transition-property: background-color, color, box-shadow;
   font-family: "Work Sans", sans-serif;
 }
 
@@ -24,7 +22,7 @@
   --secondary-clr: hsl(233, 100%, 45%);
   --accent-clr: hsl(19, 61%, 50%);
   --link-clr: hsl(0, 0%, 0%);
-  --box-shadow-clr : hsl(0, 0%, 40%);
+  --box-shadow-clr : hsl(0, 0%, 70%);
 }
 
 html {
@@ -45,9 +43,8 @@ body {
   }
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
   width: 0.6em;
-  display: block;
   background-color: var(--primary-bg);
 }
 
@@ -69,7 +66,7 @@ body::-webkit-scrollbar-track-piece:end {
 body::-webkit-scrollbar-track-piece:start {
   background: transparent;
   margin-top: 1em;
-}
+} */
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",

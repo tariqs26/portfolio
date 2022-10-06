@@ -25,7 +25,8 @@
   align-items: center;
   font-size: 1.5em;
   font-weight: 500;
-  transition: 600ms all linear;
+  transition: 600ms;
+  transition-property: filter, opacity;
 }
 
 .section-heading.hidden {
@@ -91,6 +92,6 @@
 }
 
 .section-content {
-  transition: 550ms 1.2s linear;
-  transition-property: filter, transform, opacity;
+  transition: 550ms filter 1.2s linear;
+  transition-property: filter, opacity, transform;
 }
