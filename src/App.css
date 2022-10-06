@@ -2,7 +2,7 @@
   min-height: 100vh;
   background: var(--primary-bg);
   color: var(--primary-clr);
-  transition : 500ms ease-in-out;
+  transition : 400ms ease-in-out;
   transition-property : background-color, color;
 }
 

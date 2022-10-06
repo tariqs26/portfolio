@@ -1,0 +1,14 @@
+.tech-icons {
+    display: flex;
+    flex-wrap: wrap;
+    gap:2em;
+}
+
+.tech-icon {
+    display: flex;
+    align-items: center;
+    gap:1em;
+    border-radius: 0.5em;
+    padding: 0.5em 1em;
+    box-shadow: 0 0 2px 0 var(--primary-clr);
+}

@@ -10,17 +10,17 @@
 
 .section p {
   margin: 1em 0;
-  font-size: 1.15em;
+  font-size: 1.1em;
 }
 
 .hidden {
   filter: blur(3px);
-  transform: translateY(-1em);
+  transform: translateY(1em);
   opacity: 0;
 }
 
 .section-heading {
-  color: var(--accent-clr);
+  color: var(--secondary-clr);
   display: flex;
   align-items: center;
   font-size: 1.5em;
@@ -38,6 +38,7 @@
 }
 
 .section-heading-text h2 {
+  width:0;
   white-space: nowrap;
   overflow: hidden;
   border-right: 0.05em solid var(--secondary-clr);
@@ -59,10 +60,6 @@
 }
 
 @keyframes type {
-  from {
-    width: 0;
-  }
-
   to {
     width: 100%;
   }
@@ -70,10 +67,10 @@
 
 .section-heading-rule {
   opacity: 0;
-  flex: 1;
-  height: 0.05rem;
+  flex: 0;
+  height: 1px;
   margin-left: 1em;
-  background: linear-gradient(90deg, var(--accent-clr), var(--secondary-clr));
+  background: linear-gradient(90deg, var(--secondary-clr), var(--accent-clr));
 }
 
 .section-heading-rule.animation {
@@ -81,10 +78,6 @@
 }
 
 @keyframes rule {
-  from {
-    flex: 0;
-  }
-
   to {
     flex: 1;
     opacity: 1;

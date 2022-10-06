@@ -1,5 +1,5 @@
 #intro.section-container {
-  min-height: 80vh;
+  height: 80vh;
 }
 
 #intro .section {
@@ -9,14 +9,12 @@
 
 .intro {
   opacity: 0;
+  transform: translateY(0.4em);
   animation: intro-fade 500ms 1.5s ease-in-out forwards;
 }
 
 @keyframes intro-fade {
-  0% {
-    transform: translateY(0.4em);
-  }
-  100% {
+  to {
     transform: translateY(0);
     opacity: 1;
   }
@@ -80,8 +78,8 @@
 }
 
 .intro-links svg {
-  height: 1.8rem;
-  width: 1.8rem;
+  height: 1.5rem;
+  width: 1.5rem;
   fill : var(--primary-clr);
   transition: transform 200ms ease-in-out, fill 500ms ease-in-out;
 }

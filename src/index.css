@@ -9,7 +9,7 @@
 
 :root {
   --primary-bg: hsl(218, 80%, 9%);
-  --primary-clr: hsl(0, 22%, 86%);
+  --primary-clr: hsl(0, 22%, 85%);
   --secondary-clr: hsl(233, 100%, 70%);
   --accent-clr: hsl(19, 61%, 55%);
   --link-clr: hsl(0, 0%, 100%);
@@ -18,7 +18,7 @@
 
 .light {
   --primary-bg: hsl(0, 18%, 95%);
-  --primary-clr: hsl(0, 2%, 30%);
+  --primary-clr: hsl(0, 2%, 20%);
   --secondary-clr: hsl(233, 100%, 45%);
   --accent-clr: hsl(19, 61%, 50%);
   --link-clr: hsl(0, 0%, 0%);

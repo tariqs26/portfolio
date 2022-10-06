@@ -7,7 +7,7 @@
   padding: 1em 2em;
   margin-bottom: 1rem;
   background-color: var(--primary-bg);
-  transition: 500ms ease-in-out;
+  transition: 400ms ease-in-out;
   transition-property : background-color, box-shadow;
   z-index: 1;
 }
@@ -44,16 +44,15 @@
 .nav-logo {
   opacity: 0;
   background: linear-gradient(
-    135deg,
-    var(--secondary-clr) 0%,
-    var(--accent-clr) 100%
+    90deg,
+    hsl(233, 100%, 65%) 0%,
+    hsl(19, 61%, 55%) 100%
   );
-  fill : var(--primary-bg);
+  fill : white;
   padding: 0.25em;
   border-radius: 0.5em;
-  outline: 0.1em solid var(--primary-bg);
   animation: nav-link-fade 0.5s ease-in-out forwards;
-  transition: 500ms ease-in-out;
+  transition: 400ms ease-in-out;
   transition-property : fill, outline, filter;
 }
 .nav-logo:hover {
