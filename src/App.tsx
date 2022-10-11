@@ -19,7 +19,7 @@ export default function App() {
   return (
     <div className="App">
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-      <main className="main" ref={mainRef}>
+      <main ref={mainRef}>
         <Intro />
         <About />
         <Projects />

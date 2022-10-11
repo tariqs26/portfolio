@@ -1,26 +1,10 @@
-import React, { useEffect } from "react";
+import React from "react";
+import useNavShadow from "../../hooks/useNavShadow";
 import { LogoIcon, DarkIcon, LightIcon } from "./Icons";
 import "./Navbar.css";
 
 export default function Navbar({ darkMode, setDarkMode }) {
-  const [pos, setPos] = React.useState(0);
-  
-  
-  useEffect(() => {
-    const handleScroll = () => {
-      (pos === 0 || window.scrollY === 0) && setPos(window.scrollY);
-    };
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
-  }, [pos]);
-
-  useEffect(() => {    
-    if (pos > 0) document.querySelector(".nav")?.classList.add("nav-shadow");
-    else document.querySelector(".nav")?.classList.remove("nav-shadow");
-  }, [pos]);
-
+  useNavShadow();
   return (
     <nav className="nav">
       <a href="#intro">
