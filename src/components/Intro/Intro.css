@@ -1,5 +1,6 @@
 #intro.section-container {
   min-height: 80vh;
+  padding-top: 1.5em;
 }
 
 #intro .section {
@@ -35,12 +36,14 @@
   width: fit-content;
   font-weight: 300;
   font-size: 4em;
+  transition: 400ms ease-in-out background-image;
 }
 
 .intro-subheading {
   color: var(--secondary-clr);
   font-size: 3.8em;
   font-weight: 500;
+  transition: 400ms ease-in-out color;
 }
 
 .intro-btn {
@@ -85,7 +88,7 @@
   height: 1.5rem;
   width: 1.5rem;
   fill : var(--primary-clr);
-  transition: transform 200ms ease-in-out, fill 500ms ease-in-out;
+  transition: transform 200ms ease-in-out, fill 400ms ease-in-out;
 }
 .intro-links svg:hover {
   cursor: pointer;

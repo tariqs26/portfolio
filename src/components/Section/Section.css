@@ -2,6 +2,7 @@
   min-height: 60vh;
   display: flex;
   align-items: center;
+  padding-top: 6em;
 }
 
 .section {
@@ -20,12 +21,11 @@
   align-items: center;
   font-size: 1.5rem;
   font-weight: 500;
-  transition: 600ms;
-  transition-property: filter, opacity;
+  transition: 600ms filter, 600ms opacity, 400ms ease-in-out color;
 }
 
 .section-heading.hidden {
-  transform : none;
+  transform: none;
 }
 
 .section-heading-text {
@@ -33,7 +33,7 @@
 }
 
 .section-heading-text h2 {
-  width:0;
+  width: 0;
   white-space: nowrap;
   overflow: hidden;
   border-right: 0.05rem solid var(--secondary-clr);
