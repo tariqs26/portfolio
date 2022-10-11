@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import useAnimations from "./hooks/useAnimations";
+import useDarkMode from "./hooks/useDarkMode";
 import Navbar from "./components/Navbar/Navbar";
 import Intro from "./components/Intro/Intro";
 import About from "./components/About/About";
@@ -12,19 +13,12 @@ export default function App() {
   useEffect(() => {
     window.location.href = "/#";
   }, []);
-
-  const [darkMode, setDarkMode] = useState(false);
-  const setDarkModeHandler = (darkMode : boolean) => {
-    setDarkMode(darkMode);
-    const root = document.querySelector(":root");
-    darkMode && root?.classList.add("light");
-    !darkMode  && root?.classList.remove("light");
-  };
-
+  const [darkMode, setDarkMode] = useDarkMode();
   const mainRef = useAnimations();
+
   return (
     <div className="App">
-      <Navbar darkMode={darkMode} setDarkMode={setDarkModeHandler} />
+      <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <main className="main" ref={mainRef}>
         <Intro />
         <About />
