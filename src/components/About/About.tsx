@@ -16,7 +16,7 @@ export default function About() {
         Some of my favorite projects include this website a trivia app and a
         full-stack camp site review app.
       </p>
-      <p>Here are some technologies I use in my projects:</p>
+      <p>Here are some technologies I use in projects:</p>
       <div className="tech-icons">
         {[
           "HTML",

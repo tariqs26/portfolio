@@ -13,3 +13,20 @@
   margin: 0 auto;
 }
 
+@media (max-width: 766px) {
+  .main {
+    width: 70%;
+  }
+}
+
+@media (max-width: 666px) {
+  .main {
+    width: 80%;
+  }
+}
+
+@media (max-width: 577px) {
+  .main {
+    width: 90%;
+  }
+}

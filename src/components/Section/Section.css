@@ -8,11 +8,6 @@
   width: 100%;
 }
 
-.section p {
-  margin: 1em 0;
-  font-size: 1.1em;
-}
-
 .hidden {
   filter: blur(3px);
   transform: translateY(1em);
@@ -23,7 +18,7 @@
   color: var(--secondary-clr);
   display: flex;
   align-items: center;
-  font-size: 1.5em;
+  font-size: 1.5rem;
   font-weight: 500;
   transition: 600ms;
   transition-property: filter, opacity;
@@ -41,7 +36,7 @@
   width:0;
   white-space: nowrap;
   overflow: hidden;
-  border-right: 0.05em solid var(--secondary-clr);
+  border-right: 0.05rem solid var(--secondary-clr);
 }
 
 .animation {
@@ -69,7 +64,7 @@
   opacity: 0;
   flex: 0;
   height: 1px;
-  margin-left: 1em;
+  margin-left: 1rem;
   background: linear-gradient(90deg, var(--secondary-clr), var(--accent-clr));
 }
 
@@ -87,4 +82,5 @@
 .section-content {
   transition: 550ms filter 1.2s linear;
   transition-property: filter, opacity, transform;
+  font-size: 1.1rem;
 }

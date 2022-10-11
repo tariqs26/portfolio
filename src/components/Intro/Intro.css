@@ -1,5 +1,5 @@
 #intro.section-container {
-  height: 80vh;
+  min-height: 80vh;
 }
 
 #intro .section {
@@ -11,6 +11,10 @@
   opacity: 0;
   transform: translateY(0.4em);
   animation: intro-fade 500ms 1.5s ease-in-out forwards;
+}
+
+.content {
+  font-size: 1.1em;
 }
 
 @keyframes intro-fade {

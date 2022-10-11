@@ -8,19 +8,19 @@
 }
 
 :root {
-  --primary-bg: hsl(218, 80%, 9%);
-  --primary-clr: hsl(0, 22%, 85%);
-  --secondary-clr: hsl(233, 100%, 70%);
-  --accent-clr: hsl(19, 61%, 55%);
+  --primary-bg: hsl(218, 80%, 10%);
+  --primary-clr: hsl(0, 30%, 85%);
+  --secondary-clr: hsl(218, 80%, 70%);
+  --accent-clr: hsl(19, 80%, 55%);
   --link-clr: hsl(0, 0%, 100%);
   --box-shadow-clr : hsl(0, 0%, 0%);
 }
 
 .light {
-  --primary-bg: hsl(0, 18%, 95%);
-  --primary-clr: hsl(0, 2%, 20%);
-  --secondary-clr: hsl(233, 100%, 45%);
-  --accent-clr: hsl(19, 61%, 50%);
+  --primary-bg: hsl(0, 30%, 95%);
+  --primary-clr: hsl(0, 10%, 20%);
+  --secondary-clr: hsl(218, 80%, 45%);
+  --accent-clr: hsl(19, 80%, 55%);
   --link-clr: hsl(0, 0%, 0%);
   --box-shadow-clr : hsl(0, 0%, 70%);
 }
@@ -67,6 +67,10 @@ body::-webkit-scrollbar-track-piece:start {
   background: transparent;
   margin-top: 1em;
 } */
+
+p {
+  margin:1em 0;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
