@@ -1,5 +1,6 @@
 #intro.section-container {
-  height: 80vh;
+  min-height: 80vh;
+  padding-top: 1.5em;
 }
 
 #intro .section {

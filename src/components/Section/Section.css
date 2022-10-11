@@ -2,6 +2,7 @@
   min-height: 60vh;
   display: flex;
   align-items: center;
+  padding-top: 6em;
 }
 
 .section {
@@ -29,7 +30,7 @@
 }
 
 .section-heading.hidden {
-  transform : none;
+  transform: none;
 }
 
 .section-heading-text {
@@ -37,7 +38,7 @@
 }
 
 .section-heading-text h2 {
-  width:0;
+  width: 0;
   white-space: nowrap;
   overflow: hidden;
   border-right: 0.05em solid var(--secondary-clr);
