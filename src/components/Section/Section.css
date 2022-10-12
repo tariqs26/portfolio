@@ -1,5 +1,5 @@
 .section-container {
-  min-height: 60vh;
+  min-height: 65vh;
   display: flex;
   align-items: center;
   padding-top: 6rem;
@@ -20,7 +20,7 @@
   display: flex;
   align-items: center;
   font-size: 1.5rem;
-  transition: 600ms filter, 600ms opacity, 400ms ease-in-out color;
+  transition: 600ms 200ms filter, 600ms 200ms opacity, 400ms ease-in-out color;
 }
 
 .section-heading.hidden {

@@ -1,7 +1,7 @@
 .App {
   min-height: 100vh;
-  background: var(--primary-bg);
   color: var(--primary-clr);
+  background-color: var(--primary-bg);
   transition : 400ms ease-in-out;
   transition-property : background-color, color;
 }
@@ -33,6 +33,6 @@ main {
 
 @media (max-width: 530px) {
   main {
-    width: 90%;
+    width: 85%;
   }
 }

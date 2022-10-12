@@ -35,6 +35,7 @@ body {
   overflow-x: hidden;
   overflow-y: hidden;
   animation: overflow 1s 1.5s ease-in-out forwards;
+  background-color: var(--primary-bg);
 }
 
 @keyframes overflow {
@@ -49,8 +50,7 @@ body::-webkit-scrollbar {
 }
 
 body::-webkit-scrollbar-thumb {
-  border-radius: 0.4rem;
-  background-color: hsl(240, 63%, 66%);
+  background-color: hsl(240, 63%, 55%);
 }
 
 body::-webkit-scrollbar-track-piece:end {

@@ -1,0 +1,38 @@
+.nav-links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex: 3;
+}
+
+.nav-link {
+  opacity:0;
+  list-style: none;
+  animation: nav-link-fade 0.5s ease-in-out 0.5s forwards;
+}
+.nav-link:nth-child(2) {
+  animation-delay: 0.75s;
+}
+.nav-link:nth-child(3) {
+  animation-delay: 1s;
+}
+
+@keyframes nav-link-fade {
+  from {
+    transform: translateY(-2em);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 550px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-link {
+    display: none;
+  }
+}

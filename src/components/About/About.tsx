@@ -12,10 +12,6 @@ export default function About() {
         second year. I have experience with front-end web development but I'am
         looking to expand my knowledge towards back-end development.
       </p>
-      <p>
-        Some of my favorite projects include this website a trivia app and a
-        full-stack camp site review app.
-      </p>
       <p>Here are some technologies I use in projects:</p>
       <div className="tech-icons">
         {[
