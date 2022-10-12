@@ -9,8 +9,8 @@
   transition: 
     400ms background-color ease-in-out, 
     400ms box-shadow ease-in-out,
-    300ms padding ease-in-out, 
-    300ms margin-bottom ease-in-out;
+    250ms padding ease-in-out, 
+    250ms margin-bottom ease-in-out;
   z-index: 1;
 }
 

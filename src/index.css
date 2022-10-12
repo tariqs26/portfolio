@@ -1,26 +1,26 @@
-@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,200;0,300;0,400;0,500;0,600;1,300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Work Sans", sans-serif;
+  font-family: "Rubik", sans-serif;
 }
 
 :root {
   --primary-bg: hsl(218, 80%, 10%);
   --primary-clr: hsl(0, 30%, 85%);
-  --secondary-clr: hsl(218, 80%, 70%);
-  --accent-clr: hsl(19, 80%, 55%);
+  --secondary-clr: hsl(218, 80%, 73%);
+  --accent-clr: hsl(19, 80%, 60%);
   --link-clr: hsl(0, 0%, 100%);
   --box-shadow-clr : hsl(0, 0%, 0%);
 }
 
 .light {
-  --primary-bg: hsl(0, 10%, 100%);
+  --primary-bg: hsl(20, 0%, 100%);
   --primary-clr: hsl(0, 10%, 20%);
-  --secondary-clr: hsl(218, 80%, 45%);
-  --accent-clr: hsl(19, 80%, 55%);
+  --secondary-clr: hsl(218, 80%, 40%);
+  --accent-clr: hsl(19, 80%, 50%);
   --link-clr: hsl(0, 0%, 0%);
   --box-shadow-clr : hsl(0, 0%, 70%);
 }
@@ -50,7 +50,6 @@ body::-webkit-scrollbar {
 
 body::-webkit-scrollbar-thumb {
   border-radius: 0.4rem;
-  height: 0;
   background-color: hsl(240, 63%, 66%);
 }
 
@@ -66,9 +65,4 @@ body::-webkit-scrollbar-track-piece:start {
 
 p {
   margin:1rem 0;
-}
-
-code {
-  font-family: Consolas, "Courier New",
-    monospace;
 }

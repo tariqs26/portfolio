@@ -42,8 +42,18 @@
 .intro-subheading {
   color: var(--secondary-clr);
   font-size: 3.8rem;
-  font-weight: 500;
+  font-weight: 400;
   transition: 400ms ease-in-out color;
+}
+
+@media (max-width: 475px) {
+  .intro-heading {
+    font-size: 3.5rem;
+  }
+
+  .intro-subheading {
+    font-size: 3.2rem;
+  }
 }
 
 .intro-btn {
