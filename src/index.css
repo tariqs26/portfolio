@@ -34,7 +34,7 @@ html {
 body {
   overflow-x: hidden;
   overflow-y: hidden;
-  animation: overflow 1s 1.5s ease-in-out forwards;
+  animation: overflow 1s 1.7s ease-in-out forwards;
   background-color: var(--primary-bg);
 }
 

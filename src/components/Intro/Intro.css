@@ -51,6 +51,17 @@
   }
 }
 
+@media (max-width: 400px) {
+  .intro-heading {
+    font-size: 3.2rem;
+  }
+
+  .intro-subheading {
+    font-size: 2.9rem;
+  }
+}
+
+
 .intro-btn {
   border: 0.12rem solid var(--accent-clr);
   border-radius: 0.5rem;

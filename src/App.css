@@ -31,8 +31,15 @@ main {
   }
 }
 
-@media (max-width: 530px) {
+@media (max-width: 550px) {
   main {
     width: 85%;
+  }
+}
+
+
+@media (max-width: 505px) {
+  main {
+    width: 90%;
   }
 }
