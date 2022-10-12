@@ -1,15 +1,15 @@
 .tech-icons {
     display: flex;
     flex-wrap: wrap;
-    gap:2em;
+    gap:2rem;
 }
 
 .tech-icon {
     display: flex;
     align-items: center;
-    gap:1em;
-    border-radius: 0.5em;
-    padding: 0.5em 1em;
+    gap:0.5rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem 1rem;
     box-shadow: 0 0 2px 0 var(--primary-clr);
-    transition: 400ms all ease-in-out;
+    transition: 400ms box-shadow ease-in-out;
 }

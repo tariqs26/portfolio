@@ -1,11 +1,11 @@
 #intro.section-container {
   min-height: 80vh;
-  padding-top: 1.5em;
+  padding-top: 1.5rem;
 }
 
 #intro .section {
   display: flex;
-  gap: 2em;
+  gap: 2rem;
 }
 
 .intro {
@@ -15,7 +15,7 @@
 }
 
 .content {
-  font-size: 1.1em;
+  font-size: 1.1rem;
 }
 
 @keyframes intro-fade {
@@ -35,25 +35,26 @@
   );
   width: fit-content;
   font-weight: 300;
-  font-size: 4em;
+  font-size: 4rem;
   transition: 400ms ease-in-out background-image;
 }
 
 .intro-subheading {
   color: var(--secondary-clr);
-  font-size: 3.8em;
+  font-size: 3.8rem;
   font-weight: 500;
   transition: 400ms ease-in-out color;
 }
 
 .intro-btn {
-  border: 2px solid var(--accent-clr);
-  border-radius: 0.2rem;
-  padding: 0.5rem 1rem;
+  border: 0.12rem solid var(--accent-clr);
+  border-radius: 0.5rem;
+  padding: 1rem 1.2rem;
   background: transparent;
   color: inherit;
-  font-size: 1.1rem;
-  transition: border-color 200ms ease-in-out;
+  font-size: 1rem;
+  transition: 200ms ease-in-out;
+  transition-property: border-color, background-color;
 }
 .intro-btn:nth-of-type(2) {
   margin-top: 1rem;
@@ -65,7 +66,7 @@
 }
 
 .intro-greet {
-  border-radius: 1rem;
+  border-radius: 1.5rem;
   border-bottom-left-radius: 0;
   width: fit-content;
   margin-bottom : 1rem;

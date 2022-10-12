@@ -2,7 +2,7 @@
   min-height: 60vh;
   display: flex;
   align-items: center;
-  padding-top: 6em;
+  padding-top: 6rem;
 }
 
 .section {
@@ -11,7 +11,7 @@
 
 .hidden {
   filter: blur(3px);
-  transform: translateY(1em);
+  transform: translateY(-1em);
   opacity: 0;
 }
 

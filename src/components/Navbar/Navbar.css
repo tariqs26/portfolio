@@ -4,21 +4,26 @@
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1em 2em;
+  padding: 1.25rem 2.5rem;
   background-color: var(--primary-bg);
-  transition: 400ms ease-in-out;
-  transition-property : background-color, box-shadow;
+  transition: 
+    400ms background-color ease-in-out, 
+    400ms box-shadow ease-in-out,
+    300ms padding ease-in-out, 
+    300ms margin-bottom ease-in-out;
   z-index: 1;
 }
 
 .nav-shadow {
-  box-shadow: 0 3px 0.5em 0.1em var(--box-shadow-clr);
+  padding: 0.75rem 2.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 2px 0.75rem 0.1rem var(--box-shadow-clr);
 }
 
 .nav-icon-container {
   opacity: 0;
   display: flex;
-  padding: 0.2em;
+  padding: 0.2rem;
   border-radius: 50%;
   animation: nav-link-fade 0.5s ease-in-out forwards;
   transition: background-color 200ms ease-in-out;
@@ -29,14 +34,14 @@
 }
 
 .nav-icon {
-  height: 2.1em;
-  width: 2.1em;
+  height: 2.1rem;
+  width: 2.1rem;
   transition: filter 150ms ease-in-out;
 }
 
 .nav-icon.clr-scheme {
   fill: var(--link-clr);
-  stroke : var(--link-clr);
+  stroke: var(--link-clr);
   transition: 400ms all ease-in-out;
 }
 
@@ -47,12 +52,12 @@
     hsl(233, 100%, 65%) 0%,
     hsl(19, 61%, 55%) 100%
   );
-  fill : white;
-  padding: 0.25em;
-  border-radius: 0.5em;
+  fill: white;
+  padding: 0.25rem;
+  border-radius: 0.5rem;
   animation: nav-link-fade 0.5s ease-in-out forwards;
   transition: 400ms ease-in-out;
-  transition-property : fill, outline, filter;
+  transition-property: fill, outline, filter;
 }
 .nav-logo:hover {
   filter: brightness(1.2);
@@ -62,9 +67,8 @@
 .nav-links {
   display: flex;
   justify-content: center;
-  gap: 1em;
+  gap: 1rem;
   flex: 3;
-  font-size: 1.1em;
 }
 
 .nav-link {
