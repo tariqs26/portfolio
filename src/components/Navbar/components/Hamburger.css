@@ -3,65 +3,49 @@
   flex: auto;
   width: 100%;
   justify-content: center;
-  position: relative;
 }
 
 .bar-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: grid;
+  place-items: center;
   gap: 0.6rem;
-  width: fit-content;
   padding: 0.4rem;
   border-radius: 0.5rem;
   transition: 200ms ease-in-out;
 }
 
-.menu {
-  display: flex;
-  gap: 1rem;
-  background-color: var(--primary-bg);
-  padding: 1rem 2rem;
-  width:100vw;
-  height: 10%;
-  position: fixed;
-  top: 4rem;
-  box-shadow: 0 4px 0.3rem var(--box-shadow-clr);
-  transition: 400ms all ease-in-out;
-  justify-content: center;
-  align-items: center;
-}
-
-.menu a {
-  width: fit-content;
-}
-
-.hidden {
-  opacity: 0;
-  top:6rem;
-}
-
 .bar {
   opacity: 0;
-  width: 2.1rem;
+  width: 75%;
   height: 2px;
   border-radius: 1px;
   background-color: var(--link-clr);
   animation: nav-link-fade 0.4s ease-in-out 1s forwards;
 }
 .bar:nth-child(2) {
+  width: 2.1rem;
   animation-delay: 0.75s;
 }
 .bar:nth-child(3) {
+  width: 75%;
   animation-delay: 0.5s;
 }
 
-.bar-animate {
-  animation: bar-animate 0.4s ease-in-out forwards;
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  width: 100vw;
+  background-color: var(--primary-bg);
+  box-shadow: 0 4px 0.3rem var(--box-shadow-clr);
+  position: fixed;
+  top: 4rem;
+  transition: 400ms all ease-in-out;
 }
 
-@keyframes bar {
-  to {
-    transform: rotate(45deg);
-  }
+.hidden {
+  opacity: 0;
+  top: 6rem;
 }

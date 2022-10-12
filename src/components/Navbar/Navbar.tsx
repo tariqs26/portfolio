@@ -2,24 +2,26 @@ import React from "react";
 import useNavShadow from "../../hooks/useNavShadow";
 import { LogoIcon, DarkIcon, LightIcon } from "./components/Icons";
 import Hamburger from "./components/Hamburger";
+import useNavMenu from "../../hooks/useNavMenu";
 import NavLinks from "./components/NavLinks";
 import "./Navbar.css";
 
 export default function Navbar({ darkMode, setDarkMode }) {
   useNavShadow();
+  const { open, setOpen, menuRef } = useNavMenu();
   return (
     <nav className="nav">
       <a
         href="/#"
         className="nav-a"
         onClick={() => {
-          document.querySelector(".menu").classList.add("hidden");
+          setOpen(false);
         }}
       >
         <LogoIcon />
       </a>
       <NavLinks />
-      <Hamburger />
+      <Hamburger {...{ open, setOpen, menuRef }} />
       <div className="nav-icon-container">
         {darkMode ? (
           <DarkIcon onClick={() => setDarkMode(false)} />

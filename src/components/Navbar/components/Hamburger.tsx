@@ -1,15 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
 import "./Hamburger.css";
 
-export default function Hamburger() {
-  const [open, setOpen] = useState(false);
-  const menuRef = useRef(null);
-  useEffect(() => {
-    menuRef.current &&
-      (open
-        ? (menuRef.current as HTMLElement).classList.remove("hidden") 
-        : (menuRef.current as HTMLElement).classList.add("hidden"));
-  }, [open]);
+export default function Hamburger({open, setOpen, menuRef}) {
   return (
     <div className="hamburger">
       <div className="bar-container" onClick={() => setOpen(!open)}>
@@ -18,13 +10,13 @@ export default function Hamburger() {
         <div className="bar"></div>
       </div>
       <div className="menu hidden" ref={menuRef}>
-        <a href="#about" className="link" onClick={() => setOpen(!open)}>
+        <a href="#about" className="link" onClick={() => setOpen(false)}>
           About
         </a>
-        <a href="#projects" className="link" onClick={() => setOpen(!open)}>
+        <a href="#projects" className="link" onClick={() => setOpen(false)}>
           Projects
         </a>
-        <a href="#contact" className="link" onClick={() => setOpen(!open)}>
+        <a href="#contact" className="link" onClick={() => setOpen(false)}>
           Contact
         </a>
       </div>

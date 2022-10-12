@@ -21,8 +21,6 @@ export default function About() {
           "TypeScript",
           "React",
           "Redux",
-          "Node",
-          "Python",
         ].map((name) => {
           return <TechIcon key={name} icon={iconLinks[name]} name={name} />;
         })}
