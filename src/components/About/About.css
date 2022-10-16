@@ -1,15 +1,44 @@
 .tech-icons {
-    display: flex;
-    flex-wrap: wrap;
-    gap:2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
 }
 
 .tech-icon {
-    display: flex;
-    align-items: center;
-    gap:0.5rem;
-    border-radius: 0.5rem;
-    padding: 0.4rem 0.8rem;
-    box-shadow: 0 0 2px 0 var(--primary-clr);
-    transition: 400ms box-shadow ease-in-out;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--tech-bg);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  box-shadow: 0 0 2px 0 black;
+  transition: 400ms ease-in-out;
+  transition-property: background-color, transform, opacity;
+  transition-delay: 0s, 1.9s, 1.9s;
+}
+
+.tech-icon.hidden {
+  filter: none;
+  transform: translateX(-1rem);
+}
+
+.tech-icon:nth-child(2) {
+  transition-delay: 0s, 2s, 2s;
+}
+
+.tech-icon:nth-child(3) {
+  transition-delay: 0s, 2.1s, 2.1s;
+}
+
+.tech-icon:nth-child(4) {
+  transition-delay: 0s, 2.2s, 2.2s;
+}
+
+.tech-icon:nth-child(5) {
+  transition-delay: 0s, 2.3s, 2.3s;
+}
+
+.tech-icon:nth-child(6) {
+  transition-delay: 0s, 2.4s, 2.4s;
 }

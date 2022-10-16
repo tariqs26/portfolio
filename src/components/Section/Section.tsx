@@ -2,8 +2,9 @@ import React from "react";
 import "./Section.css";
 
 export default function Section({ heading, children }) {
+  let id = heading.split(" ")[0].toLowerCase()
   return (
-    <div className="section-container" id={heading.split(" ")[0].toLowerCase()}>
+    <div className="section-container" >
       <section className="section">
         <header className="section-heading hidden">
           <div className="section-heading-text">

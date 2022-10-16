@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
 
 * {
   margin: 0;
@@ -8,21 +8,29 @@
 }
 
 :root {
-  --primary-bg: hsl(218, 80%, 10%);
-  --primary-clr: hsl(0, 30%, 85%);
-  --secondary-clr: hsl(218, 80%, 73%);
-  --accent-clr: hsl(19, 80%, 60%);
-  --link-clr: hsl(0, 0%, 100%);
-  --box-shadow-clr : hsl(0, 0%, 0%);
+  --primary-bg: hsl(218 80% 10%);
+  --alt-bg: hsl(218 81% 6%);
+  --tech-bg: hsl(218 80% 23%);
+  --primary-clr: hsl(0 30% 85%);
+  --secondary-clr: hsl(218 80% 73%);
+  --accent-clr: hsl(19 80% 60%);
+  --link-clr: hsl(0 0% 100%);
+  --box-shadow-clr: hsl(0 0% 0%);
+  --url: url("./wave2.svg");
+  --url-r: url("./wave3.svg");
 }
 
 .light {
-  --primary-bg: hsl(20, 0%, 100%);
-  --primary-clr: hsl(0, 10%, 20%);
-  --secondary-clr: hsl(218, 80%, 40%);
-  --accent-clr: hsl(19, 80%, 50%);
-  --link-clr: hsl(0, 0%, 0%);
-  --box-shadow-clr : hsl(0, 0%, 70%);
+  --primary-bg: hsl(0 0% 100%);
+  --alt-bg: hsl(0 0% 93%);
+  --tech-bg: hsl(218 80% 30%);
+  --primary-clr: hsl(0 10% 10%);
+  --secondary-clr: hsl(218 80% 40%);
+  --accent-clr: hsl(19 80% 50%);
+  --link-clr: hsl(259 79% 56%);
+  --box-shadow-clr: hsl(0 0% 70%);
+  --url: url("./wave2-light.svg");
+  --url-r: url("./wave3-light.svg");
 }
 
 html {
@@ -34,7 +42,7 @@ html {
 body {
   overflow-x: hidden;
   overflow-y: hidden;
-  animation: overflow 1s 1.7s ease-in-out forwards;
+  animation: overflow 1s 2.4s ease-in-out forwards;
   background-color: var(--primary-bg);
 }
 
@@ -64,5 +72,6 @@ body::-webkit-scrollbar-track-piece:start {
 }
 
 p {
-  margin:1rem 0;
+  margin: 1.5rem 0;
+  line-height: 1.5;
 }

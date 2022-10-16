@@ -8,38 +8,32 @@ export default function Intro() {
     <div className="section-container" id="intro">
       <section className="section">
         <div className="intro">
-          <button className="intro-greet intro-btn">
-            Hi, I'm
-            <div className="greet-icon"></div>
-          </button>
-          <h1 className="intro-heading">Saad Tariq</h1>
-          <h2 className="intro-subheading">Web Developer</h2>
-          <div className="intro-links">
-            <a
-              href="https://github.com/tariqs26"
-              rel="noreferrer"
-              target="_blank"
-            >
+          <button className="intro-greet intro-btn animate">Hi, I'm</button>
+          <h1 className="intro-heading animate">Saad Tariq</h1>
+          <h2 className="intro-subheading animate">Web Developer</h2>
+          <div className="intro-links animate">
+            <IntroLink href="https://github.com/tariqs26">
               <GitHubIcon />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/saad-tariq-cs/"
-              rel="noreferrer"
-              target="_blank"
-            >
+            </IntroLink>
+            <IntroLink href="https://www.linkedin.com/in/saad-tariq-cs/">
               <LinkedInIcon />
-            </a>
+            </IntroLink>
           </div>
-          <div className="content">
+          <div className="content animate">
             <p>
               Computer science student at{" "}
-              <Link href="">McMaster University</Link> with an interest in all
-              things web development.
+              <Link href="">McMaster University</Link> passionate about building things for the web.
             </p>
           </div>
-          <button className="intro-btn">View resume</button>
+          <button className="intro-btn animate">View resume</button>
         </div>
       </section>
     </div>
   );
 }
+
+const IntroLink = ({ href, children }) => (
+  <a href={href} rel="noreferrer" target="_blank">
+    {children}
+  </a>
+);

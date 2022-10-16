@@ -9,37 +9,17 @@
 main {
   display: flex;
   flex-direction: column;
-  width: 55%;
-  margin: 0 auto;
+  width: 100%;
 }
 
-@media (max-width: 1000px) {
-  main {
-    width: 60%;
-  }
+.spacer {
+  aspect-ratio: 960 / 100;
+  width: 100%;
+  background-size: cover;
+  background-image: var(--url);
+  transition : 400ms ease-in-out;
 }
 
-@media (max-width: 750px) {
-  main {
-    width: 75%;
-  }
-}
-
-@media (max-width: 600px) {
-  main {
-    width: 80%;
-  }
-}
-
-@media (max-width: 550px) {
-  main {
-    width: 85%;
-  }
-}
-
-
-@media (max-width: 505px) {
-  main {
-    width: 90%;
-  }
+.spacer2 {
+  background-image: var(--url-r);
 }

@@ -21,8 +21,11 @@ export default function App() {
       <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
       <main ref={mainRef}>
         <Intro />
+        <div className="spacer" id="about"/>
         <About />
+        <div className="spacer spacer2" id="projects"/>
         <Projects />
+        <div className="spacer" id="contact"/>
         <Contact />
       </main>
     </div>

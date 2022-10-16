@@ -1,19 +1,22 @@
 #intro.section-container {
-  min-height: 80vh;
-  padding-top: 1.5rem;
+  min-height: 70vh;
+  padding-top: 4rem;
 }
 
-.intro {
+.animate {
   opacity: 0;
-  transform: translateY(0.4em);
-  animation: intro-fade 500ms 1.5s ease-in-out forwards;
+  animation: intro-fade 0.5s ease-in-out 1.5s forwards;
 }
 
 .content {
   font-size: 1.1rem;
+  animation-delay: 1.9s;
 }
 
 @keyframes intro-fade {
+  from {
+    transform: translateY(4rem);
+  }
   to {
     transform: translateY(0);
     opacity: 1;
@@ -32,6 +35,7 @@
   font-weight: 300;
   font-size: 4rem;
   transition: 400ms ease-in-out background-image;
+  animation-delay: 1.6s;
 }
 
 .intro-subheading {
@@ -39,6 +43,7 @@
   font-size: 3.8rem;
   font-weight: 400;
   transition: 400ms ease-in-out color;
+  animation-delay: 1.7s;
 }
 
 @media (max-width: 475px) {
@@ -61,7 +66,6 @@
   }
 }
 
-
 .intro-btn {
   border: 0.12rem solid var(--accent-clr);
   border-radius: 0.5rem;
@@ -71,10 +75,7 @@
   font-size: 1rem;
   transition: 200ms ease-in-out;
   transition-property: border-color, background-color;
-}
-.intro-btn:nth-of-type(2) {
-  margin-top: 1rem;
-  margin-right: 1rem;
+  animation-delay: 2s;
 }
 .intro-btn:hover {
   cursor: pointer;
@@ -85,7 +86,8 @@
   border-radius: 1.5rem;
   border-bottom-left-radius: 0;
   width: fit-content;
-  margin-bottom : 1rem;
+  margin-bottom: 1.1rem;
+  animation-delay: 1.5s;
 }
 .intro-greet::selection {
   background: var(--primary-bg);
@@ -99,16 +101,17 @@
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
+  animation-delay: 1.8s;
 }
 
 .intro-links svg {
   height: 1.5rem;
   width: 1.5rem;
-  fill : var(--primary-clr);
+  fill: var(--primary-clr);
   transition: transform 200ms ease-in-out, fill 400ms ease-in-out;
 }
 .intro-links svg:hover {
   cursor: pointer;
-  fill : var(--link-clr);
+  fill: var(--link-clr);
   transform: translateY(-0.2rem);
 }

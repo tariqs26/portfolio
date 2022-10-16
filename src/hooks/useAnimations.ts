@@ -7,13 +7,10 @@ export default function useAnimations() {
       (entries) => {
         entries.forEach((entry) => {
           const section = entry.target;
-          const sectionContent = section.querySelector(".section-content");
-          const sectionText = section.querySelector(".section-heading");
           const sectionTextH2 = section.querySelector(".section-heading h2");
           const sectionRule = section.querySelector(".section-heading-rule");
-
           if (entry.isIntersecting) {
-            for (let elem of [sectionContent, sectionText])
+            for (let elem of section.querySelectorAll(".hidden"))
               elem && elem.classList.remove("hidden");
             for (let elem of [sectionTextH2, sectionRule])
               elem && elem.classList.add("animation");

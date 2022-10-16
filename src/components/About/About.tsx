@@ -8,22 +8,19 @@ export default function About() {
     <Section heading={"About me"}>
       <p>Hi There!</p>
       <p>
-        I'm Saad Tariq, a computer science student at McMaster University in my
-        second year. I have experience with front-end web development but I'am
-        looking to expand my knowledge towards back-end development.
+        I'm Saad Tariq, a second year computer science student at McMaster
+        University. I have experience with front-end web development acquired
+        from experimenting with and developing projects in my free time. I am
+        constantly on the lookout for opportunities to learn new technologies
+        and improve my current skills.
       </p>
       <p>Here are some technologies I use in projects:</p>
       <div className="tech-icons">
-        {[
-          "HTML",
-          "CSS",
-          "JavaScript",
-          "TypeScript",
-          "React",
-          "Redux",
-        ].map((name) => {
-          return <TechIcon key={name} icon={iconLinks[name]} name={name} />;
-        })}
+        {["HTML", "CSS", "JavaScript", "TypeScript", "React", "Redux"].map(
+          (name) => {
+            return <TechIcon key={name} icon={iconLinks[name]} name={name} />;
+          }
+        )}
       </div>
     </Section>
   );
@@ -31,7 +28,7 @@ export default function About() {
 
 const TechIcon = ({ icon, name }) => {
   return (
-    <div className="tech-icon">
+    <div className="tech-icon hidden">
       <img src={icon} alt={name} />
       <span>{name}</span>
     </div>
