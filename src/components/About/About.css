@@ -15,7 +15,7 @@
   box-shadow: 0 0 2px 0 black;
   transition: 400ms ease-in-out;
   transition-property: background-color, transform, opacity;
-  transition-delay: 0s, 1.9s, 1.9s;
+  transition-delay: 0s, 1.7s, 1.7s;
 }
 
 .tech-icon.hidden {
@@ -24,21 +24,21 @@
 }
 
 .tech-icon:nth-child(2) {
-  transition-delay: 0s, 2s, 2s;
+  transition-delay: 0s, 1.8s, 1.8s;
 }
 
 .tech-icon:nth-child(3) {
-  transition-delay: 0s, 2.1s, 2.1s;
+  transition-delay: 0s, 1.9s, 1.9s;
 }
 
 .tech-icon:nth-child(4) {
-  transition-delay: 0s, 2.2s, 2.2s;
+  transition-delay: 0s, 2s, 2s;
 }
 
 .tech-icon:nth-child(5) {
-  transition-delay: 0s, 2.3s, 2.3s;
+  transition-delay: 0s, 2.1s, 2.1s;
 }
 
 .tech-icon:nth-child(6) {
-  transition-delay: 0s, 2.4s, 2.4s;
+  transition-delay: 0s, 2.2s, 2.2s;
 }

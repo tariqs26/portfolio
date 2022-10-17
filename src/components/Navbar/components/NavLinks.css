@@ -6,7 +6,7 @@
 }
 
 .nav-link {
-  opacity:0;
+  opacity: 0;
   list-style: none;
   animation: nav-link-fade 0.5s ease-in-out 0.5s forwards;
 }
@@ -15,6 +15,10 @@
 }
 .nav-link:nth-child(3) {
   animation-delay: 1s;
+}
+
+.nav-link a {
+  color: var(--nav-clr);
 }
 
 @keyframes nav-link-fade {

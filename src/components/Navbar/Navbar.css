@@ -40,8 +40,8 @@
 }
 
 .nav-icon.clr-scheme {
-  fill: var(--link-clr);
-  stroke: var(--link-clr);
+  fill: var(--nav-clr);
+  stroke: var(--nav-clr);
   transition: 400ms all ease-in-out;
 }
 
