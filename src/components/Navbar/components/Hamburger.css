@@ -19,7 +19,7 @@
   width: 75%;
   height: 2px;
   border-radius: 1px;
-  background-color: var(--link-clr);
+  background-color: var(--nav-clr);
   animation: nav-link-fade 0.4s ease-in-out 1s forwards;
 }
 .bar:nth-child(2) {
@@ -43,6 +43,10 @@
   position: fixed;
   top: 4rem;
   transition: 400ms all ease-in-out;
+}
+
+.menu a {
+  color: var(--nav-clr);
 }
 
 .hidden {

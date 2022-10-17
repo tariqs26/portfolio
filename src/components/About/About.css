@@ -18,6 +18,25 @@
   transition-delay: 0s, 1.7s, 1.7s;
 }
 
+@media (max-width: 525px) {
+  .tech-icon {
+    padding: 0.3rem 0.6rem;
+  }
+  .tech-icons {
+    gap: 1.5rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+  }
+}
+
+@media (max-width: 400px) {
+  .tech-icons {
+    font-size: 0.9rem;
+    gap:1rem;
+  }
+}
+
 .tech-icon.hidden {
   filter: none;
   transform: translateX(-1rem);
