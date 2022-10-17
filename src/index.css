@@ -16,8 +16,8 @@
   --accent-clr: hsl(19 80% 60%);
   --link-clr: hsl(0 0% 100%);
   --box-shadow-clr: hsl(0 0% 0%);
-  --url: url("./wave2.svg");
-  --url-r: url("./wave3.svg");
+  --url: url("./assets/wave2.svg");
+  --url-r: url("./assets/wave3.svg");
 }
 
 .light {
@@ -29,8 +29,8 @@
   --accent-clr: hsl(19 80% 50%);
   --link-clr: hsl(259 79% 56%);
   --box-shadow-clr: hsl(0 0% 70%);
-  --url: url("./wave2-light.svg");
-  --url-r: url("./wave3-light.svg");
+  --url: url("./assets/wave2-light.svg");
+  --url-r: url("./assets/wave3-light.svg");
 }
 
 html {
