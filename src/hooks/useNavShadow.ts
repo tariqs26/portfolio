@@ -6,14 +6,14 @@ export default function useNavShadow() {
     const handleScroll = () => {
       (pos < 20 || window.scrollY < 20) && setPos(window.scrollY);
     };
-    window.addEventListener("scroll", handleScroll);
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, [pos]);
 
-  useEffect(() => {        
-    if (pos > 19) document.querySelector(".nav")?.classList.add("nav-shadow");
-    else document.querySelector(".nav")?.classList.remove("nav-shadow");
+  useEffect(() => {
+    if (pos > 19) document.querySelector('.nav')?.classList.add('nav-shadow');
+    else document.querySelector('.nav')?.classList.remove('nav-shadow');
   }, [pos]);
-} 
+}

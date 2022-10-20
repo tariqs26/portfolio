@@ -1,11 +1,11 @@
-import React from "react";
-import Section from "../Section/Section";
-import iconLinks from "./iconLinks";
-import "./About.css";
+import React from 'react';
+import Section from '../Section/Section';
+import iconLinks from './iconLinks';
+import './About.css';
 
 export default function About() {
   return (
-    <Section heading={"About me"}>
+    <Section heading={'About me'}>
       <p>Hi There!</p>
       <p>
         I'm Saad Tariq, a second year computer science student at McMaster
@@ -15,8 +15,8 @@ export default function About() {
         and improve my current skills.
       </p>
       <p>Here are some technologies I use in projects:</p>
-      <div className="tech-icons">
-        {["HTML", "CSS", "JavaScript", "TypeScript", "React", "Redux"].map(
+      <div className='tech-icons'>
+        {['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Redux'].map(
           (name) => {
             return <TechIcon key={name} icon={iconLinks[name]} name={name} />;
           }
@@ -28,7 +28,7 @@ export default function About() {
 
 const TechIcon = ({ icon, name }) => {
   return (
-    <div className="tech-icon hidden">
+    <div className='tech-icon hidden'>
       <img src={icon} alt={name} />
       <span>{name}</span>
     </div>

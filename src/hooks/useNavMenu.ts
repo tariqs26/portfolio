@@ -1,13 +1,23 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect } from 'react';
 
 export default function useNavMenu() {
   const [open, setOpen] = useState(false);
   const menuRef = useRef(null);
   useEffect(() => {
-    menuRef.current &&
-      (open
-        ? (menuRef.current as HTMLElement).classList.remove("hidden")
-        : (menuRef.current as HTMLElement).classList.add("hidden"));
+    if (!menuRef.current) return;
+    const menu = menuRef.current as HTMLElement;
+    const arr = menu.parentElement;
+    if (open) {
+      menu.classList.remove('hide');
+      for (let bar of arr!.querySelectorAll('.bar')) {
+        bar.classList.toggle('anim');
+      }
+    } else {
+      menu.classList.add('hide');
+      for (let bar of arr!.querySelectorAll('.bar')) {
+        bar.classList.remove('anim');
+      }
+    }
   }, [open]);
 
   return { open, setOpen, menuRef };

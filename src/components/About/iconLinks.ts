@@ -1,6 +1,6 @@
-const baseURL = "https://img.icons8.com",
-  sz = "40",
-  opt = "000000",
+const baseURL = 'https://img.icons8.com',
+  sz = '40',
+  opt = '000000',
   iconBase = `${baseURL}/color/${sz}/${opt}`;
 
 const iconLinks = {

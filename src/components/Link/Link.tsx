@@ -1,9 +1,9 @@
-import React from "react";
-import "./Link.css";
+import React from 'react';
+import './Link.css';
 
 export default function Link({ href, children }) {
   return (
-    <a href={href} className="link">
+    <a href={href} className='link'>
       {children}
     </a>
   );
