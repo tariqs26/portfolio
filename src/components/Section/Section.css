@@ -79,14 +79,14 @@
   background: linear-gradient(90deg, var(--secondary-clr), var(--accent-clr));
 }
 .section-heading-rule.animation {
-  animation: rule 600ms ease-in-out 800ms forwards;
+  animation: rule 600ms ease-in-out 700ms forwards;
 }
 @keyframes rule {
   to { flex: 1; }
 }
 
 .content {
-  transition: 500ms filter 1.4s linear;
+  transition: 500ms filter 1.3s linear;
   transition-property: filter, opacity, transform;
   font-size: 1.1rem;
 }
