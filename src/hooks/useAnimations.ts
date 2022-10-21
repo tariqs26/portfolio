@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 
 export default function useAnimations() {
   const mainRef = useRef(null);
+
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
