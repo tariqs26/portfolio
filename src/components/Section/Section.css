@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 400ms background-color ease-in-out;
+  transition: 300ms background-color ease-in-out;
   padding: 1rem 0;
 }
 
@@ -121,7 +121,7 @@
   }
 }
 
-.section-content {
+.content {
   transition: 550ms filter 1.2s linear;
   transition-property: filter, opacity, transform;
   font-size: 1.1rem;

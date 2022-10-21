@@ -16,7 +16,7 @@ export default function Intro() {
     <div className='section-container' id='intro'>
       <section className='section'>
         <div className='intro' ref={introRef}>
-          <button className='intro-greet intro-btn animate'>Hi, I'm</button>
+          <div className='intro-greet intro-btn animate'>Hi, I'm</div>
           <h1 className='intro-heading animate'>Saad Tariq</h1>
           <h2 className='intro-subheading animate'>Web Developer</h2>
           <div className='intro-links animate'>
@@ -34,7 +34,7 @@ export default function Intro() {
               things for the web.
             </p>
           </div>
-          <button className='intro-btn animate'>View resume</button>
+          <div className='intro-btn animate'>View resume</div>
         </div>
       </section>
     </div>

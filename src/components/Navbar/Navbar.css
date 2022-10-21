@@ -7,8 +7,8 @@
   padding: 1.25rem 2.5rem;
   background-color: var(--primary-bg);
   transition: 
-    400ms background-color ease-in-out, 
-    400ms box-shadow ease-in-out,
+    300ms background-color ease-in-out, 
+    300ms box-shadow ease-in-out,
     250ms padding ease-in-out, 
     250ms margin-bottom ease-in-out;
   z-index: 1;
@@ -42,7 +42,7 @@
 .nav-icon.clr-scheme {
   fill: var(--nav-clr);
   stroke: var(--nav-clr);
-  transition: 400ms all ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .nav-a {
@@ -60,7 +60,7 @@
   padding: 0.25rem;
   border-radius: 0.5rem;
   animation: nav-link-fade 0.5s ease-in-out forwards;
-  transition: 400ms ease-in-out;
+  transition: 300ms ease-in-out;
   transition-property: fill, outline, filter;
 }
 

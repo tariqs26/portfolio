@@ -8,10 +8,6 @@
   animation: intro-fade 0.5s ease-in-out forwards;
 }
 
-.content {
-  font-size: 1.1rem;
-}
-
 @keyframes intro-fade {
   from {
     transform: translateY(4rem);
@@ -23,20 +19,20 @@
 }
 
 .intro-heading {
+  width: fit-content;
   color: transparent;
   background-clip: text;
   background-image: var(--gradient);
-  width: fit-content;
   font-weight: 300;
   font-size: 4rem;
-  transition: background-image 400ms ease-in-out;
+  transition: background-image 300ms ease-in-out;
 }
 
 .intro-subheading {
   color: var(--secondary-clr);
   font-size: 3.8rem;
   font-weight: 400;
-  transition: color 400ms ease-in-out;
+  transition: color 300ms ease-in-out;
 }
 
 @media (max-width: 475px) {
@@ -60,15 +56,13 @@
 }
 
 .intro-btn {
+  width: fit-content;
   border: 0.12rem solid var(--accent-clr);
   border-radius: 0.5rem;
   padding: 0.8rem 1.2rem;
-  background: transparent;
-  color: inherit;
-  font-size: 1rem;
   transition: 200ms border-color ease-in-out;
 }
-.intro-btn:hover {
+.intro-btn:last-child:hover {
   cursor: pointer;
   border-color: var(--secondary-clr);
 }
@@ -76,15 +70,10 @@
 .intro-greet {
   border-radius: 1.5rem;
   border-bottom-left-radius: 0;
-  width: fit-content;
   margin-bottom: 1.1rem;
 }
 .intro-greet::selection {
   background: transparent;
-}
-.intro-greet:hover {
-  cursor: unset;
-  border-color: var(--accent-clr);
 }
 
 .intro-links {
@@ -95,12 +84,10 @@
 
 .intro-links svg {
   height: 1.5rem;
-  width: 1.5rem;
   fill: var(--primary-clr);
-  transition: transform 200ms ease-in-out, fill 400ms ease-in-out;
+  transition: fill 300ms ease-in-out;
 }
 .intro-links svg:hover {
   cursor: pointer;
   fill: var(--link-clr);
-  transform: translateY(-0.2rem);
 }

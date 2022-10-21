@@ -13,7 +13,7 @@
   border-radius: 0.5rem;
   padding: 0.4rem 0.8rem;
   box-shadow: 0 0 2px 0 black;
-  transition: 400ms ease-in-out;
+  transition: 300ms ease-in-out;
   transition-property: background-color, transform, opacity;
   transition-delay: 0s, 1.7s, 1.7s;
 }

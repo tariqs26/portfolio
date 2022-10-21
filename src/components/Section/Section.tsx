@@ -11,7 +11,7 @@ export default function Section({ heading, children }) {
           </div>
           <span className='section-heading-rule' />
         </header>
-        <div className='section-content hidden'>{children}</div>
+        <div className='content hidden'>{children}</div>
       </section>
     </div>
   );
