@@ -18,7 +18,7 @@
 
 .bar {
   width: 70%;
-  height: 2px;
+  height: 0.115rem;
   border-radius: 1px;
   background-color: var(--nav-clr);
   transition: 300ms ease-in-out;
@@ -29,7 +29,7 @@
 .bar.anim {
   rotate: 135deg;
   width: 2.1rem;
-  translate: -0.3px 0.72em;
+  translate: -0.3px 0.71rem;
 }
 .bar.anim:nth-child(2) {
   scale: 0;
@@ -38,7 +38,7 @@
 }
 .bar.anim:nth-child(3) {
   rotate: -135deg;
-  translate: -0.3px -0.72em;
+  translate: -0.3px -0.7rem;
 }
 
 .menu {

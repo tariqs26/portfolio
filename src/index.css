@@ -3,7 +3,9 @@
 * {
   margin: 0;
   padding: 0;
+  border:0;
   box-sizing: border-box;
+  vertical-align: baseline;
   font-family: 'Rubik', sans-serif;
 }
 

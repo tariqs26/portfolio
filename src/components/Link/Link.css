@@ -3,9 +3,9 @@
   color: var(--link-clr);
   filter: contrast(1.2);
   background-image: var(--gradient);
-  background-size: 0 2px;
+  background-size: 0 1px;
   background-repeat: no-repeat;
   background-position: left bottom;
   transition: 300ms all ease-in-out;
 }
-.link:hover { background-size: 100% 2px; }
+.link:hover { background-size: 100% 1px; }

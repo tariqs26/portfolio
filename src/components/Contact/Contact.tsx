@@ -4,7 +4,7 @@ import Link from '../Link/Link';
 
 export default function Contact() {
   return (
-    <Section heading='Contact Me'>
+    <Section heading='Contact me'>
       <p>
         Reach out to me on{' '}
         <Link
