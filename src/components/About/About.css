@@ -36,14 +36,16 @@
   transition-delay: 0s, 2.2s, 2.2s;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 540px) {
   .tech-icons {
     display: grid;
-    grid-template-columns: repeat(2, fit-content(100%));
-    gap: 2rem;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media (max-width: 400px) {
-  .tech-icon { padding: 0.3rem 0.6rem; }
-  .tech-icons { font-size: 0.9rem; gap : 1rem; }
+  .tech-icon { 
+    padding: 0.3rem 0.6rem; 
+    font-size: 0.9rem; 
+  }
+  .tech-icons { gap : 1rem; }
 }

@@ -24,10 +24,10 @@
 @media (max-width: 800px) {
   .section { width: 75%; }
 }
-@media (max-width: 630px) {
+@media (max-width: 640px) {
   .section { width: 82%; }
 }
-@media (max-width: 585px) {
+@media (max-width: 590px) {
   .section { width: 90%; }
 }
 
@@ -79,14 +79,14 @@
   background: linear-gradient(90deg, var(--secondary-clr), var(--accent-clr));
 }
 .section-heading-rule.animation {
-  animation: rule 600ms ease-in-out 700ms forwards;
+  animation: rule 600ms ease-in-out 650ms forwards;
 }
 @keyframes rule {
   to { flex: 1; }
 }
 
 .content {
-  transition: 500ms filter 1.3s linear;
+  transition: 500ms filter 1.25s linear;
   transition-property: filter, opacity, transform;
   font-size: 1.1rem;
 }

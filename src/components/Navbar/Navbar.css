@@ -28,7 +28,7 @@
   animation: nav-link-fade 500ms ease-in-out forwards;
   transition: background-color 200ms ease-in-out;
 }
-.nav-icon-container:hover, .bar-container:hover {
+.nav-icon-container:active, .bar-container:active {
   cursor: pointer;
   background-color: rgba(163, 163, 219, 0.408);
 }
@@ -61,7 +61,18 @@
   transition-property: fill, outline, filter;
 }
 
-.nav-logo:hover {
+.nav-logo:active {
   filter: brightness(1.2);
   cursor: pointer;
+}
+
+@media (hover : hover) {
+  .nav-icon-container:hover, .bar-container:hover {
+    cursor: pointer;
+    background-color: rgba(163, 163, 219, 0.408);
+  }
+  .nav-logo:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+  }
 }

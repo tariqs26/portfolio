@@ -72,7 +72,10 @@
   fill: var(--primary-clr);
   transition: fill 300ms ease-in-out;
 }
-.intro-links svg:hover {
-  cursor: pointer;
-  fill: var(--link-clr);
+
+@media (hover: hover) {
+  .intro-links svg:hover {
+    cursor: pointer;
+    fill: var(--link-clr);
+  }
 }

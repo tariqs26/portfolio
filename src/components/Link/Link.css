@@ -8,4 +8,7 @@
   background-position: left bottom;
   transition: 300ms all ease-in-out;
 }
-.link:hover { background-size: 100% 1px; }
+.link:active { background-size: 100% 1px; }
+@media (hover : hover){
+  .link:hover { background-size: 100% 1px; }
+}
