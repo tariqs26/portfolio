@@ -2,13 +2,13 @@
   text-decoration: none;
   color: var(--link-clr);
   font-weight: 400;
-  font-size:1.15rem;
-  filter:contrast(1.2);
-  background: linear-gradient(90deg, var(--secondary-clr), var(--accent-clr));
+  font-size: 1.15rem;
+  filter: contrast(1.2);
+  background: var(--gradient);
   background-size: 0 2px;
   background-repeat: no-repeat;
   background-position: left bottom;
-  transition: color 400ms ease-in-out , background-size 0.3s;
+  transition: color 400ms ease-in-out, background-size 0.3s;
 }
 
 .link:hover {
