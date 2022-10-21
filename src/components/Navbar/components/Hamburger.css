@@ -56,7 +56,7 @@
   box-shadow: 0 4px 0.3rem var(--box-shadow-clr);
   position: absolute;
   top: 3rem;
-  transition: 400ms ease-in-out;
+  transition: 300ms all ease-in-out;
 }
 
 .menu a {
@@ -64,5 +64,7 @@
 }
 
 .menu.hide {
-  transform: translateX(-100%);
+  opacity: 0;
+  visibility: collapse;
+  transform: translateY(-1rem);
 }
