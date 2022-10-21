@@ -5,13 +5,11 @@
 
 .animate {
   opacity: 0;
-  animation: intro-fade 0.5s ease-in-out forwards;
+  animation: intro-fade 400ms ease-in-out forwards;
 }
 
 @keyframes intro-fade {
-  from {
-    transform: translateY(4rem);
-  }
+  from { transform: translateY(4rem); }
   to {
     transform: translateY(0);
     opacity: 1;
@@ -25,34 +23,23 @@
   background-image: var(--gradient);
   font-weight: 300;
   font-size: 4rem;
-  transition: background-image 300ms ease-in-out;
+  transition: 300ms background-image ease-in-out;
 }
 
 .intro-subheading {
   color: var(--secondary-clr);
   font-size: 3.8rem;
   font-weight: 400;
-  transition: color 300ms ease-in-out;
+  transition: 300ms color ease-in-out;
 }
 
 @media (max-width: 475px) {
-  .intro-heading {
-    font-size: 3.5rem;
-  }
-
-  .intro-subheading {
-    font-size: 3.2rem;
-  }
+  .intro-heading { font-size: 3.5rem; }
+  .intro-subheading { font-size: 3.2rem; }
 }
-
 @media (max-width: 400px) {
-  .intro-heading {
-    font-size: 3.2rem;
-  }
-
-  .intro-subheading {
-    font-size: 2.9rem;
-  }
+  .intro-heading { font-size: 3.2rem; }
+  .intro-subheading { font-size: 2.9rem; }
 }
 
 .intro-btn {
@@ -60,11 +47,12 @@
   border: 0.12rem solid var(--accent-clr);
   border-radius: 0.5rem;
   padding: 0.8rem 1.2rem;
-  transition: 200ms border-color ease-in-out;
+  transition: 200ms border-color ease-in-out, 200ms background-color ease-in-out;
 }
 .intro-btn:last-child:hover {
   cursor: pointer;
   border-color: var(--secondary-clr);
+  background-color: rgba(0, 0, 0, 0.1);
 }
 
 .intro-greet {
@@ -72,16 +60,13 @@
   border-bottom-left-radius: 0;
   margin-bottom: 1.1rem;
 }
-.intro-greet::selection {
-  background: transparent;
-}
+.intro-greet::selection { background: transparent; }
 
 .intro-links {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
 }
-
 .intro-links svg {
   height: 1.5rem;
   fill: var(--primary-clr);

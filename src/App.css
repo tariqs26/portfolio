@@ -2,8 +2,8 @@
   min-height: 100vh;
   color: var(--primary-clr);
   background-color: var(--primary-bg);
-  transition : 300ms ease-in-out;
-  transition-property : background-color, color;
+  transition: 300ms ease-in-out;
+  transition-property: background-color, color;
 }
 
 .spacer {
@@ -11,7 +11,7 @@
   width: 100%;
   background-size: cover;
   background-image: var(--url);
-  transition : 300ms ease-in-out;
+  transition: 300ms ease-in-out;
 }
 
 .spacer2 {

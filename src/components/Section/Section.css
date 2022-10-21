@@ -6,58 +6,38 @@
   transition: 300ms background-color ease-in-out;
   padding: 1rem 0;
 }
-
-@media (max-width: 768px) {
-  .section-container {
-    padding: 2rem 0;
-  }
-}
-@media (max-width: 500px) {
-  .section-container {
-    padding: 3rem 0;
-  }
-}
-
 .section-container:nth-of-type(2n + 1) {
   background-color: var(--alt-bg);
 }
-
-.section-container:nth-of-type(1),
+.section-container:first-child,
 .section-container:nth-of-type(5) {
   background-color: var(--primary-bg);
 }
 
-.section {
-  width: 55%;
+@media (max-width: 750px) {
+  .section-container {
+    padding: 2.5rem 0;
+  }
 }
+
+.section { width: 55%; }
 
 @media (max-width: 1000px) {
-  .section {
-    width: 60%;
-  }
+  .section { width: 60%; }
 }
-
 @media (max-width: 800px) {
-  .section {
-    width: 75%;
-  }
+  .section { width: 75%; }
 }
-
 @media (max-width: 630px) {
-  .section {
-    width: 82%;
-  }
+  .section { width: 82%; }
 }
-
-@media (max-width: 580px) {
-  .section {
-    width: 90%;
-  }
+@media (max-width: 585px) {
+  .section { width: 90%; }
 }
 
 .hidden {
   filter: blur(3px);
-  transform: translateY(-1em);
+  transform: translateY(-0.5rem);
   opacity: 0;
 }
 
@@ -67,6 +47,10 @@
   align-items: center;
   font-size: 1.5rem;
   transition: 600ms 200ms filter, 600ms 200ms opacity, 400ms ease-in-out color;
+}
+
+.section-heading.hidden {
+  filter: none;
 }
 
 .section-heading-text {
@@ -85,44 +69,29 @@
   animation: type 600ms steps(40, end) forwards, blink 0.8s step-end 4 forwards;
 }
 
+@keyframes type {
+  to { width: 100%; }
+}
 @keyframes blink {
   to,
-  from {
-    border-color: transparent;
-  }
-
-  50% {
-    border-color: var(--secondary-clr);
-  }
-}
-
-@keyframes type {
-  to {
-    width: 100%;
-  }
+  from { border-color: transparent; }
+  50% { border-color: var(--secondary-clr); }
 }
 
 .section-heading-rule {
-  opacity: 0;
-  flex: 0;
   height: 1px;
   margin-left: 1rem;
   background: linear-gradient(90deg, var(--secondary-clr), var(--accent-clr));
 }
-
 .section-heading-rule.animation {
-  animation: rule 600ms ease-in-out 600ms forwards;
+  animation: rule 600ms ease-in-out 800ms forwards;
 }
-
 @keyframes rule {
-  to {
-    flex: 1;
-    opacity: 1;
-  }
+  to { flex: 1; }
 }
 
 .content {
-  transition: 550ms filter 1.2s linear;
+  transition: 500ms filter 1.4s linear;
   transition-property: filter, opacity, transform;
   font-size: 1.1rem;
 }

@@ -17,47 +17,33 @@
   transition-property: background-color, transform, opacity;
   transition-delay: 0s, 1.7s, 1.7s;
 }
-
-@media (max-width: 525px) {
-  .tech-icon {
-    padding: 0.3rem 0.6rem;
-  }
-  .tech-icons {
-    gap: 1.5rem;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-  }
-}
-
-@media (max-width: 400px) {
-  .tech-icons {
-    font-size: 0.9rem;
-    gap:1rem;
-  }
-}
-
 .tech-icon.hidden {
-  filter: none;
   transform: translateX(-1rem);
 }
-
 .tech-icon:nth-child(2) {
   transition-delay: 0s, 1.8s, 1.8s;
 }
-
 .tech-icon:nth-child(3) {
   transition-delay: 0s, 1.9s, 1.9s;
 }
-
 .tech-icon:nth-child(4) {
   transition-delay: 0s, 2s, 2s;
 }
-
 .tech-icon:nth-child(5) {
   transition-delay: 0s, 2.1s, 2.1s;
 }
-
 .tech-icon:nth-child(6) {
   transition-delay: 0s, 2.2s, 2.2s;
+}
+
+@media (max-width: 550px) {
+  .tech-icons {
+    display: grid;
+    grid-template-columns: repeat(2, fit-content(100%));
+    gap: 2rem;
+  }
+}
+@media (max-width: 400px) {
+  .tech-icon { padding: 0.3rem 0.6rem; }
+  .tech-icons { font-size: 0.9rem; gap : 1rem; }
 }
