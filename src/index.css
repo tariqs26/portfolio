@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
+/* VERY  IMPORTANT: css reset, for all browsers */
 * {
   margin: 0;
   padding: 0;
-  border:0;
+  border: 0;
   box-sizing: border-box;
   vertical-align: baseline;
   font-family: 'Rubik', sans-serif;
@@ -56,9 +57,7 @@ body {
 }
 
 @keyframes overflow {
-  to {
-    overflow-y: scroll;
-  }
+  to { overflow-y: scroll; }
 }
 
 body::-webkit-scrollbar {
@@ -71,11 +70,11 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track-piece:end {
-  margin-bottom: 1em;
+  margin-bottom: 1rem;
 }
 
 body::-webkit-scrollbar-track-piece:start {
-  margin-top: 1em;
+  margin-top: 1rem;
 }
 
 p {

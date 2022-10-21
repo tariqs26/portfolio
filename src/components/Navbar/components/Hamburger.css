@@ -55,7 +55,10 @@
   transition: 300ms all ease-in-out;
 }
 
-.menu a { color: var(--nav-clr); }
+.menu a { 
+  color: var(--nav-clr); 
+  font-size: 1.1rem;
+}
 
 .menu.hide {
   opacity: 0;
