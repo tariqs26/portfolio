@@ -1,24 +1,35 @@
-@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Rubik", sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
-:root {
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
   --primary-bg: hsl(218 80% 10%);
   --alt-bg: hsl(218 81% 6%);
   --tech-bg: hsl(218 80% 23%);
   --primary-clr: hsl(0 30% 85%);
   --secondary-clr: hsl(218 80% 73%);
   --accent-clr: hsl(19 80% 60%);
+  --gradient: linear-gradient(
+    135deg,
+    var(--secondary-clr) 0%,
+    var(--accent-clr) 100%
+  );
   --link-clr: hsl(0, 0%, 100%);
   --nav-clr: hsl(0, 0%, 100%);
   --box-shadow-clr: hsl(0 0% 0%);
-  --url: url("./assets/wave2.svg");
-  --url-r: url("./assets/wave3.svg");
+  --url: url('./assets/wave2.svg');
+  --url-r: url('./assets/wave3.svg');
 }
 
 .light {
@@ -31,14 +42,8 @@
   --link-clr: hsl(218 80% 40%);
   --nav-clr: hsl(0 0% 10%);
   --box-shadow-clr: hsl(0 0% 70%);
-  --url: url("./assets/wave2-light.svg");
-  --url-r: url("./assets/wave3-light.svg");
-}
-
-html {
-  scroll-behavior: smooth;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --url: url('./assets/wave2-light.svg');
+  --url-r: url('./assets/wave3-light.svg');
 }
 
 body {
@@ -64,12 +69,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 body::-webkit-scrollbar-track-piece:end {
-  background: transparent;
   margin-bottom: 1em;
 }
 
 body::-webkit-scrollbar-track-piece:start {
-  background: transparent;
   margin-top: 1em;
 }
 
