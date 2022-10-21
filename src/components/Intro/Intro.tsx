@@ -1,13 +1,21 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import Link from '../Link/Link';
 import { LinkedInIcon, GitHubIcon } from './Icons';
 import './Intro.css';
 
 export default function Intro() {
+  const introRef = useRef(null);
+  useEffect(() => {
+    if (!introRef.current) return;
+    const children = (introRef.current as HTMLElement).children;
+    for (let i = 0; i < children.length; i++)
+      (children[i] as HTMLElement).style.animationDelay = `${i * 0.1 + 1.5}s`;
+  }, [introRef]);
+
   return (
     <div className='section-container' id='intro'>
       <section className='section'>
-        <div className='intro'>
+        <div className='intro' ref={introRef}>
           <button className='intro-greet intro-btn animate'>Hi, I'm</button>
           <h1 className='intro-heading animate'>Saad Tariq</h1>
           <h2 className='intro-subheading animate'>Web Developer</h2>

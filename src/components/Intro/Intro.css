@@ -5,12 +5,11 @@
 
 .animate {
   opacity: 0;
-  animation: intro-fade 0.5s ease-in-out 1.5s forwards;
+  animation: intro-fade 0.5s ease-in-out forwards;
 }
 
 .content {
   font-size: 1.1rem;
-  animation-delay: 1.9s;
 }
 
 @keyframes intro-fade {
@@ -30,16 +29,14 @@
   width: fit-content;
   font-weight: 300;
   font-size: 4rem;
-  transition: background-image 400ms ease-in-out ;
-  animation-delay: 1.6s;
+  transition: background-image 400ms ease-in-out;
 }
 
 .intro-subheading {
   color: var(--secondary-clr);
   font-size: 3.8rem;
   font-weight: 400;
-  transition: 400ms ease-in-out color;
-  animation-delay: 1.7s;
+  transition: color 400ms ease-in-out;
 }
 
 @media (max-width: 475px) {
@@ -69,9 +66,7 @@
   background: transparent;
   color: inherit;
   font-size: 1rem;
-  transition: 200ms ease-in-out;
-  transition-property: border-color, background-color;
-  animation-delay: 2s;
+  transition: 200ms border-color ease-in-out;
 }
 .intro-btn:hover {
   cursor: pointer;
@@ -83,7 +78,6 @@
   border-bottom-left-radius: 0;
   width: fit-content;
   margin-bottom: 1.1rem;
-  animation-delay: 1.5s;
 }
 .intro-greet::selection {
   background: transparent;
@@ -97,7 +91,6 @@
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
-  animation-delay: 1.8s;
 }
 
 .intro-links svg {
