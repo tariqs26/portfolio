@@ -7,6 +7,7 @@
 
 .nav-links a {
   opacity: 0;
+  font-size:1.15rem;
   animation: nav-link-fade 0.5s ease-in-out 0.5s forwards;
   color: var(--nav-clr);
 }
@@ -28,10 +29,6 @@
 }
 
 @media (max-width: 550px) {
-  .hamburger {
-    display: flex;
-  }
-  .nav-links a {
-    display: none;
-  }
+  .hamburger { display: flex; }
+  .nav-links a { display: none; }
 }

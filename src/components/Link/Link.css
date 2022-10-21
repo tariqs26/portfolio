@@ -1,7 +1,6 @@
 .link {
   text-decoration: none;
   color: var(--link-clr);
-  font-size: 1.15rem;
   filter: contrast(1.2);
   background-image: var(--gradient);
   background-size: 0 2px;
