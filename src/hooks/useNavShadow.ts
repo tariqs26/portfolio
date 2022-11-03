@@ -13,7 +13,8 @@ export default function useNavShadow() {
   }, [pos]);
 
   useEffect(() => {
-    if (pos > 19) document.querySelector('.nav')?.classList.add('nav-shadow');
-    else document.querySelector('.nav')?.classList.remove('nav-shadow');
+    const nav = document.querySelector('nav') as HTMLElement;
+    if (pos > 19) nav.classList.add('nav-shadow');
+    else nav.classList.remove('nav-shadow');
   }, [pos]);
 }

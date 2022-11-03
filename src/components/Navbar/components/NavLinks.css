@@ -28,7 +28,7 @@
   }
 }
 
-@media (max-width: 550px) {
+@media (max-width: 540px) {
   .hamburger { display: flex; }
   .nav-links a { display: none; }
 }

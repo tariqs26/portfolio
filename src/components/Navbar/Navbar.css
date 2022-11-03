@@ -20,6 +20,11 @@
   box-shadow: 0 2px 0.75rem 0.1rem var(--box-shadow-clr);
 }
 
+@media (max-width: 400px) {
+  .nav { padding: 1.25rem 1.5rem; }
+  .nav-shadow { padding: 0.75rem 1.5rem; }
+}
+
 .nav-icon-container {
   opacity: 0;
   display: flex;

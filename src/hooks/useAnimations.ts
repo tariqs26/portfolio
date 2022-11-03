@@ -7,14 +7,13 @@ export default function useAnimations() {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          const section = entry.target;
-          const sectionTextH2 = section.querySelector('.section-heading h2');
-          const sectionRule = section.querySelector('.section-heading-rule');
+          const animate = entry.target.querySelectorAll(
+            '.section-heading h2, .section-heading-rule'
+          );
           if (entry.isIntersecting) {
-            for (let elem of section.querySelectorAll('.hidden'))
-              elem && elem.classList.remove('hidden');
-            for (let elem of [sectionTextH2, sectionRule])
-              elem && elem.classList.add('animation');
+            for (let elem of entry.target.querySelectorAll('.hidden'))
+              elem.classList.remove('hidden');
+            for (let elem of animate) elem.classList.add('animation');
           }
         });
       },

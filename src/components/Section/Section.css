@@ -45,13 +45,9 @@
   transition: 600ms 200ms filter, 600ms 200ms opacity, 400ms ease-in-out color;
 }
 
-.section-heading.hidden {
-  filter: none;
-}
+.section-heading.hidden {  filter: none; }
 
-.section-heading-text {
-  width: fit-content;
-}
+.section-heading-text { width: fit-content; }
 
 .section-heading-text h2 {
   width: 0;
