@@ -4,26 +4,26 @@ const Netlify = 'netlify.app';
 const projects = [
   {
     title: 'Quizr',
-    description: 'A user generated trivia app',
+    description: 'A trivia app built with React and Typescript, using the Open Trivia Database API. Deployed on Netlify.',
     features: [
       'create quiz, based on data from the Open Trivia Database',
       'a timed quiz with a score',
     ],
     technologies: ['React', 'Redux'],
-    image: 'https://picsum.photos/200/300',
+    image: 'https://wallpaper.dog/large/20359633.jpg',
     liveLink: `quizr.${Netlify}`,
     githubLink: `${GitHub}/React-Quiz-App`,
   },
 
   {
-    title: 'Path Finder',
-    description: 'A path finding visualizer',
+    title: 'Job Tracker',
+    description: 'A job application tracker built with next.js, Typescript, PostgreSQL, and Prisma. Deployed on Vercel. Manage applications, add notes, and track the status',
     features: [
       'visualize the A* path finding algorithm',
       "visualize the Dijkstra's algorithm",
     ],
-    technologies: ['React'],
-    image: 'https://picsum.photos/200/300',
+    technologies: ['Next.js', 'Typescript', 'PostgreSQL', 'Prisma'],
+    image: 'https://wallpaper.dog/large/20359633.jpg',
     liveLink: `pathfinder.${Netlify}`,
     githubLink: `${GitHub}/Path-Finder`,
   },
@@ -36,7 +36,7 @@ const projects = [
       'create, edit, and delete reviews',
     ],
     technologies: ['Node', 'Express', 'MongoDB'],
-    image: 'https://picsum.photos/200/300',
+    image: 'https://wallpaper.dog/large/20359633.jpg',
     liveLink: `yelpcamp.${Netlify}`,
     githubLink: `${GitHub}/YelpCamp`,
   },

@@ -69,6 +69,7 @@
 }
 .intro-links svg {
   height: 1.5rem;
+  width: 1.5rem;
   fill: var(--primary-clr);
   transition: fill 300ms ease-in-out;
 }

@@ -6,29 +6,19 @@
   transition: 300ms background-color ease-in-out;
   padding: 1rem 0;
 }
-.section-container:nth-child(2n + 1) { background-color: var(--alt-bg); }
-.section-container:first-child,
-.section-container:nth-of-type(5) {
-  background-color: initial;
-}
+.section-container:last-child,
+.section-container:nth-of-type(3)
+{ background-color: var(--alt-bg); }
+
 
 @media (max-width: 750px) {
   .section-container { padding: 2.5rem 0; }
 }
 
-.section { width: 55%; }
-
-@media (max-width: 1000px) {
-  .section { width: 60%; }
-}
-@media (max-width: 800px) {
-  .section { width: 75%; }
-}
-@media (max-width: 640px) {
-  .section { width: 82%; }
-}
-@media (max-width: 590px) {
-  .section { width: 90%; }
+.section { 
+  width: 100%; 
+  max-width: 65rem; 
+  padding:2rem
 }
 
 .hidden {
