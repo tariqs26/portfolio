@@ -1,4 +1,3 @@
-import React from 'react';
 import Section from '../Section/Section';
 import projects from './data';
 import { GitHubIcon, LinkedInIcon } from '../Intro/Icons';

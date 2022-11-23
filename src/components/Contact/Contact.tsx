@@ -1,4 +1,3 @@
-import React from 'react';
 import Section from '../Section/Section';
 import Link from '../Link/Link';
 

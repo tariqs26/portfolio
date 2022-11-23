@@ -1,4 +1,3 @@
-import React from 'react';
 import useNavShadow from '../../hooks/useNavShadow';
 import { LogoIcon, DarkIcon, LightIcon } from './components/Icons';
 import Hamburger from './components/Hamburger';
