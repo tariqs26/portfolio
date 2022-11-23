@@ -9,7 +9,9 @@
 }
 
 @keyframes intro-fade {
-  from { transform: translateY(4rem); }
+  from {
+    transform: translateY(4rem);
+  }
   to {
     transform: translateY(0);
     opacity: 1;
@@ -19,6 +21,7 @@
 .intro-heading {
   width: fit-content;
   color: transparent;
+  -webkit-background-clip: text;
   background-clip: text;
   background-image: var(--gradient);
   font-weight: 300;
@@ -34,12 +37,20 @@
 }
 
 @media (max-width: 475px) {
-  .intro-heading { font-size: 3.5rem; }
-  .intro-subheading { font-size: 3.2rem; }
+  .intro-heading {
+    font-size: 3.5rem;
+  }
+  .intro-subheading {
+    font-size: 3.2rem;
+  }
 }
 @media (max-width: 400px) {
-  .intro-heading { font-size: 3.2rem; }
-  .intro-subheading { font-size: 2.9rem; }
+  .intro-heading {
+    font-size: 3.2rem;
+  }
+  .intro-subheading {
+    font-size: 2.9rem;
+  }
 }
 
 .intro-btn {
@@ -60,7 +71,9 @@
   border-bottom-left-radius: 0;
   margin-bottom: 1.1rem;
 }
-.intro-greet::selection { background: transparent; }
+.intro-greet::selection {
+  background: transparent;
+}
 
 .intro-links {
   display: flex;
