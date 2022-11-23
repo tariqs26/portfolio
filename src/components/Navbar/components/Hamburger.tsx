@@ -1,7 +1,14 @@
-import React from 'react';
 import './Hamburger.css';
 
-export default function Hamburger({ open, setOpen, menuRef }) {
+export default function Hamburger({
+  open,
+  setOpen,
+  menuRef,
+}: {
+  open: boolean;
+  setOpen: (open: boolean) => void;
+  menuRef: React.RefObject<HTMLDivElement>;
+}) {
   return (
     <div className='hamburger'>
       <div className='bar-container' onClick={() => setOpen(!open)}>

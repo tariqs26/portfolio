@@ -41,7 +41,13 @@ export default function Intro() {
   );
 }
 
-const IntroLink = ({ href, children }) => (
+const IntroLink = ({
+  href,
+  children,
+}: {
+  href: string;
+  children: React.ReactNode;
+}) => (
   <a href={href} rel='noreferrer' target='_blank'>
     {children}
   </a>

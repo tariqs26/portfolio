@@ -1,7 +1,12 @@
-import React from 'react';
 import './Section.css';
 
-export default function Section({ heading, children }) {
+export default function Section({
+  heading,
+  children,
+}: {
+  heading: string;
+  children: React.ReactNode;
+}) {
   return (
     <div className='section-container'>
       <section className='section'>

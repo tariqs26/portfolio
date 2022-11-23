@@ -6,7 +6,13 @@ import useNavMenu from '../../hooks/useNavMenu';
 import NavLinks from './components/NavLinks';
 import './Navbar.css';
 
-export default function Navbar({ darkMode, setDarkMode }) {
+export default function Navbar({
+  darkMode,
+  setDarkMode,
+}: {
+  darkMode: boolean;
+  setDarkMode: (darkMode: boolean) => void;
+}) {
   useNavShadow();
   const { open, setOpen, menuRef } = useNavMenu();
   return (
