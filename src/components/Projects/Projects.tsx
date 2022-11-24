@@ -15,7 +15,7 @@ export default function Projects() {
               <p className='project-desc'>{project.description}</p>
               <div className='project-tech-container'>
                 {project.technologies.map((tech) => (
-                  <code>{tech}</code>
+                  <code key={tech}>{tech}</code>
                 ))}
               </div>
               <div className='project-links'>

@@ -20,10 +20,10 @@ export default function Intro() {
           <h1 className='intro-heading animate'>Saad Tariq</h1>
           <h2 className='intro-subheading animate'>Web Developer</h2>
           <div className='intro-links animate'>
-            <IntroLink href='https://github.com/tariqs26'>
+            <IntroLink href='https://github.com/tariqs26' ariaLabel='GitHub'>
               <GitHubIcon />
             </IntroLink>
-            <IntroLink href='https://www.linkedin.com/in/saad-tariq-cs/'>
+            <IntroLink href='https://www.linkedin.com/in/saad-tariq-cs/' ariaLabel='Linkedin'>
               <LinkedInIcon />
             </IntroLink>
           </div>
@@ -43,12 +43,14 @@ export default function Intro() {
 
 const IntroLink = ({
   href,
+  ariaLabel,
   children,
 }: {
   href: string;
+  ariaLabel: string;
   children: React.ReactNode;
 }) => (
-  <a href={href} rel='noreferrer' target='_blank'>
+  <a href={href} aria-label={ariaLabel} rel='noreferrer' target='_blank'>
     {children}
   </a>
 );

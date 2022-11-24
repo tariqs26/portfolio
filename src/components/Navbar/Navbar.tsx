@@ -19,6 +19,7 @@ export default function Navbar({
       <a
         href='/#'
         className='nav-a'
+        aria-label='Home'
         onClick={() => {
           setOpen(false);
         }}

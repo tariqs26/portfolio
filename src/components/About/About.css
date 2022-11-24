@@ -17,6 +17,10 @@
   transition-property: background-color, transform, opacity;
   transition-delay: 0s, 1.7s, 1.7s;
 }
+.tech-icon img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
 .tech-icon.hidden {
   transform: translateX(-1rem);
 }
