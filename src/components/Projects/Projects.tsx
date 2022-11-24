@@ -1,6 +1,6 @@
 import Section from '../Section/Section';
 import projects from './data';
-import { GitHubIcon, LinkedInIcon } from 'src/Icons';
+import { GitHubIcon, LinkedInIcon } from 'components/Icons';
 import './Projects.css';
 
 export default function Projects() {

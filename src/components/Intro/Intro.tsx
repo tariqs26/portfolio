@@ -1,6 +1,6 @@
 import { useEffect, useRef } from 'react';
 import Link from '../Link/Link';
-import { LinkedInIcon, GitHubIcon } from 'src/Icons';
+import { LinkedInIcon, GitHubIcon } from 'components/Icons';
 import './Intro.css';
 
 export default function Intro() {
