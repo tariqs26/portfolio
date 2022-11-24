@@ -1,7 +1,7 @@
 import useNavShadow from 'hooks/useNavShadow';
-import { LogoIcon, DarkIcon, LightIcon } from './components/Icons';
-import Hamburger from './components/Hamburger';
 import useNavMenu from 'hooks/useNavMenu';
+import { LogoIcon, DarkIcon, LightIcon } from 'src/Icons';
+import Hamburger from './components/Hamburger';
 import NavLinks from './components/NavLinks';
 import './Navbar.css';
 
