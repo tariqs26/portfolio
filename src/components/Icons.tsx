@@ -29,7 +29,9 @@ export const LogoIcon = () => {
   );
 };
 
-export const LightIcon = (props: { onClick: () => void }) => {
+type ClrSchemeIconProps = { onClick(): void };
+
+export const LightIcon = (props: ClrSchemeIconProps) => {
   return (
     <svg
       {...props}
@@ -47,7 +49,7 @@ export const LightIcon = (props: { onClick: () => void }) => {
   );
 };
 
-export const DarkIcon = (props: { onClick: () => void }) => {
+export const DarkIcon = (props: ClrSchemeIconProps) => {
   return (
     <svg
       {...props}
