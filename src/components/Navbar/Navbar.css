@@ -30,7 +30,7 @@
   display: flex;
   padding: 0.2rem;
   border-radius: 50%;
-  animation: nav-link-fade 500ms ease-in-out forwards;
+  animation: nav-link-fade 300ms ease-in-out forwards;
   transition: background-color 200ms ease-in-out;
 }
 .nav-icon-container:active, .bar-container:active {
@@ -61,7 +61,7 @@
   fill: white;
   padding: 0.25rem;
   border-radius: 0.5rem;
-  animation: nav-link-fade 0.5s ease-in-out forwards;
+  animation: nav-link-fade 300ms ease-in-out forwards;
   transition: 300ms ease-in-out;
   transition-property: fill, outline, filter;
 }

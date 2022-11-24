@@ -9,7 +9,7 @@ export default function Intro() {
     if (!introRef.current) return;
     const children = (introRef.current as HTMLElement).children;
     for (let i = 0; i < children.length; i++)
-      (children[i] as HTMLElement).style.animationDelay = `${i * 0.1 + 1.5}s`;
+      (children[i] as HTMLElement).style.animationDelay = `${i * 0.1 + 1.1}s`;
   }, [introRef]);
 
   return (
