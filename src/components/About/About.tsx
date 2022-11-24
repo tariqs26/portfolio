@@ -17,7 +17,13 @@ export default function About() {
       <div className='tech-icons'>
         {['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Redux'].map(
           (name) => {
-            return <TechIcon key={name} icon={iconLinks[name]} name={name} />;
+            return (
+              <TechIcon
+                key={name}
+                icon={iconLinks[name as keyof typeof iconLinks]}
+                name={name}
+              />
+            );
           }
         )}
       </div>
@@ -25,7 +31,7 @@ export default function About() {
   );
 }
 
-const TechIcon = ({ icon, name }) => {
+const TechIcon = ({ icon, name }: { icon: string; name: string }) => {
   return (
     <div className='tech-icon hidden'>
       <img src={icon} alt={name} />

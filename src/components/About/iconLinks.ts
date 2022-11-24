@@ -15,11 +15,11 @@ const iconLinks = {
   TypeScript: `${iconBase}/typescript.png`,
   Git: `${iconBase}/git.png`,
   Github: `${iconBase}/github.png`,
-  npm: `${iconBase}/npm.png`,
+  NPM: `${iconBase}/npm.png`,
   Python: `${iconBase}/python.png`,
   Java: `${iconBase}/java-coffee-cup-logo.png`,
-  heroku: `${iconBase}/heroku.png`,
-  netlify: `${iconBase}/netlify.png`,
+  Heroku: `${iconBase}/heroku.png`,
+  Netlify: `${iconBase}/netlify.png`,
 };
 
 export default iconLinks;
