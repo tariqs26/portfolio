@@ -1,4 +1,3 @@
-import React from 'react';
 import Section from '../Section/Section';
 import iconLinks from './iconLinks';
 import './About.css';

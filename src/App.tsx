@@ -1,10 +1,10 @@
 import { useEffect, useState } from 'react';
-import useAnimations from './hooks/useAnimations';
-import Navbar from './components/Navbar/Navbar';
-import Intro from './components/Intro/Intro';
-import About from './components/About/About';
-import Projects from './components/Projects/Projects';
-import Contact from './components/Contact/Contact';
+import useAnimations from 'hooks/useAnimations';
+import Navbar from 'components/Navbar/Navbar';
+import Intro from 'components/Intro/Intro';
+import About from 'components/About/About';
+import Projects from 'components/Projects/Projects';
+import Contact from 'components/Contact/Contact';
 
 import './App.css';
 
