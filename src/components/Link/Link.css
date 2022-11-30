@@ -1,12 +1,8 @@
 .link {
-  text-decoration: none;
   color: var(--link-clr);
-  filter: contrast(1.2);
   background-image: var(--gradient);
   background-size: 0 1px;
-  background-repeat: no-repeat;
   background-position: left bottom;
-  transition: 300ms all ease-in-out;
 }
 .link:active { background-size: 100% 1px; }
 @media (hover : hover){

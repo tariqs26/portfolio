@@ -7,15 +7,12 @@
 
 :is(.nav-links,.menu) a {
   color: var(--nav-clr);
-  text-decoration: none;
   font-size: 1.15rem;
   opacity: 0;
   animation: nav-link-fade 400ms ease-in-out 300ms forwards;
   background-image: var(--nav-gradient);
   background-size: 0 2px;
-  background-repeat: no-repeat;
   background-position: center bottom;
-  transition: 250ms all ease-in-out;
 }
 
 .nav-links a:nth-child(2) {
