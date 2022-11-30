@@ -6,17 +6,9 @@ export default function Contact() {
     <Section heading='Contact me'>
       <p>
         Reach out to me on{' '}
-        <Link
-          href='https://twitter.com/Linklexandereardon'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
-          linkedin
-        </Link>
-        , or shoot me an{'\n'}
-        <Link href='mailto:' target='_blank' rel='noopener noreferrer'>
-          email
-        </Link>
+        <Link href='https://twitter.com/Linklexandereardon'>linkedin</Link>, or
+        shoot me an{' '}
+        <Link href='mailto:'>email</Link>
       </p>
     </Section>
   );
