@@ -30,8 +30,8 @@
   color: var(--secondary-clr);
   display: flex;
   align-items: center;
-  font-size: 1.5rem;
-  transition: 600ms 200ms filter, 600ms 200ms opacity, 400ms ease-in-out color;
+  font-size: 1.4rem;
+  transition: 400ms 200ms filter, 400ms 200ms opacity, 300ms ease-in-out color;
 }
 
 .section-heading.hidden {  filter: none; }
@@ -46,7 +46,7 @@
 }
 
 .animation {
-  animation: type 600ms steps(40, end) forwards, blink 0.8s step-end 4 forwards;
+  animation: type 600ms steps(50, end) forwards, blink 0.8s step-end 4 forwards;
 }
 
 @keyframes type {
@@ -64,14 +64,14 @@
   background: linear-gradient(90deg, var(--secondary-clr), var(--accent-clr));
 }
 .section-heading-rule.animation {
-  animation: rule 600ms ease-in-out 650ms forwards;
+  animation: rule 500ms ease-in-out 600ms forwards;
 }
 @keyframes rule {
   to { flex: 1; }
 }
 
 .content {
-  transition: 500ms filter 1.25s linear;
+  transition: 500ms filter 1100ms ease-in-out;
   transition-property: filter, opacity, transform;
   font-size: 1.1rem;
 }
