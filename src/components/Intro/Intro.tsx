@@ -1,5 +1,4 @@
 import { useEffect, useRef } from 'react';
-import Link from '../Link/Link';
 import { LinkedInIcon, GitHubIcon } from 'components/Icons';
 import './Intro.css';
 
@@ -23,15 +22,17 @@ export default function Intro() {
             <IntroLink href='https://github.com/tariqs26' ariaLabel='GitHub'>
               <GitHubIcon />
             </IntroLink>
-            <IntroLink href='https://www.linkedin.com/in/saad-tariq-cs/' ariaLabel='Linkedin'>
+            <IntroLink
+              href='https://www.linkedin.com/in/saad-tariq-cs/'
+              ariaLabel='Linkedin'
+            >
               <LinkedInIcon />
             </IntroLink>
           </div>
           <div className='content animate'>
             <p>
-              Computer science student at{' '}
-              <Link href=''>McMaster University</Link> passionate about building
-              things for the web.
+              Computer science student at McMaster University passionate about
+              building things for the web.
             </p>
           </div>
           <div className='intro-btn animate'>View resume</div>

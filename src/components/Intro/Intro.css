@@ -36,15 +36,7 @@
   transition: 300ms color ease-in-out;
 }
 
-@media (max-width: 475px) {
-  .intro-heading {
-    font-size: 3.5rem;
-  }
-  .intro-subheading {
-    font-size: 3.2rem;
-  }
-}
-@media (max-width: 400px) {
+@media (max-width: 470px) {
   .intro-heading {
     font-size: 3.2rem;
   }
@@ -80,16 +72,20 @@
   gap: 1rem;
   margin-top: 1rem;
 }
+.intro-links a {
+  display: flex;
+}
 .intro-links svg {
   height: 1.5rem;
   width: 1.5rem;
   fill: var(--primary-clr);
-  transition: fill 300ms ease-in-out;
+  transition: fill 300ms ease-in-out, transform 300ms ease-in-out;
 }
 
 @media (hover: hover) {
-  .intro-links svg:hover {
+  .intro-links a:hover svg{
     cursor: pointer;
     fill: var(--link-clr);
+    transform: translateY(-0.2rem);
   }
 }
