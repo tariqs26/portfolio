@@ -18,12 +18,12 @@ export default function App() {
     document.body?.classList.toggle('light');
   };
   
-  const mainRef = useAnimations();
+  useAnimations();
 
   return (
     <div className='App'>
       <Navbar darkMode={darkMode} setDarkMode={setDarkModeHandler} />
-      <main ref={mainRef}>
+      <main>
         <Intro />
         <div className='spacer' id='about' />
         <About />

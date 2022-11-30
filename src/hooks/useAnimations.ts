@@ -1,8 +1,6 @@
-import { useEffect, useRef } from 'react';
+import { useEffect } from 'react';
 
 export default function useAnimations() {
-  const mainRef = useRef(null);
-
   useEffect(() => {
     const observer = new IntersectionObserver(
       (entries) => {
@@ -21,14 +19,11 @@ export default function useAnimations() {
     );
 
     setTimeout(() => {
-      mainRef.current &&
-        (mainRef.current as HTMLElement)
+        document
           .querySelectorAll('.section-container')
           .forEach((section) => {
             observer.observe(section);
           });
     }, 1000);
-  }, [mainRef]);
-
-  return mainRef;
+  }, []);
 }
