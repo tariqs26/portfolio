@@ -10,20 +10,19 @@
 .section-container:nth-of-type(3)
 { background-color: var(--alt-bg); }
 
-
 @media (max-width: 750px) {
   .section-container { padding: 2.5rem 0; }
 }
 
 .section { 
   width: 100%; 
-  max-width: 65rem; 
-  padding:2rem
+  max-width: 70rem; 
+  padding: 2rem
 }
 
 .hidden {
   filter: blur(3px);
-  transform: translateY(-0.5rem);
+  transform: translateY(-1.5rem);
   opacity: 0;
 }
 
