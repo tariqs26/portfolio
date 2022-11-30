@@ -7,23 +7,23 @@ export default function Projects() {
   return (
     <>
       <Section heading={'Projects'}>{null}</Section>
-      {projects.map((project) => (
+      {projects.map(({ name, imgSrc, tech, desc, codeLink, liveLink }) => (
         <div className='project-container section-container'>
-          <div className='project section hidden' key={project.name}>
-            <img className='project-img' src={project.imgSrc} alt='' />
+          <div className='project section hidden' key={name}>
+            <img className='project-img' src={imgSrc} alt='' />
             <div className='project-content'>
-              <h3 className='project-name'>{project.name}</h3>
+              <h3 className='project-name'>{name}</h3>
               <div className='project-tech-container'>
-                {project.tech.map((tech) => (
+                {tech.map((tech) => (
                   <code key={tech}>{tech}</code>
                 ))}
               </div>
-              <p className='project-desc'>{project.description}</p>
+              <p className='project-desc'>{desc}</p>
               <div className='project-links'>
-                <a href={project.codeLink}>
+                <a href={codeLink}>
                   <GitHubIcon />
                 </a>
-                <a href={project.liveLink}>
+                <a href={liveLink}>
                   <LiveLinkIcon />
                 </a>
               </div>

@@ -5,7 +5,7 @@ const imgPath = "./src/assets"
 const projects = [
   {
     name: 'Quizr',
-    description: 'A trivia app built with React and Typescript, using the Open Trivia Database API. Deployed on Netlify.',
+    desc: 'A trivia app built with React and Typescript, using the Open Trivia Database API. Deployed on Netlify.',
     tech: ['React', 'Redux'],
     imgSrc: 'https://wallpaper.dog/large/20359633.jpg',
     liveLink: `quizr.${Netlify}`,
@@ -14,7 +14,7 @@ const projects = [
 
   {
     name: 'Job Tracker',
-    description: 'An application to manage job applications, filter by status, add files, notes, and more.',
+    desc: 'An application to manage job applications, filter by status, add files, notes, and more.',
     tech: ['Next.js', 'Typescript', 'PostgreSQL', 'Prisma'],
     imgSrc: `${imgPath}/project1.png`,
     liveLink: `pathfinder.${Netlify}`,
@@ -23,7 +23,7 @@ const projects = [
 
   {
     name: 'YelpCamp',
-    description: 'A campground review app',
+    desc: 'A campground review app',
     tech: ['Node', 'Express', 'MongoDB'],
     imgSrc: 'https://wallpaper.dog/large/20359633.jpg',
     liveLink: `yelpcamp.${Netlify}`,
