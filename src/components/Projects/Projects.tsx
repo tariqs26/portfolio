@@ -8,8 +8,8 @@ export default function Projects() {
     <>
       <Section heading={'Projects'}>{null}</Section>
       {projects.map(({ name, imgSrc, tech, desc, codeLink, liveLink }) => (
-        <div className='project-container section-container'>
-          <div className='project section hidden' key={name}>
+        <div className='project-container section-container' key={name}>
+          <section className='project section hidden'>
             <img className='project-img' src={imgSrc} alt='' />
             <div className='project-content'>
               <h3 className='project-name'>{name}</h3>
@@ -28,7 +28,7 @@ export default function Projects() {
                 </a>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       ))}
     </>
