@@ -42,7 +42,7 @@ body {
   --tech-bg: hsl(218 80% 30%);
   --primary-clr: hsl(0 10% 10%);
   --secondary-clr: hsl(218 80% 40%);
-  --accent-clr: hsl(19 80% 50%);
+  --accent-clr: hsl(19 80% 48%);
   --link-clr: hsl(218 80% 40%);
   --nav-clr: hsl(0 0% 10%);
   --box-shadow-clr: hsl(0 0% 70%);
@@ -81,4 +81,9 @@ body::-webkit-scrollbar-track-piece:start {
 p {
   margin: 1.5rem 0;
   line-height: 1.5;
+}
+
+code {
+  font-size: 0.9rem;
+  font-family: monospace;
 }
