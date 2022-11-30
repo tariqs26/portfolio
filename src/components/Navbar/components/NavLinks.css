@@ -5,17 +5,29 @@
   flex: 3;
 }
 
-.nav-links a {
-  opacity: 0;
-  font-size:1.15rem;
-  animation: nav-link-fade 400ms ease-in-out 300ms forwards;
+:is(.nav-links,.menu) a {
   color: var(--nav-clr);
+  text-decoration: none;
+  font-size: 1.15rem;
+  opacity: 0;
+  animation: nav-link-fade 400ms ease-in-out 300ms forwards;
+  background-image: var(--nav-gradient);
+  background-size: 0 2px;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  transition: 250ms all ease-in-out;
 }
+
 .nav-links a:nth-child(2) {
   animation-delay: 500ms;
 }
 .nav-links a:nth-child(3) {
   animation-delay: 700ms;
+}
+
+:is(.nav-links, .menu) a:active { background-size: 100% 2px; }
+@media (hover : hover){
+  :is(.nav-links, .menu) a:hover { background-size: 100% 2px; }
 }
 
 @keyframes nav-link-fade {

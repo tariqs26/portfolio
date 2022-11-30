@@ -17,13 +17,13 @@ export default function Hamburger({
         <div className='bar'></div>
       </div>
       <div className='menu hide' ref={menuRef}>
-        <a href='#about' className='link' onClick={() => setOpen(false)}>
+        <a href='#about' onClick={() => setOpen(false)}>
           About
         </a>
-        <a href='#projects' className='link' onClick={() => setOpen(false)}>
+        <a href='#projects' onClick={() => setOpen(false)}>
           Projects
         </a>
-        <a href='#contact' className='link' onClick={() => setOpen(false)}>
+        <a href='#contact' onClick={() => setOpen(false)}>
           Contact
         </a>
       </div>
