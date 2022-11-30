@@ -46,7 +46,7 @@
 }
 
 .animation {
-  animation: type 600ms steps(50, end) forwards, blink 0.8s step-end 4 forwards;
+  animation: type 600ms steps(40, end) forwards, blink 0.8s step-end 4 forwards;
 }
 
 @keyframes type {
