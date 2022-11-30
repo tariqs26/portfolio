@@ -22,12 +22,13 @@ body {
   --tech-bg: hsl(218 80% 23%);
   --primary-clr: hsl(0 30% 85%);
   --secondary-clr: hsl(218 80% 73%);
-  --accent-clr: hsl(19 80% 60%);
+  --accent-clr: hsl(19 80% 66%);
   --gradient: linear-gradient(
     135deg,
     var(--secondary-clr) 0%,
     var(--accent-clr) 100%
   );
+  --nav-gradient : linear-gradient(135deg, var(--secondary-clr) 0%, var(--secondary-clr) 100%);
   --link-clr: hsl(0, 0%, 100%);
   --nav-clr: hsl(0, 0%, 100%);
   --box-shadow-clr: hsl(0 0% 0%);
