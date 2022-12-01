@@ -1,6 +1,5 @@
-#intro.section-container {
-  padding-top: 8vh;
-  padding-bottom: 0;
+#intro .section {
+  padding: 3rem 2rem;
 }
 
 .animate {
@@ -38,10 +37,10 @@
 
 @media (max-width: 470px) {
   .intro-heading {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   .intro-subheading {
-    font-size: 2.9rem;
+    font-size: 2.8rem;
   }
 }
 
