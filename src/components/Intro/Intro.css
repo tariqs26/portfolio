@@ -1,3 +1,7 @@
+#intro.section-container {
+  min-height: 70vh;
+}
+
 #intro .section {
   padding: 3rem 2rem;
 }
