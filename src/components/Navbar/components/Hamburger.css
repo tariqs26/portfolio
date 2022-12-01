@@ -1,7 +1,6 @@
 .hamburger {
   display: none;
   opacity: 0;
-  flex: auto;
   width: 100%;
   justify-content: center;
   animation: nav-link-fade 500ms 750ms ease-in-out forwards;

@@ -6,7 +6,7 @@ export default function Contact() {
     <Section heading='Contact'>
       <p>
         Reach out to me on{' '}
-        <Link href='https://twitter.com/Linklexandereardon'>linkedin</Link>, or
+        <Link href='https://linkedin.com/saad-tariq-cs'>linkedin</Link>, or
         shoot me an{' '}
         <Link href='mailto:'>email</Link>
       </p>
