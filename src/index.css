@@ -91,5 +91,5 @@ code {
 a {
   text-decoration: none;
   background-repeat: no-repeat;
-  transition: 250ms all ease-in-out;
-};
+  transition: 250ms ease-in-out;
+}

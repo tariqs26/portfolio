@@ -18,7 +18,6 @@ export default function Navbar({
     <nav className='nav'>
       <a
         href='/#'
-        className='nav-a'
         aria-label='Home'
         onClick={() => {
           setOpen(false);
@@ -28,7 +27,7 @@ export default function Navbar({
       </a>
       <NavLinks />
       <Hamburger {...{ open, setOpen, menuRef }} />
-      <div className='nav-icon-container'>
+      <div className='mode-container'>
         {darkMode ? (
           <DarkIcon onClick={() => setDarkMode(false)} />
         ) : (

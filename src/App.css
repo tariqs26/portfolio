@@ -3,7 +3,6 @@
   color: var(--primary-clr);
   background-color: var(--primary-bg);
   transition: 300ms ease-in-out;
-  transition-property: background-color, color;
 }
 
 .spacer {

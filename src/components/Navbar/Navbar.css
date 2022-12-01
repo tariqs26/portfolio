@@ -3,7 +3,6 @@
   top: 0;
   display: flex;
   align-items: center;
-  width: 100%;
   padding: 1.25rem 2.5rem;
   background-color: var(--primary-bg);
   transition: 
@@ -25,15 +24,15 @@
   .nav-shadow { padding: 0.75rem 1.5rem; }
 }
 
-.nav-icon-container {
+.mode-container {
   opacity: 0;
   display: flex;
   padding: 0.2rem;
   border-radius: 50%;
   animation: nav-link-fade 300ms ease-in-out forwards;
-  transition: background-color 200ms ease-in-out;
+  transition: 200ms ease-in-out;
 }
-.nav-icon-container:active, .bar-container:active {
+:is(.mode-container,.bar-container):active {
   cursor: pointer;
   background-color: rgba(163, 163, 219, 0.408);
 }
@@ -41,15 +40,14 @@
 .nav-icon {
   height: 2.1rem;
   width: 2.1rem;
-  transition: 150ms filter ease-in-out;
 }
 
-.nav-icon.clr-scheme {
+.clr-scheme {
   fill: var(--nav-clr);
   stroke: var(--nav-clr);
 }
 
-.nav-a { display: flex; }
+a:has(> .nav-logo) { display: flex; }
 
 .nav-logo {
   opacity: 0;
@@ -62,8 +60,7 @@
   padding: 0.25rem;
   border-radius: 0.5rem;
   animation: nav-link-fade 300ms ease-in-out forwards;
-  transition: 300ms ease-in-out;
-  transition-property: fill, outline, filter;
+  transition: 250ms ease-in-out;
 }
 
 .nav-logo:active {
@@ -72,7 +69,7 @@
 }
 
 @media (hover : hover) {
-  .nav-icon-container:hover, .bar-container:hover {
+  :is(.mode-container,.bar-container):hover {
     cursor: pointer;
     background-color: rgba(163, 163, 219, 0.408);
   }
