@@ -4,7 +4,7 @@ import './About.css';
 
 export default function About() {
   return (
-    <Section heading={'About Me'}>
+    <Section heading={'About'}>
       <p>Hi There!</p>
       <p>
         I'm Saad Tariq, a second year computer science student at McMaster

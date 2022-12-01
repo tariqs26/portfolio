@@ -3,7 +3,7 @@ import Link from '../Link/Link';
 
 export default function Contact() {
   return (
-    <Section heading='Contact me'>
+    <Section heading='Contact'>
       <p>
         Reach out to me on{' '}
         <Link href='https://twitter.com/Linklexandereardon'>linkedin</Link>, or

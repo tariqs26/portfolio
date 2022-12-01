@@ -12,7 +12,7 @@ export default function Section({
       <section className='section'>
         <header className='section-heading hidden'>
           <div className='section-heading-text'>
-            <h2>{heading}</h2>
+            <h2>{`<${heading} />`}</h2>
           </div>
           <span className='section-heading-rule' />
         </header>
