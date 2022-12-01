@@ -7,7 +7,6 @@
 
 .spacer {
   aspect-ratio: 960 / 100;
-  width: 100%;
   background-size: cover;
   background-image: var(--url);
   transition: 300ms ease-in-out;
