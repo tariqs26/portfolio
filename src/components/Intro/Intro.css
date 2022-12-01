@@ -17,7 +17,7 @@
   }
 }
 
-.intro h1 {
+h1 {
   width: fit-content;
   color: transparent;
   -webkit-background-clip: text;
@@ -25,7 +25,6 @@
   background-image: var(--gradient);
   font-weight: 300;
   font-size: 4rem;
-  transition: 300ms background-image ease-in-out;
 }
 
 .intro h2 {
@@ -36,7 +35,7 @@
 }
 
 @media (max-width: 470px) {
-  .intro h1 {
+  h1 {
     font-size: 3rem;
   }
   .intro h2 {
@@ -78,7 +77,7 @@
   height: 1.5rem;
   width: 1.5rem;
   fill: var(--primary-clr);
-  transition: fill 300ms ease-in-out, transform 300ms ease-in-out;
+  transition: 250ms ease-in-out;
 }
 
 @media (hover: hover) {
