@@ -77,17 +77,20 @@ h1 {
 .intro-links a {
   display: flex;
 }
-.intro-links svg {
-  height: 1.5rem;
+:is(.intro-links, .project-links) svg {
   width: 1.5rem;
+  height: 1.5rem;
   fill: var(--primary-clr);
   transition: 250ms ease-in-out;
 }
 
 @media (hover: hover) {
-  .intro-links a:hover svg{
+  :is(.intro-links, .project-links) a:hover svg{
     cursor: pointer;
     fill: var(--link-clr);
     transform: translateY(-0.2rem);
+  }
+  .project-links a:hover svg{
+    transform: none;
   }
 }

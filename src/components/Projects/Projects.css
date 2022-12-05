@@ -67,11 +67,6 @@
   flex-wrap: wrap;
   gap: 0.7rem;
 }
-.project-links svg {
-  width: 1.5rem;
-  fill: var(--primary-clr);
-  transition: fill 300ms ease-in-out;
-}
 
 .section-container:nth-of-type(8) .project {
   margin-bottom: 0rem;
