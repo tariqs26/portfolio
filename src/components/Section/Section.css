@@ -27,7 +27,7 @@
   color: var(--secondary-clr);
   display: flex;
   align-items: center;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   transition: 400ms 200ms filter, 400ms 200ms opacity, 300ms ease-in-out color;
 }
 
