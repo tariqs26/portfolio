@@ -31,7 +31,7 @@
   grid-column: 2 / -1;
   font-size: 1em;
   display: flex;
-  gap: 1rem;
+  gap: 1.4rem;
   flex-direction: column;
   justify-content: center;
   transition: 300ms background-color ease-in-out;
@@ -41,7 +41,7 @@
 .project-desc { text-align: right; }
 
 .project-name {
-  font-size: 1.7rem;
+  font-size: 2rem;
   color: var(--accent-clr);
   transition: 300ms color ease-in-out;
 }
@@ -63,8 +63,7 @@
   gap: 0.7rem;
 }
 .project-links svg {
-  height: 1.4rem;
-  width: 1.4rem;
+  width: 1.5rem;
   fill: var(--primary-clr);
   transition: fill 300ms ease-in-out;
 }
@@ -108,10 +107,11 @@
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
   }
-  .project-name,
-  .project-desc { text-align: left; }
+  :is(.project-name,.project-desc) { 
+    text-align: left; 
+  }
   .project-desc { 
-    padding: 0.5rem 0; 
+    padding: 0;
     box-shadow: initial;
   }
   .project-links,
