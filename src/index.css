@@ -15,6 +15,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* CSS Variables */
 body {
   --primary-bg: hsl(218 80% 10%);
   --alt-bg: hsl(218 81% 6%);
@@ -27,7 +28,11 @@ body {
     var(--secondary-clr) 0%,
     var(--accent-clr) 100%
   );
-  --nav-gradient : linear-gradient(135deg, var(--secondary-clr) 0%, var(--secondary-clr) 100%);
+  --nav-gradient: linear-gradient(
+    135deg,
+    var(--secondary-clr) 0%,
+    var(--secondary-clr) 100%
+  );
   --link-clr: hsl(0, 0%, 100%);
   --nav-clr: hsl(0, 0%, 100%);
   --box-shadow-clr: hsl(0 0% 0%);
@@ -49,6 +54,7 @@ body {
   --url-r: url('./assets/wave3-light.svg');
 }
 
+/* Global Styles */
 body {
   overflow-x: hidden;
   overflow-y: hidden;
@@ -58,9 +64,12 @@ body {
 }
 
 @keyframes overflow {
-  to { overflow-y: scroll; }
+  to {
+    overflow-y: scroll;
+  }
 }
 
+/* Scrollbar */
 body::-webkit-scrollbar {
   width: 0.8rem;
   background-color: rgb(58, 56, 56);
@@ -78,6 +87,7 @@ body::-webkit-scrollbar-track-piece:start {
   margin-top: 1rem;
 }
 
+/* Geneal Elements */
 p {
   margin-bottom: 1.5rem;
   line-height: 1.5;
