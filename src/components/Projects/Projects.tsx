@@ -20,10 +20,10 @@ export default function Projects() {
               </div>
               <p className='project-desc'>{desc}</p>
               <div className='project-links'>
-                <a href={codeLink}>
+                <a href={codeLink} aria-label="GitHub Link">
                   <GitHubIcon />
                 </a>
-                <a href={liveLink}>
+                <a href={liveLink} aria-label="Live Link">
                   <LiveLinkIcon />
                 </a>
               </div>
