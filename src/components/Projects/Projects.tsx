@@ -12,7 +12,7 @@ export default function Projects() {
           <section className='project section hidden'>
             <img className='project-img' src={imgSrc} alt='' />
             <div className='project-content'>
-              <h3 className='project-name'>{name}</h3>
+              <h4 className='project-name'>{name}</h4>
               <div className='project-tech-container'>
                 {tech.map((tech) => (
                   <code key={tech}>{tech}</code>

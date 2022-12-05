@@ -17,32 +17,6 @@
   }
 }
 
-h1 {
-  width: fit-content;
-  color: transparent;
-  -webkit-background-clip: text;
-  background-clip: text;
-  background-image: var(--gradient);
-  font-weight: 300;
-  font-size: 4rem;
-}
-
-.intro h2 {
-  color: var(--secondary-clr);
-  font-size: 3.8rem;
-  font-weight: 400;
-  transition: 300ms color ease-in-out;
-}
-
-@media (max-width: 470px) {
-  h1 {
-    font-size: 3rem;
-  }
-  .intro h2 {
-    font-size: 2.8rem;
-  }
-}
-
 .intro-btn {
   width: fit-content;
   border: 0.12rem solid var(--accent-clr);
@@ -69,24 +43,4 @@ h1 {
   display: flex;
   gap: 1rem;
   margin-top: 1rem;
-}
-.intro-links a {
-  display: flex;
-}
-:is(.intro-links, .project-links) svg {
-  width: 1.5rem;
-  height: 1.5rem;
-  fill: var(--primary-clr);
-  transition: 250ms ease-in-out;
-}
-
-@media (hover: hover) {
-  :is(.intro-links, .project-links) a:hover svg{
-    cursor: pointer;
-    fill: var(--link-clr);
-    transform: translateY(-0.2rem);
-  }
-  .project-links a:hover svg{
-    transform: none;
-  }
 }

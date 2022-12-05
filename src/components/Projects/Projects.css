@@ -40,17 +40,6 @@
 .project-name,
 .project-desc { text-align: right; }
 
-.project-name {
-  font-size: 2rem;
-  color: var(--accent-clr);
-  transition: 300ms color ease-in-out;
-}
-@media (max-width: 470px) {
-  .project-name {
-    font-size: 1.5rem;
-  }
-}
-
 .project-desc {
   background-color: var(--alt-bg);
   box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);

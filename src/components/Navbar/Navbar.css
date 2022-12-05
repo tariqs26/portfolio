@@ -47,8 +47,6 @@
   stroke: var(--nav-clr);
 }
 
-a:has(> .nav-logo) { display: flex; }
-
 .nav-logo {
   opacity: 0;
   background: linear-gradient(
@@ -60,21 +58,11 @@ a:has(> .nav-logo) { display: flex; }
   padding: 0.25rem;
   border-radius: 0.5rem;
   animation: nav-link-fade 300ms ease-in-out forwards;
-  transition: 250ms ease-in-out;
-}
-
-.nav-logo:active {
-  filter: brightness(1.2);
-  cursor: pointer;
 }
 
 @media (hover : hover) {
   :is(.mode-container,.bar-container):hover {
     cursor: pointer;
     background-color: rgba(163, 163, 219, 0.408);
-  }
-  .nav-logo:hover {
-    filter: brightness(1.2);
-    cursor: pointer;
   }
 }

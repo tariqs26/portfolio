@@ -6,7 +6,7 @@ export default function useAnimations() {
       (entries) => {
         entries.forEach((entry) => {
           const animate = entry.target.querySelectorAll(
-            '.section-heading h2, .section-heading-rule'
+            'h3, .section-heading-rule'
           );          
           if (entry.isIntersecting) {
             for (let elem of entry.target.querySelectorAll('.hidden'))

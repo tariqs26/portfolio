@@ -24,28 +24,14 @@
 }
 
 .section-heading {
-  color: var(--secondary-clr);
   display: flex;
   align-items: center;
-  font-size: 1.7rem;
-  transition: 400ms 200ms filter, 400ms 200ms opacity, 300ms ease-in-out color;
-}
-@media (max-width: 470px) {
-  .section-heading {
-    font-size: 1.3rem;
-  }
+  transition: 400ms 200ms filter, 400ms 200ms opacity;
 }
 
 .section-heading.hidden { filter: none; }
 
 .section-heading-text { width: fit-content; }
-
-.section-heading-text h2 {
-  width: 0;
-  white-space: nowrap;
-  overflow: hidden;
-  border-right: 0.05rem solid var(--secondary-clr);
-}
 
 .animation {
   animation: type 600ms steps(40, end) forwards, blink 0.8s step-end 4 forwards;
