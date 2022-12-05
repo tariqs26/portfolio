@@ -30,6 +30,11 @@
   font-size: 1.7rem;
   transition: 400ms 200ms filter, 400ms 200ms opacity, 300ms ease-in-out color;
 }
+@media (max-width: 470px) {
+  .section-heading {
+    font-size: 1.3rem;
+  }
+}
 
 .section-heading.hidden { filter: none; }
 

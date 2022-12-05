@@ -45,6 +45,11 @@
   color: var(--accent-clr);
   transition: 300ms color ease-in-out;
 }
+@media (max-width: 470px) {
+  .project-name {
+    font-size: 1.5rem;
+  }
+}
 
 .project-desc {
   background-color: var(--alt-bg);
