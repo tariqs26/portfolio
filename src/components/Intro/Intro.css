@@ -2,10 +2,6 @@
   min-height: 70vh;
 }
 
-#intro .section {
-  padding: 3rem 2rem;
-}
-
 .animate {
   opacity: 0;
   animation: intro-fade 400ms ease-in-out forwards;
