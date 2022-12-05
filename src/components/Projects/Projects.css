@@ -1,9 +1,8 @@
 .section-container:nth-of-type(5) .section{
-  padding: 2rem;
-  padding-bottom: 1rem;
+  padding: 2rem 2rem 0;
 }
-.project-container.section-container .section {
-  padding-top: 2rem;
+.section-container:nth-of-type(5) .content{
+  padding: 0;
 }
 
 .project {
