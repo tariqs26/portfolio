@@ -87,7 +87,7 @@ body::-webkit-scrollbar-track-piece:start {
   margin-top: 1rem;
 }
 
-/* Geneal Elements */
+/* General Elements */
 p {
   margin-bottom: 1.5rem;
   line-height: 1.5;
@@ -97,6 +97,8 @@ code {
   font-size: 0.95rem;
   font-family: monospace;
 }
+
+/* Links + Svg's */
 
 a {
   text-decoration: none;
@@ -127,6 +129,8 @@ a > svg {
     filter: brightness(1.2);
   }
 }
+
+/* Headings */
 
 h1 {
   width: fit-content;
