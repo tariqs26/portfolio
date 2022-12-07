@@ -94,7 +94,7 @@ p {
 }
 
 code {
-  font-size: 0.95rem;
+  font-size: 1rem;
   font-family: monospace;
 }
 
@@ -116,15 +116,15 @@ a > svg {
 }
 
 @media (hover: hover) {
-  a:hover svg {
+  a:hover > svg {
     cursor: pointer;
     color: var(--link-clr);
     transform: translateY(-0.2rem);
   }
-  .project-links a:hover svg {
+  .project-links a:hover > svg {
     transform: none;
   }
-  a:hover .nav-logo {
+  a:hover > .nav-logo {
     fill: white;
     filter: brightness(1.2);
   }
@@ -161,8 +161,7 @@ h4 {
 }
 
 @media (max-width: 520px) {
-  h1,
-  h2 { font-size: 3.2rem; }
+  :is(h1, h2) { font-size: 3.2rem; }
   h3 { font-size: 2rem; }
   h4 { font-size: 1.5rem; }
 }
