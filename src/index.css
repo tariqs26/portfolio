@@ -161,7 +161,7 @@ h4 {
 }
 
 @media (max-width: 520px) {
-  :is(h1, h2) { font-size: 3.2rem; }
+  h1, h2 { font-size: 3.2rem; }
   h3 { font-size: 2rem; }
   h4 { font-size: 1.5rem; }
 }
