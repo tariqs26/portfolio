@@ -27,7 +27,7 @@
 .intro-btn:last-child:hover {
   cursor: pointer;
   border-color: var(--secondary-clr);
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: var(--alt-bg);
 }
 
 .intro-greet {
