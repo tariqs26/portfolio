@@ -36,8 +36,8 @@ body {
   --link-clr: hsl(0, 0%, 100%);
   --nav-clr: hsl(0, 0%, 100%);
   --box-shadow-clr: hsl(0 0% 0%);
-  --url: url('./assets/wave2.svg');
-  --url-r: url('./assets/wave3.svg');
+  --url: url('./assets/svg/wave2.svg');
+  --url-r: url('./assets/svg/wave3.svg');
 }
 
 .light {
@@ -50,8 +50,8 @@ body {
   --link-clr: hsl(218 80% 40%);
   --nav-clr: hsl(0 0% 10%);
   --box-shadow-clr: hsl(0 0% 70%);
-  --url: url('./assets/wave2-light.svg');
-  --url-r: url('./assets/wave3-light.svg');
+  --url: url('./assets/svg/wave2-light.svg');
+  --url-r: url('./assets/svg/wave3-light.svg');
 }
 
 /* Global Styles */

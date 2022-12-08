@@ -1,7 +1,7 @@
 const start = 'https://';
 const gitHub = (name: string) => `${start}github.com/${name}`;
 const netlify = (name: string) => `${start}${name}netlify.app`;
-const imgPath = './src/assets';
+const imgPath = './src/assets/images';
 
 const projects = [
   {

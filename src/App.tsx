@@ -12,12 +12,12 @@ export default function App() {
   useEffect(() => {
     window.location.href = '/#';
   }, []);
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState<boolean>(false);
   const setDarkModeHandler = (darkMode: boolean) => {
     setDarkMode(darkMode);
     document.body?.classList.toggle('light');
   };
-  
+
   useAnimations();
 
   return (
