@@ -2,8 +2,8 @@
 
 ## About the App
 
-- personal portfolio to showcase, projects, skills, and contact information
-- built with React and TypeScript
+- personal portfolio to showcase, projects, skills, and contact information.
+- built with React and TypeScript.
 
 ## To Get Started
 
