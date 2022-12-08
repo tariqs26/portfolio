@@ -40,15 +40,12 @@ export default function Intro() {
   );
 }
 
-const IntroLink = ({
-  href,
-  ariaLabel,
-  children,
-}: {
+type IntroLinkProps = {
   href: string;
   ariaLabel: string;
   children: React.ReactNode;
-}) => (
+};
+const IntroLink = ({ href, ariaLabel, children }: IntroLinkProps) => (
   <a href={href} aria-label={ariaLabel} rel='noreferrer' target='_blank'>
     {children}
   </a>

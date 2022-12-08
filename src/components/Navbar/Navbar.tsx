@@ -5,13 +5,12 @@ import Hamburger from './components/Hamburger';
 import NavLinks from './components/NavLinks';
 import './Navbar.css';
 
-export default function Navbar({
-  darkMode,
-  setDarkMode,
-}: {
+type NavbarProps = {
   darkMode: boolean;
   setDarkMode: (darkMode: boolean) => void;
-}) {
+};
+
+export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
   useNavShadow();
   const { open, setOpen, menuRef } = useNavMenu();
   return (

@@ -31,7 +31,11 @@ export default function About() {
   );
 }
 
-const TechIcon = ({ icon, name }: { icon: string; name: string }) => {
+type TechIconProps = {
+  icon: string;
+  name: string; 
+};
+const TechIcon = ({ icon, name }: TechIconProps) => {
   return (
     <div className='tech-icon hidden'>
       <img src={icon} alt={name} />

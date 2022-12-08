@@ -1,14 +1,11 @@
 import './Hamburger.css';
 
-export default function Hamburger({
-  open,
-  setOpen,
-  menuRef,
-}: {
+type HamburgerProps = {
   open: boolean;
   setOpen: (open: boolean) => void;
   menuRef: React.RefObject<HTMLDivElement>;
-}) {
+};
+export default function Hamburger({ open, setOpen, menuRef }: HamburgerProps) {
   return (
     <div className='hamburger'>
       <div className='bar-container' onClick={() => setOpen(!open)}>
