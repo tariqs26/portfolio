@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 
 export default function useNavMenu() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState<boolean>(false);
   const menuRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
