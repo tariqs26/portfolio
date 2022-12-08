@@ -86,7 +86,7 @@
     flex-direction: column;
   }
   .project-content {
-    padding: 1.5rem;
+    padding: 1rem;
     background-color: var(--alt-bg);
     box-shadow: 0 0 10px 4px rgba(0, 0, 0, 0.2);
     border-top: 2px solid var(--accent-clr);
