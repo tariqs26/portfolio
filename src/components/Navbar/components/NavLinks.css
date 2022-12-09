@@ -29,11 +29,11 @@
 
 @keyframes nav-link-fade {
   from {
-    transform: translateY(-2em) scale(0.8);
+    transform: translateY(-2em) rotateX(90deg);
   }
   to {
     opacity: 1;
-    transform: translateY(0) scale(1);
+    transform: translateY(0) rotateX(0);
   }
 }
 
