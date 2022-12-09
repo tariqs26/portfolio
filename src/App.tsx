@@ -10,7 +10,7 @@ import './App.css';
 
 export default function App() {
   const [darkMode, setDarkMode] = useState<boolean>(
-    localStorage.getItem('theme') === 'dark'
+    localStorage.getItem('theme') !== 'light'
   );
   useEffect(() => {
     window.location.href = '/#';
