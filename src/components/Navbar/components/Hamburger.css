@@ -3,7 +3,7 @@
   opacity: 0;
   width: 100%;
   justify-content: center;
-  animation: nav-link-fade 500ms 750ms ease-in-out forwards;
+  animation: nav-link-fade 400ms 500ms ease-in-out forwards;
 }
 
 .bar-container {
