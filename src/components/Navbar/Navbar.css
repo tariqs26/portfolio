@@ -5,11 +5,7 @@
   align-items: center;
   padding: 1.25rem 2.5rem;
   background-color: var(--primary-bg);
-  transition: 
-    300ms background-color ease-in-out, 
-    300ms box-shadow ease-in-out,
-    250ms padding ease-in-out, 
-    250ms margin-bottom ease-in-out;
+  transition: 300ms ease-in-out;
   z-index: 1;
 }
 
