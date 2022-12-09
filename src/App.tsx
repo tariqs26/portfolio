@@ -9,15 +9,21 @@ import Contact from 'components/Contact/Contact';
 import './App.css';
 
 export default function App() {
+  const [darkMode, setDarkMode] = useState<boolean>(false);
   useEffect(() => {
+    const theme = localStorage.getItem('theme');
+    setDarkMode(theme === 'light');
     window.location.href = '/#';
   }, []);
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  
+  useEffect(() => {
+    document.body.classList.toggle('light', darkMode);
+  }, [darkMode]);
+
   const setDarkModeHandler = (darkMode: boolean) => {
     setDarkMode(darkMode);
-    document.body?.classList.toggle('light');
+    localStorage.setItem('theme', darkMode ? 'light' : 'dark');
   };
-
   useAnimations();
 
   return (
