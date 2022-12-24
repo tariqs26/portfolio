@@ -5,12 +5,12 @@ const imgPath = './src/assets/images';
 
 const projects = [
   {
-    name: 'Quizr',
+    name: 'Neuro',
     desc: 'A trivia app built with React and Typescript, using the Open Trivia Database API. Deployed on Netlify.',
-    tech: ['React', 'Redux'],
-    imgSrc: `${imgPath}/project1.png`,
-    liveLink: netlify('quizr'),
-    codeLink: gitHub('quizr'),
+    tech: ['React', 'Redux', 'TypeScript', 'Axios'],
+    imgSrc: `${imgPath}/project2.png`,
+    liveLink: netlify('neuro'),
+    codeLink: gitHub('neuro'),
   },
 
   {
