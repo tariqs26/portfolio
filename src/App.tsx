@@ -14,7 +14,6 @@ export default function App() {
   );
   useEffect(() => {
     history.scrollRestoration = 'manual';
-    window.location.href = '#top';
     window.scrollTo(0, 0);
     !darkMode && document.body.classList.add('light');
   }, []);
