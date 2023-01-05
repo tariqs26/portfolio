@@ -90,8 +90,12 @@ body::-webkit-scrollbar-track-piece:start {
 
 /* General Elements */
 p {
-  margin-bottom: 1.5rem;
   line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 code {
