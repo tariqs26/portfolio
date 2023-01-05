@@ -6,6 +6,7 @@
   padding: 1.25rem 2.5rem;
   background-color: var(--primary-bg);
   transition: 300ms ease-in-out;
+  transition-property: background-color, box-shadow, padding, margin-bottom;
   z-index: 1;
 }
 
