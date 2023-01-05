@@ -13,7 +13,7 @@ export default function App() {
     localStorage.getItem('theme') !== 'light'
   );
   useEffect(() => {
-    window.location.href = '#';
+    window.location.href = '#top';
     window.scrollTo(0, 0);
     !darkMode && document.body.classList.add('light');
   }, []);
