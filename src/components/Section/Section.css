@@ -4,63 +4,116 @@
   justify-content: center;
   transition: 300ms background-color ease-in-out;
 }
-.section-container:is(:last-child,:nth-of-type(3)) { 
-  background-color: var(--alt-bg); 
+.section-container:is(:last-child, :nth-of-type(2)) {
+  background-color: var(--alt-bg);
+}
+.section-container:first-of-type {
+  min-height: 85vh;
+  background-image: var(--url);
+  background-size: cover;
+  background-position: bottom;
+  transition: 300ms background-image ease-in-out;
 }
 
-.section { 
-  width: 100%; 
-  max-width: 70rem; 
+.section {
+  width: 100%;
+  max-width: 70rem;
   padding: 3rem 2rem;
 }
+.section-container:nth-of-type(2) .section {
+  padding-top: 0;
+}
+
 @media (max-width: 750px) {
-  .section { padding: 3rem 2rem; }
+  .section {
+    padding: 3rem 2rem;
+  }
+}
+
+.section-container:last-child .content {
+  align-items: center;
+}
+.section-container:last-child .content h4 {
+  font-size: 1.5rem;
+  max-width: 30rem;
+  text-align: center;
 }
 
 .hidden {
-  filter: blur(3px);
   transform: translateY(-1.5rem);
   opacity: 0;
 }
 
 .section-heading {
   display: flex;
+  gap: 1rem;
   align-items: center;
   transition: 400ms 200ms filter, 400ms 200ms opacity;
 }
-
-.section-heading.hidden { filter: none; }
-
-.section-heading-text { width: fit-content; }
+.section-heading.hidden {
+  filter: none;
+}
+.section-heading-text {
+  width: fit-content;
+}
 
 .animation {
   animation: type 600ms steps(40, end) forwards, blink 0.8s step-end 4 forwards;
 }
 
 @keyframes type {
-  to { width: 100%; }
+  to {
+    width: 100%;
+  }
 }
 @keyframes blink {
   to,
-  from { border-color: transparent; }
-  50% { border-color: var(--secondary-clr); }
+  from {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--secondary-clr);
+  }
 }
 
 .section-heading-rule {
   height: 1.9px;
-  margin-left: 1rem;
-  background: var(--gradient);
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+    to right,
+    var(--alt-bg) 0%,
+    var(--secondary-clr) 30%,
+    var(--accent-clr) 100%
+  );
+  background-size: 0% 100%;
+  flex: 1;
+}
+.section-container:nth-of-type(4) .section-heading-rule {
+  background-image: linear-gradient(
+    to right,
+    var(--primary-bg) 0%,
+    var(--secondary-clr) 30%,
+    var(--accent-clr) 100%
+  );
+}
+.section-heading-rule:first-child {
+  rotate: 180deg;
 }
 .section-heading-rule.animation {
   animation: rule 500ms ease-in-out 600ms forwards;
 }
 @keyframes rule {
-  to { flex: 1; }
+  to {
+    background-size: 100% 100%;
+  }
 }
 
 .content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   transition: 500ms 1100ms ease-in-out;
   transition-property: filter, opacity, transform;
   font-size: 1.1rem;
-  padding-top: 2rem;
+  padding-top: 1.5rem;
 }
