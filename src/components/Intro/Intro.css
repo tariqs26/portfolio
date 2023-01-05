@@ -1,12 +1,7 @@
-#intro.section-container {
-  min-height: 70vh;
-}
-
 .animate {
   opacity: 0;
   animation: intro-fade 400ms ease-in-out forwards;
 }
-
 @keyframes intro-fade {
   from {
     transform: translateY(4rem);
@@ -17,30 +12,31 @@
   }
 }
 
+:is(.intro-buttons, .intro-links) {
+  display: flex;
+  gap: 1rem;
+}
+
 .intro-btn {
   width: fit-content;
   border: 0.12rem solid var(--accent-clr);
   border-radius: 0.5rem;
   padding: 0.8rem 1.2rem;
-  transition: 200ms border-color ease-in-out, 200ms background-color ease-in-out;
 }
-.intro-btn:last-child:hover {
+a.intro-btn {
+  transition: 200ms border-color ease-in-out, 200ms background-color ease-in-out,
+    300ms color ease-in-out;
+}
+.intro-btn:not(.intro-greet):hover {
   cursor: pointer;
   border-color: var(--secondary-clr);
   background-color: var(--alt-bg);
 }
 
 .intro-greet {
-  border-radius: 1.5rem;
-  border-bottom-left-radius: 0;
-  margin-bottom: 1.1rem;
+  border-radius: 1.5rem 1.5rem 1.5rem 0;
+  margin-bottom: 1.5rem;
 }
 .intro-greet::selection {
   background: transparent;
-}
-
-.intro-links {
-  display: flex;
-  gap: 1rem;
-  margin-top: 1rem;
 }
