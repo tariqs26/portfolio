@@ -9,8 +9,7 @@ export default function About() {
       <p>Hi there!</p>
       <p>
         I'm Saad Tariq, a second year computer science student at{' '}
-        <Link href='https://www.mcmaster.ca/'>McMaster</Link>
-        University, passionate about all things web development.
+        <Link href='https://www.mcmaster.ca/'>McMaster University</Link>, passionate about all things web development.
       </p>
       <p>
         I have experience with front-end web development gained from working on
