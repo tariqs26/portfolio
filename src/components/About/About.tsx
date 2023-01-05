@@ -42,7 +42,7 @@ type TechIconProps = {
 const TechIcon = ({ icon, name }: TechIconProps) => {
   return (
     <div className='tech-icon hidden'>
-      <img src={icon} alt={name} />
+      <img src={icon} alt={name} loading='lazy' />
       <span>{name}</span>
     </div>
   );
