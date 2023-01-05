@@ -8,10 +8,14 @@ export default function About() {
       <p>Hi There!</p>
       <p>
         I'm Saad Tariq, a second year computer science student at McMaster
-        University. I have experience with front-end web development acquired
-        from experimenting with and developing projects in my free time. I am
-        constantly on the lookout for opportunities to learn new technologies
-        and improve my current skills.
+        University, passionate about all things web development.
+      </p>
+      <p>
+        I have experience with front-end web development gained from working on
+        personal projects and am currently aiming towards full-stack
+        development. I am constantly on the lookout for opportunities to learn
+        new technologies, build upon my existing skills, and grow as a
+        developer.
       </p>
       <p>Here are some technologies I use in projects:</p>
       <div className='tech-icons'>
@@ -33,7 +37,7 @@ export default function About() {
 
 type TechIconProps = {
   icon: string;
-  name: string; 
+  name: string;
 };
 const TechIcon = ({ icon, name }: TechIconProps) => {
   return (
