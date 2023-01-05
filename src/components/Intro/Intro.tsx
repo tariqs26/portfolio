@@ -46,7 +46,7 @@ export default function Intro() {
             </p>
             <div className='intro-buttons animate'>
               <a href='#projects' className='intro-btn'>
-                View My Work
+                View my work
               </a>
               <a href='#contact' className='intro-btn'>
                 Contact me
