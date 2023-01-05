@@ -13,6 +13,8 @@ html {
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -moz-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 /* CSS Variables */
@@ -46,8 +48,8 @@ body {
   --tech-bg: hsl(218 80% 30%);
   --primary-clr: hsl(0 0% 0%);
   --secondary-clr: hsl(218 80% 40%);
-  --accent-clr: hsl(19 80% 50%);
-  --link-clr: hsl(218 80% 40%);
+  --accent-clr: hsl(19 80% 45%);
+  --link-clr: hsl(218 80% 30%);
   --nav-clr: hsl(0 0% 0%);
   --box-shadow-clr: hsl(0 0% 70%);
   --url: url(./assets/svg/w1l.svg);
@@ -150,11 +152,23 @@ h1 {
   font-weight: 300;
 }
 
-h1, h2 { font-size : 4.5rem; }
-h2, h3 { color : var(--secondary-clr); }
-h2, h3, h4 { transition: 300ms ease-in-out; }
+h1,
+h2 {
+  font-size: 4.5rem;
+}
+h2,
+h3 {
+  color: var(--secondary-clr);
+}
+h2,
+h3,
+h4 {
+  transition: 300ms ease-in-out;
+}
 
-h2 { font-weight: 400;}
+h2 {
+  font-weight: 400;
+}
 
 h3 {
   font-size: 2.5rem;
@@ -170,7 +184,14 @@ h4 {
 }
 
 @media (max-width: 520px) {
-  h1, h2 { font-size: 3.2rem; }
-  h3 { font-size: 2rem; }
-  h4 { font-size: 1.5rem; }
+  h1,
+  h2 {
+    font-size: 3.2rem;
+  }
+  h3 {
+    font-size: 2rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
 }
