@@ -13,6 +13,16 @@ export default function Intro() {
 
   return (
     <div className='section-container'>
+      <div
+        id='top'
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          width: '10px',
+          height: '10px',
+        }}
+      ></div>
       <section className='section'>
         <div className='intro'>
           <div className='intro-greet intro-btn animate'>Hi, I'm</div>
