@@ -1,8 +1,9 @@
-.section-container:nth-of-type(5) .section{
-  padding: 2rem 2rem 0;
+.section-container:nth-of-type(4) .section {
+  padding-bottom: 0;
 }
-.section-container:nth-of-type(5) .content{
-  padding: 0;
+
+.section-container:nth-of-type(5) .section {
+  padding-top: 0;
 }
 
 .project {
@@ -12,12 +13,12 @@
   transition-property: filter, opacity, transform;
 }
 
-.project.hidden{
+.project.hidden {
   transform: translateX(3rem);
 }
 
-:is(.project-img, .project-content) { 
-  grid-row: 1; 
+:is(.project-img, .project-content) {
+  grid-row: 1;
 }
 
 .project-img {
@@ -36,8 +37,8 @@
   transition: 300ms background-color ease-in-out;
 }
 
-:is(.project-name, .project-desc) { 
-  text-align: right; 
+:is(.project-name, .project-desc) {
+  text-align: right;
 }
 
 .project-desc {
@@ -58,25 +59,22 @@
   gap: 0.7rem;
 }
 
-.section-container:nth-of-type(8) .project {
-  margin-bottom: 0rem;
-}
-.section-container:nth-of-type(7) .project {
+.section-container:nth-of-type(6) .project {
   grid-template-columns: 1fr 0.3fr 1.4fr;
 }
-.section-container:nth-of-type(7) .project.hidden {
+.section-container:nth-of-type(6) .project.hidden {
   transform: translateX(-3rem);
 }
-.section-container:nth-of-type(7) .project-img {
+.section-container:nth-of-type(6) .project-img {
   grid-column: 2 / -1;
 }
-.section-container:nth-of-type(7) .project-content {
+.section-container:nth-of-type(6) .project-content {
   grid-column: 1 / 3;
 }
-.section-container:nth-of-type(7) :is(.project-name,.project-desc) {
+.section-container:nth-of-type(6) :is(.project-name, .project-desc) {
   text-align: left;
 }
-.section-container:nth-of-type(7) :is(.project-links,.project-tech-container) {
+.section-container:nth-of-type(6) :is(.project-links, .project-tech-container) {
   justify-content: flex-start;
 }
 
@@ -95,14 +93,14 @@
   .project-img {
     border-radius: 5px 5px 0 0;
   }
-  :is(.project-name,.project-desc) { 
-    text-align: left; 
+  :is(.project-name, .project-desc) {
+    text-align: left;
   }
-  .project-desc { 
+  .project-desc {
     padding: 0;
     box-shadow: initial;
   }
-  :is(.project-links, .project-tech-container) { 
-    justify-content: initial; 
+  :is(.project-links, .project-tech-container) {
+    justify-content: initial;
   }
 }
