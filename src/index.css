@@ -120,6 +120,10 @@ a > svg {
   transition: 250ms ease-in-out;
 }
 
+a.intro-btn {
+  color: var(--primary-clr);
+}
+
 @media (hover: hover) {
   a:hover > svg {
     cursor: pointer;
@@ -146,7 +150,7 @@ h1 {
   font-weight: 300;
 }
 
-h1, h2 { font-size : 4rem; }
+h1, h2 { font-size : 4.5rem; }
 h2, h3 { color : var(--secondary-clr); }
 h2, h3, h4 { transition: 300ms ease-in-out; }
 
