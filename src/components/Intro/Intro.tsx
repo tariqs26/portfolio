@@ -44,6 +44,7 @@ export default function Intro() {
             </div>
           </div>
         </div>
+        <span id='about'></span>
       </section>
     </div>
   );
