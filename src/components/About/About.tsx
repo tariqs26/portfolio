@@ -1,13 +1,15 @@
 import Section from '../Section/Section';
+import Link from 'components/Link/Link';
 import iconLinks from './iconLinks';
 import './About.css';
 
 export default function About() {
   return (
     <Section heading={'About'}>
-      <p>Hi There!</p>
+      <p>Hi there!</p>
       <p>
-        I'm Saad Tariq, a second year computer science student at McMaster
+        I'm Saad Tariq, a second year computer science student at{' '}
+        <Link href='https://www.mcmaster.ca/'>McMaster</Link>
         University, passionate about all things web development.
       </p>
       <p>
