@@ -1,15 +1,25 @@
-import Section from '../Section/Section';
-import Link from '../Link/Link';
-
 export default function Contact() {
   return (
-    <Section heading='Contact'>
-      <p>
-        Reach out to me on{' '}
-        <Link href='https://linkedin.com/saad-tariq-cs'>linkedin</Link>, or
-        shoot me an{' '}
-        <Link href='mailto:'>email</Link>
-      </p>
-    </Section>
+    <div className='section-container'>
+      <section className='section'>
+        <header className='section-heading hidden'>
+          <span className='section-heading-rule' />
+          <div className='section-heading-text'>
+            <h3>{`<Contact />`}</h3>
+          </div>
+          <span className='section-heading-rule' />
+        </header>
+        <div className='content hidden'>
+          {' '}
+          <h4>
+            Want to work together, or just want to say hi? Feel free to reach
+            out!
+          </h4>
+          <a className='intro-btn' href='mailto:tariqs26@mcmaster.ca'>
+            Say Hello
+          </a>
+        </div>
+      </section>
+    </div>
   );
 }
