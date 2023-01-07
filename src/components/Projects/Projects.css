@@ -13,8 +13,12 @@
   transition-property: filter, opacity, transform;
 }
 
+.project.delay {
+  transition-delay: 900ms;
+}
+
 .project.hidden {
-  transform: translateX(3rem);
+  transform: translateX(4rem);
 }
 
 :is(.project-img, .project-content) {
@@ -63,7 +67,7 @@
   grid-template-columns: 1fr 0.3fr 1.4fr;
 }
 .section-container:nth-of-type(6) .project.hidden {
-  transform: translateX(-3rem);
+  transform: translateX(-4rem);
 }
 .section-container:nth-of-type(6) .project-img {
   grid-column: 2 / -1;
