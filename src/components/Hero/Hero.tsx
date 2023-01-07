@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 import { LinkedInIcon, GitHubIcon } from 'components/Icons';
-import './Intro.css';
+import './Hero.css';
 
 export default function Intro() {
   useEffect(() => {
