@@ -1,15 +1,37 @@
 import Section from '../Section/Section';
+import { useEffect } from 'react';
 import projects from './data';
 import { GitHubIcon, LiveLinkIcon } from 'components/Icons';
 import './Projects.css';
 
 export default function Projects() {
+  useEffect(() => {
+    const projectHeadingRule = document.querySelector(
+      '.section-container:nth-child(4) .section-heading-rule'
+    ) as HTMLElement;
+
+    const handleAnimationEnd = () => {
+      console.log('animation end');
+      const firstProject = document.querySelector(
+        '.section-container:nth-child(5) .project'
+      ) as HTMLElement;
+      firstProject.classList.remove('hidden', 'delay');
+    };
+
+    projectHeadingRule.addEventListener('animationend', handleAnimationEnd);
+    return () =>
+      projectHeadingRule.removeEventListener(
+        'animationend',
+        handleAnimationEnd
+      );
+  }, []);
+
   return (
     <>
       <Section heading={'Projects'}>{null}</Section>
-      {projects.map(({ name, imgSrc, tech, desc, codeLink, liveLink }) => (
+      {projects.map(({ name, imgSrc, tech, desc, codeLink, liveLink }, idx) => (
         <div className='project-container section-container' key={name}>
-          <section className='project section hidden'>
+          <section className={`project section hidden ${!idx && 'delay'}`}>
             <img className='project-img' src={imgSrc} alt='' loading='lazy' />
             <div className='project-content'>
               <h4 className='project-name'>{name}</h4>
