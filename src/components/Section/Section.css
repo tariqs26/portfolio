@@ -24,19 +24,19 @@
   padding-top: 0;
 }
 
-@media (max-width: 750px) {
-  .section {
-    padding: 3rem 2rem;
-  }
-}
-
 .section-container:last-child .content {
   align-items: center;
 }
-.section-container:last-child .content h4 {
+.section-container:last-child h4 {
   font-size: 1.5rem;
   max-width: 30rem;
   text-align: center;
+}
+
+@media (max-width: 520px) {
+  .section-container:last-child h4{
+    font-size: 1.2rem;
+  }
 }
 
 .hidden {
