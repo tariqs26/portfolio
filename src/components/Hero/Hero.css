@@ -40,3 +40,9 @@ a.intro-btn {
 .intro-greet::selection {
   background: transparent;
 }
+
+@media (max-width: 550px) {
+  .intro-btn {
+    padding: 0.5rem 1rem;
+  }
+}
