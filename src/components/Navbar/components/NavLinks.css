@@ -5,7 +5,7 @@
   flex: 3;
 }
 
-:is(.nav-links,.menu) a {
+:is(.nav-links, .menu) a {
   color: var(--nav-clr);
   font-size: 1.15rem;
   opacity: 0;
@@ -22,9 +22,13 @@
   animation-delay: 800ms;
 }
 
-:is(.nav-links, .menu) a:active { background-size: 100% 2px; }
-@media (hover : hover){
-  :is(.nav-links, .menu) a:hover { background-size: 100% 2px; }
+:is(.nav-links, .menu) a:active {
+  background-size: 100% 2px;
+}
+@media (hover: hover) {
+  :is(.nav-links, .menu) a:hover {
+    background-size: 100% 2px;
+  }
 }
 
 @keyframes nav-link-fade {
@@ -38,6 +42,10 @@
 }
 
 @media (max-width: 540px) {
-  .hamburger { display: flex; }
-  .nav-links a { display: none; }
+  .hamburger {
+    display: flex;
+  }
+  .nav-links a {
+    display: none;
+  }
 }
