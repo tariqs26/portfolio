@@ -108,3 +108,9 @@
     justify-content: initial;
   }
 }
+
+@media (max-width: 520px) {
+  .project-content {
+    padding: 1rem;
+  }
+}
