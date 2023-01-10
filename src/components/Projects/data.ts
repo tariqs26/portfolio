@@ -10,8 +10,8 @@ const projects = [
     desc: 'A trivia app built with React and Typescript, using the Open Trivia Database API. Deployed on Netlify.',
     tech: ['React', 'Redux', 'TypeScript', 'Axios'],
     imgSrc: p2,
-    liveLink: netlify('neuro'),
-    codeLink: gitHub('neuro'),
+    liveLink: netlify('neuro-trivia'),
+    codeLink: gitHub('Neuro'),
   },
 
   {
