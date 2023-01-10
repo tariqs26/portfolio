@@ -27,6 +27,9 @@
 .section-container:last-child .content {
   align-items: center;
 }
+.section-container:last-child a.intro-btn {
+  width: fit-content;
+}
 .section-container:last-child h4 {
   font-size: 1.5rem;
   max-width: 30rem;
@@ -34,7 +37,7 @@
 }
 
 @media (max-width: 520px) {
-  .section-container:last-child h4{
+  .section-container:last-child h4 {
     font-size: 1.2rem;
   }
 }
