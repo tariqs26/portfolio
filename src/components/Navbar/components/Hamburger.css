@@ -47,10 +47,9 @@
 .menu {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 1.5rem;
-  padding: 1.5rem;
-  width: 100vw;
+  padding: 1.5rem 0;
+  width: calc(100vw + 5px);
   background-color: var(--primary-bg);
   box-shadow: 0 4px 0.3rem var(--box-shadow-clr);
   position: absolute;
