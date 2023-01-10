@@ -60,7 +60,6 @@ body {
 body {
   overflow-x: hidden;
   overflow-y: hidden;
-  width: 100%;
   animation: overflow 1s 1.7s ease-in-out forwards;
   background-color: var(--primary-bg);
 }
@@ -98,6 +97,7 @@ p {
 img {
   max-width: 100%;
   height: auto;
+  display: block;
 }
 
 code {
