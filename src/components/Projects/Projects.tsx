@@ -11,7 +11,6 @@ export default function Projects() {
     ) as HTMLElement;
 
     const handleAnimationEnd = () => {
-      console.log('animation end');
       const firstProject = document.querySelector(
         '.section-container:nth-child(5) .project'
       ) as HTMLElement;
