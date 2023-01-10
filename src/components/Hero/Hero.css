@@ -41,7 +41,7 @@ a.intro-btn {
   background: transparent;
 }
 
-@media (max-width: 550px) {
+@media (max-width: 520px) {
   .intro-btn {
     padding: 0.5rem 1rem;
   }

@@ -41,7 +41,7 @@
   }
 }
 
-@media (max-width: 540px) {
+@media (max-width: 520px) {
   .hamburger {
     display: flex;
   }
