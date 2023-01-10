@@ -104,7 +104,7 @@ code {
   font-size: 1rem;
   font-family: monospace;
   background-color: var(--primary-bg);
-  transition: 300ms ease-in-out;
+  transition: 300ms background-color ease-in-out;
   padding: 0.2rem;
   border-radius: 5px;
 }
