@@ -1,6 +1,6 @@
 const start = 'https://';
-const gitHub = (name: string) => `${start}github.com/${name}`;
-const netlify = (name: string) => `${start}${name}netlify.app`;
+const gitHub = (name: string) => `${start}github.com/tariqs26/${name}`;
+const netlify = (name: string) => `${start}${name}.netlify.app`;
 import p1 from 'assets/images/project1.png';
 import p2 from 'assets/images/project2.png';
 
