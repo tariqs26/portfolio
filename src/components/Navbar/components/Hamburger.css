@@ -9,7 +9,7 @@
 .bar-container {
   display: grid;
   place-items: center;
-  gap :0.6rem;
+  gap: 0.6rem;
   padding: 0.4rem;
   border-radius: 0.5rem;
   transition: 200ms ease-in-out;
@@ -22,8 +22,12 @@
   background-color: var(--nav-clr);
   transition: 300ms ease-in-out;
 }
-.bar:nth-child(2) { width: 2.1rem; }
-.bar:nth-child(3) { width: 70%; }
+.bar:nth-child(2) {
+  width: 2.1rem;
+}
+.bar:nth-child(3) {
+  width: 70%;
+}
 
 .bar.anim {
   rotate: 135deg;
@@ -46,7 +50,7 @@
   align-items: center;
   gap: 1.5rem;
   padding: 1.5rem;
-  width: calc(100vw + 1rem);
+  width: 100vw;
   background-color: var(--primary-bg);
   box-shadow: 0 4px 0.3rem var(--box-shadow-clr);
   position: absolute;
@@ -54,8 +58,8 @@
   transition: 300ms all ease-in-out;
 }
 
-.menu a { 
-  color: var(--nav-clr); 
+.menu a {
+  color: var(--nav-clr);
   font-size: 1.1rem;
 }
 
