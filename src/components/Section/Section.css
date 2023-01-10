@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
   transition: 300ms background-color ease-in-out;
 }
 .section-container:is(:last-child, :nth-of-type(2)) {
@@ -26,9 +27,6 @@
 
 .section-container:last-child .content {
   align-items: center;
-}
-.section-container:last-child a.intro-btn {
-  width: fit-content;
 }
 .section-container:last-child h4 {
   font-size: 1.5rem;
