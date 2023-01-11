@@ -29,7 +29,7 @@ export default function Hero() {
           <h1 className='animate'>Saad Tariq</h1>
           <h2 className='animate'>Web Developer</h2>
           <div className='content'>
-            <div className='hero-inks animate'>
+            <div className='hero-links animate'>
               <HeroLink href='https://github.com/tariqs26' ariaLabel='GitHub'>
                 <GitHubIcon />
               </HeroLink>
