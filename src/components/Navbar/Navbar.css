@@ -33,10 +33,6 @@
   animation: nav-link-fade 400ms ease-in-out forwards;
   transition: 200ms ease-in-out;
 }
-.mode-container:active {
-  cursor: pointer;
-  background-color: rgba(163, 163, 219, 0.408);
-}
 
 .nav-icon {
   height: 2.1rem;

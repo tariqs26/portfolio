@@ -4,7 +4,6 @@
   background-size: 0 1px;
   background-position: left bottom;
 }
-.link:active { background-size: 100% 1px; }
 @media (hover : hover){
   .link:hover { background-size: 100% 1px; }
 }

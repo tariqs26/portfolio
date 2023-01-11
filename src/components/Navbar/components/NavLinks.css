@@ -22,9 +22,6 @@
   animation-delay: 800ms;
 }
 
-:is(.nav-links, .menu) a:active {
-  background-size: 100% 2px;
-}
 @media (hover: hover) {
   :is(.nav-links, .menu) a:hover {
     background-size: 100% 2px;
