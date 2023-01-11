@@ -15,7 +15,7 @@ export default function Contact() {
             Want to work together, or just want to say hi? Feel free to reach
             out!
           </h4>
-          <a className='intro-btn' href='mailto:tariqs26@mcmaster.ca'>
+          <a className='hero-btn' href='mailto:tariqs26@mcmaster.ca'>
             Say Hello
           </a>
         </div>

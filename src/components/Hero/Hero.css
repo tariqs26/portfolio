@@ -1,8 +1,8 @@
 .animate {
   opacity: 0;
-  animation: intro-fade 400ms ease-in-out forwards;
+  animation: hero-fade 400ms ease-in-out forwards;
 }
-@keyframes intro-fade {
+@keyframes hero-fade {
   from {
     transform: translateY(4rem);
   }
