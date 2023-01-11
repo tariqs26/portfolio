@@ -126,7 +126,7 @@ a > svg {
   transition: 250ms ease-in-out;
 }
 
-a.intro-btn {
+a.hero-btn {
   color: var(--primary-clr);
 }
 

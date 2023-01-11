@@ -12,40 +12,40 @@
   }
 }
 
-:is(.intro-buttons, .intro-links) {
+:is(.hero-buttons, .hero-links) {
   display: flex;
   gap: 1rem;
 }
 
-.intro-btn {
+.hero-btn {
   width: fit-content;
   border: 0.12rem solid var(--accent-clr);
   border-radius: 0.5rem;
   padding: 0.8rem 1.2rem;
 }
-a.intro-btn {
+a.hero-btn {
   transition: 200ms border-color ease-in-out, 200ms background-color ease-in-out,
     300ms color ease-in-out;
 }
 
 @media (hover: hover) {
-  .intro-btn:not(.intro-greet):hover {
+  .hero-btn:not(.hero-greet):hover {
     cursor: pointer;
     border-color: var(--secondary-clr);
     background-color: var(--alt-bg);
   }
 }
 
-.intro-greet {
+.hero-greet {
   border-radius: 1.5rem 1.5rem 1.5rem 0;
   margin-bottom: 1.5rem;
 }
-.intro-greet::selection {
+.hero-greet::selection {
   background: transparent;
 }
 
 @media (max-width: 520px) {
-  .intro-btn {
+  .hero-btn {
     padding: 0.5rem 1rem;
   }
 }
