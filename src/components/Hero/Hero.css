@@ -27,10 +27,13 @@ a.intro-btn {
   transition: 200ms border-color ease-in-out, 200ms background-color ease-in-out,
     300ms color ease-in-out;
 }
-.intro-btn:not(.intro-greet):hover {
-  cursor: pointer;
-  border-color: var(--secondary-clr);
-  background-color: var(--alt-bg);
+
+@media (hover: hover) {
+  .intro-btn:not(.intro-greet):hover {
+    cursor: pointer;
+    border-color: var(--secondary-clr);
+    background-color: var(--alt-bg);
+  }
 }
 
 .intro-greet {
