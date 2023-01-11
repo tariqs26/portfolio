@@ -5,7 +5,7 @@ import './Hero.css';
 export default function Hero() {
   useEffect(() => {
     const children = document.querySelectorAll(
-      '.hero > :not(.content), .hero .content :is(p, div'
+      '.hero > :not(.content), .hero .content :is(p, div)'
     );
     for (let i = 0; i < children.length; i++)
       (children[i] as HTMLElement).style.animationDelay = `${i * 0.1 + 1.1}s`;
