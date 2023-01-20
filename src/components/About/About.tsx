@@ -9,14 +9,17 @@ export default function About() {
       <p>Hi there!</p>
       <p>
         I'm Saad Tariq, a second year computer science student at{' '}
-        <Link href='https://www.mcmaster.ca/'>McMaster University</Link>, passionate about all things web development.
+        <Link href='https://www.mcmaster.ca/'>McMaster University</Link>, With a
+        passion for developing aesthetically pleasing, intuitive and performant
+        web applications, with a focus on fostering dynamic user experiences.
       </p>
       <p>
-        I have experience with front-end web development gained from working on
-        personal projects and am currently aiming towards full-stack
-        development. I am constantly on the lookout for opportunities to learn
-        new technologies, build upon my existing skills, and grow as a
-        developer.
+        I am experienced in front-end develop with a focus on React, Redux,
+        React Query and TypeScript, gained from working on personal projects.
+        Currently I am aiming towards learning full-stack development, using
+        Node.js, Express, and MongoDB. I am constantly on the lookout for
+        opportunities to learn new technologies, build upon my existing skills,
+        and grow as a developer.
       </p>
       <p>Here are some technologies I use in projects:</p>
       <div className='tech-icons'>

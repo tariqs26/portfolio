@@ -7,29 +7,33 @@ import p2 from 'assets/images/project2.png';
 const projects = [
   {
     name: 'Neuro',
-    desc: 'A trivia app built with React and Typescript, using the Open Trivia Database API. Deployed on Netlify.',
+    desc: 'A trivia app built with React and Typescript, using axios to fetch data from the Open Trivia Database API.',
     tech: ['React', 'Redux', 'TypeScript', 'Axios'],
     imgSrc: p2,
     liveLink: netlify('neuro-trivia'),
     codeLink: gitHub('Neuro'),
   },
-
-  {
-    name: 'Job Tracker',
-    desc: 'An application to manage job applications, filter by status, add files, notes, and more.',
-    tech: ['Next.js', 'Typescript', 'PostgreSQL', 'Prisma'],
-    imgSrc: p2,
-    liveLink: netlify('job-tracker'),
-    codeLink: gitHub('job-tracker'),
-  },
-
   {
     name: 'YelpCamp',
-    desc: 'A campground review app',
-    tech: ['Node', 'Express', 'MongoDB'],
+    desc: 'A full-stack web application that allows users to create, edit, and delete campgrounds, and leave reviews and ratings for each campground, built using the MERN stack.',
+    tech: [
+      'React',
+      'TypeScript',
+      'React Query',
+      'Node',
+      'Express',
+      'MongoDB',
+    ],
     imgSrc: p1,
     liveLink: netlify('yelpcamp'),
     codeLink: gitHub('yelpcamp'),
+  },
+  {
+    name: 'Vector Visualizer',
+    desc: 'An app that allows users to visualize vectors and their operations, using the Elm programming language.',
+    tech: ['HTML', 'CSS', 'Elm'],
+    imgSrc: p2,
+    liveLink: netlify('job-tracker'),
   },
 ];
 
