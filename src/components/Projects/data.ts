@@ -7,7 +7,7 @@ import p2 from 'assets/images/project2.png';
 const projects = [
   {
     name: 'Neuro',
-    desc: 'A trivia app built with React and Typescript, using axios to fetch data from the Open Trivia Database API.',
+    desc: 'Trivia app with a time-based scoring system, allowing users to generate questions based on specific topics and difficulty levels.',
     tech: ['React', 'Redux', 'TypeScript', 'Axios'],
     imgSrc: p2,
     liveLink: netlify('neuro-trivia'),
@@ -15,15 +15,8 @@ const projects = [
   },
   {
     name: 'YelpCamp',
-    desc: 'A full-stack web application that allows users to create, edit, and delete campgrounds, and leave reviews and ratings for each campground, built using the MERN stack.',
-    tech: [
-      'React',
-      'TypeScript',
-      'React Query',
-      'Node',
-      'Express',
-      'MongoDB',
-    ],
+    desc: 'Full-stack web application that allows users to create, edit, and delete campgrounds, and leave reviews and ratings for each campground.',
+    tech: ['React', 'TypeScript', 'React Query', 'Node', 'Express', 'MongoDB'],
     imgSrc: p1,
     liveLink: netlify('yelpcamp'),
     codeLink: gitHub('yelpcamp'),
