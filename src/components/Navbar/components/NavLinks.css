@@ -7,7 +7,7 @@
 
 :is(.nav-links, .menu) a {
   color: var(--nav-clr);
-  font-size: 1.15rem;
+  font-size: 1.2rem;
   opacity: 0;
   animation: nav-link-fade 400ms ease-in-out 400ms forwards;
   background-image: var(--nav-gradient);
