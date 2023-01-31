@@ -14,7 +14,7 @@ export default function About() {
         web applications, focusing on fostering dynamic user experiences.
       </p>
       <p>
-        Experienced in front-end development using React, Redux, React Query and
+        Experienced in front-end development using React, Redux, and
         TypeScript, gained from working on personal projects, currently learning
         full-stack development, using Node.js, Express, and MongoDB. I am
         constantly looking for opportunities to learn new technologies, build
