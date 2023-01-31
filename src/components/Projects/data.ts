@@ -16,7 +16,7 @@ const projects = [
   {
     name: 'YelpCamp',
     desc: 'Full-stack web application that allows users to create, edit, and delete campgrounds, and leave reviews and ratings for each campground.',
-    tech: ['React', 'TypeScript', 'React Query', 'Node', 'Express', 'MongoDB'],
+    tech: ['React', 'TypeScript', 'Node', 'Express', 'MongoDB'],
     imgSrc: p1,
     liveLink: netlify('yelpcamp'),
     codeLink: gitHub('yelpcamp'),

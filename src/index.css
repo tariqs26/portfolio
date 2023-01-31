@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
-/* VERY  IMPORTANT: css reset, for all browsers */
 * {
   margin: 0;
   padding: 0;
@@ -46,10 +45,10 @@ body {
   --primary-bg: hsl(218, 81%, 94%);
   --alt-bg: hsl(218, 80%, 90%);
   --tech-bg: hsl(218 80% 30%);
-  --primary-clr: hsl(0 0% 0%);
-  --secondary-clr: hsl(218 80% 40%);
-  --accent-clr: hsl(19 80% 45%);
-  --link-clr: hsl(218 80% 30%);
+  --primary-clr: hsl(0 0% 5%);
+  --secondary-clr: hsl(218 80% 45%);
+  --accent-clr: hsl(19 80% 55%);
+  --link-clr: hsl(218 80% 40%);
   --nav-clr: hsl(0 0% 0%);
   --box-shadow-clr: hsl(0 0% 70%);
   --url: url(./assets/svg/w1l.svg);
@@ -96,7 +95,6 @@ p {
 
 img {
   max-width: 100%;
-  height: auto;
   display: block;
 }
 
