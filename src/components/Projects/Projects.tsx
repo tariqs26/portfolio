@@ -41,14 +41,14 @@ export default function Projects() {
               </div>
               <p className='project-desc'>{desc}</p>
               <div className='project-links'>
-                {codeLink && (
-                  <a href={codeLink} aria-label='GitHub Link' target='_blank'>
-                    <GitHubIcon />
+                <a href={codeLink} aria-label='GitHub Link' target='_blank'>
+                  <GitHubIcon />
+                </a>
+                {liveLink && (
+                  <a href={liveLink} aria-label='Live Link' target='_blank'>
+                    <LiveLinkIcon />
                   </a>
                 )}
-                <a href={liveLink} aria-label='Live Link' target='_blank'>
-                  <LiveLinkIcon />
-                </a>
               </div>
             </div>
           </section>
