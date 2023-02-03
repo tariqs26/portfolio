@@ -3,6 +3,7 @@
 ## Description
 
 - Personal portfolio to showcase, projects, skills, and contact information.
+- Uses the Intersection Observer API paired with css transitions and animations, to dynamically show sections on scroll.
 
 ## To Get Started
 
