@@ -10,6 +10,7 @@ const projects = [
     desc: 'Full-stack web application that allows users to create, edit, and delete campgrounds, and leave reviews and ratings for each campground.',
     tech: ['React', 'TypeScript', 'Node', 'Express', 'MongoDB'],
     imgSrc: p3,
+    liveLink: netlify('yelpcamp-campgrounds'),
     codeLink: gitHub('yelpcamp-client'),
   },
   {
