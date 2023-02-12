@@ -2,7 +2,7 @@ const start = 'https://';
 const gitHub = (name: string) => `${start}github.com/tariqs26/${name}`;
 const netlify = (name: string) => `${start}${name}.netlify.app`;
 import p2 from 'assets/images/project2.png';
-import p3 from 'assets/images/project3.png';
+import p3 from 'assets/images/project3.webp';
 
 const projects = [
   {
