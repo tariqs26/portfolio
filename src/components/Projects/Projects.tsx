@@ -14,7 +14,11 @@ export default function Projects() {
       const firstProject = document.querySelector(
         '.section-container:nth-child(5) .project'
       ) as HTMLElement;
+      const secondProject = document.querySelector(
+        '.section-container:nth-child(6) .project'
+      ) as HTMLElement;
       firstProject.classList.remove('hidden', 'delay');
+      secondProject.classList.remove('delay');
     };
 
     projectHeadingRule.addEventListener('animationend', handleAnimationEnd);
@@ -30,7 +34,7 @@ export default function Projects() {
       <Section heading={'Projects'}>{null}</Section>
       {projects.map(({ name, imgSrc, tech, desc, codeLink, liveLink }, idx) => (
         <div className='project-container section-container' key={name}>
-          <section className={`project section hidden ${!idx && 'delay'}`}>
+          <section className={`project section hidden delay`}>
             <img className='project-img' src={imgSrc} alt='' loading='lazy' />
             <div className='project-content'>
               <h4 className='project-name'>{name}</h4>
