@@ -28,17 +28,23 @@ export default function About() {
       </p>
       <p>Here are some technologies I use in projects:</p>
       <div className='tech-icons'>
-        {['HTML', 'CSS', 'JavaScript', 'TypeScript', 'React', 'Redux'].map(
-          (name) => {
-            return (
-              <TechIcon
-                key={name}
-                icon={iconLinks[name as keyof typeof iconLinks]}
-                name={name}
-              />
-            );
-          }
-        )}
+        {[
+          'JavaScript',
+          'TypeScript',
+          'React',
+          'Redux',
+          'Node',
+          'Express',
+          'MongoDB',
+        ].map((name) => {
+          return (
+            <TechIcon
+              key={name}
+              icon={iconLinks[name as keyof typeof iconLinks]}
+              name={name}
+            />
+          );
+        })}
       </div>
     </Section>
   );
