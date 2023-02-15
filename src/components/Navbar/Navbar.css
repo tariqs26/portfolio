@@ -28,7 +28,7 @@
 .mode-container {
   opacity: 0;
   display: flex;
-  padding: 0.2rem;
+  padding: 0.3rem;
   border-radius: 50%;
   animation: nav-link-fade 400ms ease-in-out forwards;
   transition: 200ms ease-in-out;
