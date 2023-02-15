@@ -1,6 +1,6 @@
 export default function Contact() {
   return (
-    <div className='section-container'>
+    <div className='section-container' id='contact'>
       <section className='section'>
         <header className='section-heading hidden'>
           <span className='section-heading-rule' />
