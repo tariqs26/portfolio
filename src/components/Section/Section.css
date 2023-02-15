@@ -21,10 +21,6 @@
   max-width: 70rem;
   padding: 3rem 2rem;
 }
-.section-container:nth-of-type(2) .section {
-  padding-top: 0;
-}
-
 .section-container:last-child .content {
   align-items: center;
 }

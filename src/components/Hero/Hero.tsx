@@ -54,7 +54,6 @@ export default function Hero() {
             </div>
           </div>
         </div>
-        <span id='about'></span>
       </section>
     </div>
   );

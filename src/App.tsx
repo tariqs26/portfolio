@@ -31,9 +31,9 @@ export default function App() {
       <main>
         <Hero />
         <About />
-        <div className='spacer spacer2' id='projects' />
+        <div className='spacer spacer2'/>
         <Projects />
-        <div className='spacer' id='contact' />
+        <div className='spacer'/>
         <Contact />
       </main>
     </div>
