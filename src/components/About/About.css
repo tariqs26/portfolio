@@ -39,6 +39,9 @@
 .tech-icon:nth-child(6) {
   transition-delay: 0s, 2.2s, 2.2s;
 }
+.tech-icon:last-child {
+  transition-delay: 0s, 2.3s, 2.3s;
+}
 
 @media (max-width: 540px) {
   .tech-icons {

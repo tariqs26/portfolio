@@ -32,7 +32,7 @@ export default function Projects() {
   return (
     <>
       <Section heading={'Projects'}>{null}</Section>
-      {projects.map(({ name, imgSrc, tech, desc, codeLink, liveLink }, idx) => (
+      {projects.map(({ name, imgSrc, tech, desc, codeLink, liveLink }) => (
         <div className='project-container section-container' key={name}>
           <section className={`project section hidden delay`}>
             <img className='project-img' src={imgSrc} alt='' loading='lazy' />
