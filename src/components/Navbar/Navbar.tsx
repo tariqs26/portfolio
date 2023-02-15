@@ -16,7 +16,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
   return (
     <nav className='nav'>
       <a
-        href='/#top'
+        href='/#hero'
         aria-label='Home'
         onClick={() => {
           setOpen(false);

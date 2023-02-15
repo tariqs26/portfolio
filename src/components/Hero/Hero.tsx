@@ -12,17 +12,7 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className='section-container'>
-      <div
-        id='top'
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: '10px',
-          height: '10px',
-        }}
-      ></div>
+    <div className='section-container' id='hero'>
       <section className='section'>
         <div className='hero'>
           <div className='hero-greet hero-btn animate'>Hi, I'm</div>
