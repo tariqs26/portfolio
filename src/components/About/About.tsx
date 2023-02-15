@@ -11,8 +11,7 @@ export default function About() {
         I'm Saad Tariq, a second-year computer science student at{' '}
         <Link href='https://www.mcmaster.ca/'>McMaster University</Link>,
         passionate about developing aesthetically pleasing, intuitive and
-        performant web applications, focusing on fostering dynamic user
-        experiences.
+        performant web applications.
       </p>
       <p>
         Experienced in front-end development using{' '}
