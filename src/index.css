@@ -19,6 +19,7 @@ html {
 
 /* CSS Variables */
 body {
+  /* Colors */
   --primary-bg: hsl(218, 80%, 10%);
   --alt-bg: hsl(218, 81%, 6%);
   --tech-bg: hsl(218 80% 10%);
@@ -102,12 +103,8 @@ img {
 }
 
 code {
-  font-size: 1rem;
+  font-size: calc(0.9rem + 0.15vw);
   font-family: monospace;
-  background-color: var(--primary-bg);
-  transition: 300ms background-color ease-in-out;
-  padding: 0.2rem;
-  border-radius: 5px;
 }
 
 /* Links + Svg's */
