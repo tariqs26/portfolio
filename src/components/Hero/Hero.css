@@ -35,9 +35,9 @@ a.hero-btn {
 }
 
 .hero-greet {
+  display: inline-block;
   border-radius: 1.5rem 1.5rem 1.5rem 0;
   margin-bottom: 1.5rem;
-  width: fit-content;
 }
 .hero-greet::selection {
   background: transparent;
