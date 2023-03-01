@@ -42,7 +42,7 @@ body {
   --url: url(./assets/svg/w1d.svg);
   --url-r: url(./assets/svg/w2d.svg);
   /* Fonts */
-  --font-size: clamp(1rem, 3.5vw, 1.2rem);
+  --font-size: clamp(1rem, 3.5vw, 1.1rem);
 }
 
 .light {
