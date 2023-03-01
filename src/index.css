@@ -75,13 +75,13 @@ body {
 
 /* Scrollbar */
 body::-webkit-scrollbar {
-  width: 0.8rem;
+  width: clamp(0.6rem, 1vw, 0.8rem);
   background-color: rgb(58, 56, 56);
 }
 
 body::-webkit-scrollbar-thumb {
   background-color: hsl(240, 63%, 55%);
-  border-radius: 0.5rem;
+  border-radius: clamp(0.3rem, 1vw, 0.4rem);
 }
 
 body::-webkit-scrollbar-track-piece:end {
