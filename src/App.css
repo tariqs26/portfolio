@@ -1,5 +1,4 @@
 .App {
-  min-height: 100vh;
   color: var(--primary-clr);
   background-color: var(--primary-bg);
   transition: 300ms ease-in-out;
