@@ -1,18 +1,18 @@
 .tech-icons {
   display: flex;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: clamp(1rem, 3vw, 2rem);
 }
 
 .tech-icon {
+  background-color: var(--tech-bg);
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 2px 0 black;
+  color: white;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  background-color: var(--tech-bg);
-  color: white;
-  border-radius: 0.5rem;
-  padding: 0.4rem 0.8rem;
-  box-shadow: 0 0 2px 0 black;
+  padding: clamp(0.3rem, 1vw, 0.4rem) clamp(0.6rem, 1vw, 0.8rem);
   transition: 300ms ease-in-out;
   transition-property: background-color, transform, opacity;
   transition-delay: 0s, 1.7s, 1.7s;
@@ -43,16 +43,9 @@
   transition-delay: 0s, 2.3s, 2.3s;
 }
 
-@media (max-width: 540px) {
+@media (max-width: 550px) {
   .tech-icons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-}
-@media (max-width: 400px) {
-  .tech-icon { 
-    padding: 0.3rem 0.6rem; 
-    font-size: 0.9rem; 
-  }
-  .tech-icons { gap : 1rem; }
 }
