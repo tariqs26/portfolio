@@ -154,26 +154,21 @@ h1 {
   font-weight: 300;
 }
 
-h1,
-h2 {
-  font-size: 4.5rem;
-}
-h2,
-h3 {
-  color: var(--secondary-clr);
-}
-h2,
-h3,
-h4 {
-  transition: 300ms ease-in-out;
+:is(h1, h2) {
+  font-size: calc(3rem + 1vw);
 }
 
 h2 {
   font-weight: 400;
 }
 
+:is(h2, h3) {
+  color: var(--secondary-clr);
+  transition: 300ms ease-in-out;
+}
+
 h3 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
   width: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -181,19 +176,7 @@ h3 {
 }
 
 h4 {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2vw, 2rem);
   color: var(--accent-clr);
-}
-
-@media (max-width: 520px) {
-  h1,
-  h2 {
-    font-size: 3.2rem;
-  }
-  h3 {
-    font-size: 2rem;
-  }
-  h4 {
-    font-size: 1.5rem;
-  }
+  transition: 300ms ease-in-out;
 }
