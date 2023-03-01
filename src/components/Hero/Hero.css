@@ -18,7 +18,6 @@
 }
 
 .hero-btn {
-  width: fit-content;
   border: 0.12rem solid var(--accent-clr);
   border-radius: 0.5rem;
   padding: 0.8rem 1.2rem;
@@ -39,6 +38,7 @@ a.hero-btn {
 .hero-greet {
   border-radius: 1.5rem 1.5rem 1.5rem 0;
   margin-bottom: 1.5rem;
+  width: fit-content;
 }
 .hero-greet::selection {
   background: transparent;
