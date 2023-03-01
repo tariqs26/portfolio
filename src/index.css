@@ -40,16 +40,18 @@ body {
   --box-shadow-clr: hsl(0 0% 0%);
   --url: url(./assets/svg/w1d.svg);
   --url-r: url(./assets/svg/w2d.svg);
+  /* Fonts */
+  --font-size: calc(1rem + 0.2vw);
 }
 
 .light {
   --primary-bg: hsl(218, 81%, 94%);
   --alt-bg: hsl(218, 80%, 90%);
-  --tech-bg: hsl(218 80% 30%);
-  --primary-clr: hsl(0 0% 5%);
+  --tech-bg: hsl(218 80% 20%);
+  --primary-clr: hsl(0 0% 20%);
   --secondary-clr: hsl(218 80% 45%);
   --accent-clr: hsl(19 80% 55%);
-  --link-clr: hsl(218 80% 40%);
+  --link-clr: hsl(0 0% 0%);
   --nav-clr: hsl(0 0% 0%);
   --box-shadow-clr: hsl(0 0% 70%);
   --url: url(./assets/svg/w1l.svg);
