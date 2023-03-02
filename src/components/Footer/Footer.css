@@ -1,0 +1,32 @@
+footer {
+  font-size: var(--font-size);
+  background-color: var(--alt-bg);
+  padding: 1.25rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem 3rem;
+  transition: 300ms background-color ease-in-out;
+}
+
+@media (max-width: 520px) {
+  footer {
+    padding: 1.25rem 1.5rem;
+  }
+}
+
+footer .socials {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-link svg {
+  width: 1.2rem;
+  height: 1.2rem;
+  transition: 300ms ease-in-out;
+}
+
+.footer-link:hover svg {
+  transform: none;
+}
