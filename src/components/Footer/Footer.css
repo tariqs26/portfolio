@@ -3,10 +3,10 @@ footer {
   background-color: var(--alt-bg);
   padding: 1.25rem 2.5rem;
   display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 8rem;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem 3rem;
   transition: 300ms background-color ease-in-out;
 }
 
@@ -18,7 +18,7 @@ footer {
 
 footer .socials {
   display: flex;
-  gap: 1rem;
+  gap: clamp(0.75rem, 1.5vw, 1rem);
 }
 
 .footer-link svg {
