@@ -103,7 +103,7 @@ img {
 }
 
 code {
-  font-size: 0.9rem;
+  font-size: var(--font-size);
   font-family: monospace;
 }
 
