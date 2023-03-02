@@ -26,7 +26,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
       </a>
       <NavLinks />
       <Hamburger {...{ open, setOpen, menuRef }} />
-      <div className='mode-container'>
+      <div className='mode-container' aria-label='Toggle dark mode' role='button'>
         {darkMode ? (
           <DarkIcon onClick={() => setDarkMode(false)} />
         ) : (
