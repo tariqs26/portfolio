@@ -7,13 +7,18 @@ type HamburgerProps = {
 };
 export default function Hamburger({ open, setOpen, menuRef }: HamburgerProps) {
   return (
-    <div className='hamburger' aria-controls='menu' role='button'>
-      <div className='bar-container' onClick={() => setOpen(!open)}>
+    <div className='hamburger'>
+      <div
+        className='bar-container'
+        onClick={() => setOpen(!open)}
+        aria-controls='menu'
+        role='button'
+      >
         <div className='bar'></div>
         <div className='bar'></div>
         <div className='bar'></div>
       </div>
-      <div className='menu hide' ref={menuRef} aria-collapsed={open}>
+      <div className='menu hide' ref={menuRef} aria-collapsed={!open}>
         <a href='#about' onClick={() => setOpen(false)}>
           About
         </a>
