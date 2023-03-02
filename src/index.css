@@ -143,6 +143,7 @@ a > svg {
 /* Headings */
 
 h1 {
+  width: -moz-fit-content;
   width: fit-content;
   color: transparent;
   -webkit-background-clip: text;

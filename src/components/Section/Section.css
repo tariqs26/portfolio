@@ -45,6 +45,7 @@
   filter: none;
 }
 .section-heading-text {
+  width: -moz-fit-content;
   width: fit-content;
 }
 
