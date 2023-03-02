@@ -5,7 +5,6 @@ import './Footer.css';
 const Footer = () => {
   return (
     <footer>
-      <p>&copy; 2023 Saad Tariq. All rights reserved</p>
       <div className='socials'>
         <a
           className='footer-link'
@@ -26,6 +25,7 @@ const Footer = () => {
           <LinkedInIcon />
         </a>
       </div>
+      <p>&copy; 2023 Saad Tariq. All rights reserved</p>
     </footer>
   );
 };
