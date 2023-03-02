@@ -7,7 +7,7 @@ type HamburgerProps = {
 };
 export default function Hamburger({ open, setOpen, menuRef }: HamburgerProps) {
   return (
-    <div className='hamburger' aria-controls='menu'>
+    <div className='hamburger' aria-controls='menu' role='button'>
       <div className='bar-container' onClick={() => setOpen(!open)}>
         <div className='bar'></div>
         <div className='bar'></div>
