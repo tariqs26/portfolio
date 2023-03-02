@@ -3,11 +3,16 @@ footer {
   background-color: var(--alt-bg);
   padding: 1.25rem 2.5rem;
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 8rem;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
   transition: 300ms background-color ease-in-out;
+}
+
+@media (max-width: 550px) {
+  footer {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 520px) {
