@@ -13,7 +13,7 @@ export default function Hamburger({ open, setOpen, menuRef }: HamburgerProps) {
         <div className='bar'></div>
         <div className='bar'></div>
       </div>
-      <div className='menu hide' ref={menuRef} aria-collapsed={!open}>
+      <div className='menu hide' ref={menuRef} aria-collapsed={open}>
         <a href='#about' onClick={() => setOpen(false)}>
           About
         </a>
