@@ -14,14 +14,9 @@ export default function About() {
         performant web applications.
       </p>
       <p>
-        Experienced in front-end development using{' '}
-        <Link href='https://reactjs.org/'>React</Link>,{' '}
-        <Link href='https://redux.js.org/'>Redux</Link>, and{' '}
-        <Link href='https://www.typescriptlang.org/'>TypeScript</Link>, gained
+        Experienced in front-end development using React, Redux, and TypeScript, gained
         from working on personal projects, currently learning full-stack
-        development using <Link href='https://nodejs.org/en/'>Node.js</Link>,{' '}
-        <Link href='https://expressjs.com/'>Express</Link>, and{' '}
-        <Link href='https://www.mongodb.com/'>MongoDB</Link>. I am constantly
+        development using the MERN stack. I am constantly
         looking for opportunities to learn new technologies, build upon my
         existing skills, and grow as a developer.
       </p>
