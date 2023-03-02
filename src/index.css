@@ -42,7 +42,7 @@ body {
   --url: url(./assets/svg/w1d.svg);
   --url-r: url(./assets/svg/w2d.svg);
   /* Fonts */
-  --font-size: clamp(1rem, 3.5vw, 1.1rem);
+  --font-size: clamp(1.05rem, 4vw, 1.1rem);
 }
 
 .light {
@@ -103,7 +103,7 @@ img {
 }
 
 code {
-  font-size: calc(0.9rem + 0.15vw);
+  font-size: 0.9rem;
   font-family: monospace;
 }
 
