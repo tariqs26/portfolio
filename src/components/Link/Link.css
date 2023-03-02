@@ -1,12 +1,23 @@
 .link {
   color: var(--link-clr);
-  background-image: var(--gradient);
-  background-size: 0 1.5px;
-  background-position: left bottom;
+  transition: all 0.25s ease-in-out;
+  position: relative;
 }
 
-@media (hover: hover) {
-  .link:hover {
-    background-size: 100% 1.5px;
-  }
+.link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1.5px;
+  background-image: var(--gradient);
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
