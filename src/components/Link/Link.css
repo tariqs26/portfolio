@@ -1,9 +1,12 @@
 .link {
   color: var(--link-clr);
   background-image: var(--gradient);
-  background-size: 0 1px;
+  background-size: 0 1.5px;
   background-position: left bottom;
 }
-@media (hover : hover){
-  .link:hover { background-size: 100% 1px; }
+
+@media (hover: hover) {
+  .link:hover {
+    background-size: 100% 1.5px;
+  }
 }
