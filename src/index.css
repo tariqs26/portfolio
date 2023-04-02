@@ -65,7 +65,6 @@ body {
   overflow-y: hidden;
   animation: overflow 1s 1.7s ease-in-out forwards;
   background-color: var(--primary-bg);
-  --font-size: 1em;
 }
 
 @keyframes overflow {
@@ -95,7 +94,6 @@ body::-webkit-scrollbar-track-piece:start {
 /* General Elements */
 p {
   line-height: 1.5;
-  font-size: var(--font-size);
 }
 
 img {
