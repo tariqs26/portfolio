@@ -151,7 +151,7 @@ h1 {
 }
 
 :is(h1, h2) {
-  font-size: calc(3rem + 1vw);
+  font-size: calc(2.5rem + 1vw);
 }
 
 :is(h2, h3) {
@@ -160,7 +160,7 @@ h1 {
 }
 
 h3 {
-  font-size: clamp(2rem, 2.5vw, 2.5rem);
+  font-size: clamp(1.8rem, 2.5vw, 2.3rem);
   width: 0;
   white-space: nowrap;
   overflow: hidden;
@@ -168,7 +168,7 @@ h3 {
 }
 
 h4 {
-  font-size: clamp(1.5rem, 2vw, 2rem);
+  font-size: clamp(1.5rem, 2vw, 1.8rem);
   color: var(--accent-clr);
   transition: 300ms ease-in-out;
 }
