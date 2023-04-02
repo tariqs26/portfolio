@@ -1,13 +1,13 @@
 .nav-links {
   display: flex;
   justify-content: center;
-  gap: 1.5rem;
+  gap: 2rem;
   flex: 3;
 }
 
 :is(.nav-links, .menu) a {
   color: var(--nav-clr);
-  font-size: clamp(1.15rem, 3vw, 1.2rem);
+  font-size: 1.1rem;
   opacity: 0;
   animation: nav-link-fade 400ms ease-in-out 400ms forwards;
   background-image: var(--nav-gradient);
@@ -38,7 +38,7 @@
   }
 }
 
-@media (max-width: 520px) {
+@media (max-width: 550px) {
   .hamburger {
     display: flex;
   }
