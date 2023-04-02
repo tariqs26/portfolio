@@ -42,22 +42,19 @@ body {
   --box-shadow-clr: hsl(0 0% 0%);
   --url: url(./assets/svg/w1d.svg);
   --url-r: url(./assets/svg/w2d.svg);
-  /* Fonts */
-  --font-size: clamp(1.05rem, 3vw, 1.1rem);
 }
 
 .light {
   --primary-bg: hsl(218, 81%, 94%);
   --alt-bg: hsl(218, 80%, 90%);
-  --tech-bg: hsl(218 80% 25%);
-  --primary-clr: hsl(0 0% 20%);
-  --secondary-clr: hsl(218 80% 40%);
-  --accent-clr: hsl(19 80% 55%);
+  --primary-clr: hsl(218, 10%, 20%);
+  --secondary-clr: hsl(218 80% 45%);
+  --accent-clr: hsl(19 80% 50%);
   --link-clr: hsl(0 0% 0%);
   --nav-clr: hsl(0 0% 0%);
   --box-shadow-clr: hsl(0 0% 70%);
   --url: url(./assets/svg/w1l.svg);
-  --url-r: url('./assets/svg/w2l.svg');
+  --url-r: url(./assets/svg/w2l.svg);
 }
 
 /* Global Styles */
