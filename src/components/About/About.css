@@ -5,17 +5,17 @@
 }
 
 .tech-icon {
-  background-color: var(--tech-bg);
+  background-color: var(--primary-bg);
   border-radius: 0.5rem;
-  box-shadow: 0 2px 2px 0 black;
-  color: white;
+  box-shadow: 0 0 3px 0 hsla(0, 0%, 50%, 0.5);
+  color: var(--primary-clr);
   display: flex;
   align-items: center;
   gap: 0.5rem;
   padding: clamp(0.3rem, 1vw, 0.4rem) clamp(0.6rem, 1vw, 0.8rem);
   transition: 300ms ease-in-out;
-  transition-property: background-color, transform, opacity;
-  transition-delay: 0s, 1.7s, 1.7s;
+  transition-property: background-color, color, transform, opacity;
+  transition-delay: 0s, 0s, 1.7s, 1.7s;
 }
 .tech-icon img {
   width: 2.5rem;
@@ -25,22 +25,22 @@
   transform: translateX(-1rem);
 }
 .tech-icon:nth-child(2) {
-  transition-delay: 0s, 1.8s, 1.8s;
+  transition-delay: 0s, 0s, 1.8s, 1.8s;
 }
 .tech-icon:nth-child(3) {
-  transition-delay: 0s, 1.9s, 1.9s;
+  transition-delay: 0s, 0s, 1.9s, 1.9s;
 }
 .tech-icon:nth-child(4) {
-  transition-delay: 0s, 2s, 2s;
+  transition-delay: 0s, 0s, 2s, 2s;
 }
 .tech-icon:nth-child(5) {
-  transition-delay: 0s, 2.1s, 2.1s;
+  transition-delay: 0s, 0s, 2.1s, 2.1s;
 }
 .tech-icon:nth-child(6) {
-  transition-delay: 0s, 2.2s, 2.2s;
+  transition-delay: 0s, 0s, 2.2s, 2.2s;
 }
 .tech-icon:last-child {
-  transition-delay: 0s, 2.3s, 2.3s;
+  transition-delay: 0s, 0s, 2.3s, 2.3s;
 }
 
 @media (max-width: 550px) {
