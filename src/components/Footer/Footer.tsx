@@ -25,7 +25,7 @@ const Footer = () => {
           <LinkedInIcon />
         </a>
       </div>
-      <p>&copy; 2023 Saad Tariq. All rights reserved</p>
+      <p>&copy; {new Date().getFullYear()} Saad Tariq. All rights reserved.</p>
     </footer>
   );
 };
