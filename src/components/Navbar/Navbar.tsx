@@ -19,8 +19,14 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
   useEffect(() => {
     const menu = menuRef.current as HTMLElement;
     const arr = menu.parentElement as HTMLElement;
-    menu.classList.toggle('hide');
-    for (let bar of arr.querySelectorAll('.bar')) bar.classList.toggle('anim');
+    if (open) {
+      menu.classList.remove('hide');
+      for (let bar of arr.querySelectorAll('.bar')) bar.classList.add('anim');
+    } else {
+      menu.classList.add('hide');
+      for (let bar of arr.querySelectorAll('.bar'))
+        bar.classList.remove('anim');
+    }
   }, [open]);
 
   return (
