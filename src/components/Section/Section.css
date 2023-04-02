@@ -106,6 +106,5 @@
   gap: 1.5rem;
   transition: 500ms 1100ms ease-in-out;
   transition-property: filter, opacity, transform;
-  font-size: var(--font-size);
   padding-top: 1.5rem;
 }
