@@ -100,8 +100,7 @@ img {
 }
 
 code {
-  font-size: var(--font-size);
-  font-family: monospace;
+  font-family: 'Fira Mono', monospace;
 }
 
 /* Links + Svg's */
