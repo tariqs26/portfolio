@@ -12,11 +12,6 @@ footer {
 @media (max-width: 550px) {
   footer {
     flex-direction: column;
-  }
-}
-
-@media (max-width: 520px) {
-  footer {
     padding: 1.25rem 1.5rem;
   }
 }
