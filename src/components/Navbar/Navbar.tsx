@@ -1,5 +1,5 @@
+import { useState, useRef, useEffect } from 'react';
 import useNavShadow from 'hooks/useNavShadow';
-import useNavMenu from 'hooks/useNavMenu';
 import { LogoIcon, DarkIcon, LightIcon } from 'components/Icons';
 import Hamburger from './components/Hamburger';
 import NavLinks from './components/NavLinks';
@@ -12,7 +12,17 @@ type NavbarProps = {
 
 export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
   useNavShadow();
-  const { open, setOpen, menuRef } = useNavMenu();
+
+  const [open, setOpen] = useState<boolean>(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const menu = menuRef.current as HTMLElement;
+    const arr = menu.parentElement as HTMLElement;
+    menu.classList.toggle('hide');
+    for (let bar of arr.querySelectorAll('.bar')) bar.classList.toggle('anim');
+  }, [open]);
+
   return (
     <nav className='nav'>
       <a
@@ -26,7 +36,11 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
       </a>
       <NavLinks />
       <Hamburger {...{ open, setOpen, menuRef }} />
-      <div className='mode-container' aria-label='Toggle dark mode' role='button'>
+      <div
+        className='mode-container'
+        aria-label='Toggle dark mode'
+        role='button'
+      >
         {darkMode ? (
           <DarkIcon onClick={() => setDarkMode(false)} />
         ) : (
