@@ -3,7 +3,7 @@ const baseURL = 'https://img.icons8.com',
   opt = '000000',
   iconBase = `${baseURL}/color/${sz}/${opt}`;
 
-const iconLinks = {
+export default {
   MongoDB: `${baseURL}/external-tal-revivo-shadow-tal-revivo/${sz}/external-mongodb-a-cross-platform-document-oriented-database-program-logo-shadow-tal-revivo.png`,
   Node: `${baseURL}/fluency/${sz}/node-js.png`,
   React: `${iconBase}/react-native.png`,
@@ -17,5 +17,3 @@ const iconLinks = {
   Python: `${iconBase}/python.png`,
   Java: `${iconBase}/java-coffee-cup-logo.png`,
 };
-
-export default iconLinks;
