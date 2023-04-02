@@ -18,6 +18,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  font-size: 16px;
 }
 
 /* CSS Variables */
@@ -64,6 +65,7 @@ body {
   overflow-y: hidden;
   animation: overflow 1s 1.7s ease-in-out forwards;
   background-color: var(--primary-bg);
+  --font-size: 1em;
 }
 
 @keyframes overflow {
@@ -150,7 +152,7 @@ h1 {
 }
 
 :is(h1, h2) {
-  font-size: calc(2.5rem + 1vw);
+  font-size: calc(3rem + 1vw);
 }
 
 :is(h2, h3) {
