@@ -13,10 +13,11 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  -moz-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
 }
 
 /* CSS Variables */
@@ -149,11 +150,7 @@ h1 {
 }
 
 :is(h1, h2) {
-  font-size: calc(3rem + 1vw);
-}
-
-h2 {
-  font-weight: 400;
+  font-size: calc(2.5rem + 1vw);
 }
 
 :is(h2, h3) {
