@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@500&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +24,6 @@ body {
   /* Colors */
   --primary-bg: hsl(218, 80%, 10%);
   --alt-bg: hsl(218, 81%, 6%);
-  --tech-bg: hsl(218 80% 10%);
   --primary-clr: hsl(0 30% 85%);
   --secondary-clr: hsl(218, 80%, 73%);
   --accent-clr: hsl(19 80% 66%);
