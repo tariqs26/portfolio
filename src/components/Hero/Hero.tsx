@@ -32,7 +32,7 @@ export default function Hero() {
             </div>
             <p className='animate'>
               Computer science student at McMaster University passionate about
-              building things for the web.
+              all things web development.
             </p>
             <div className='hero-buttons animate'>
               <a href='#projects' className='hero-btn'>
