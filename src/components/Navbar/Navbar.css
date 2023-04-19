@@ -6,7 +6,6 @@
   padding: 1.25rem 2.5rem;
   background-color: var(--primary-bg);
   transition: 300ms ease-in-out;
-  transition-property: background-color, box-shadow, padding, margin-bottom;
   z-index: 1;
 }
 
@@ -40,8 +39,8 @@
 }
 
 .clr-scheme {
-  fill: var(--nav-clr);
-  stroke: var(--nav-clr);
+  fill: var(--primary-clr);
+  stroke: var(--primary-clr);
 }
 
 .nav-logo {
