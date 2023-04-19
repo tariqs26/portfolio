@@ -6,10 +6,10 @@
 }
 
 :is(.nav-links, .menu) a {
-  color: var(--nav-clr);
   font-size: 1.1rem;
   opacity: 0;
   animation: nav-link-fade 400ms ease-in-out 400ms forwards;
+  color: var(--primary-clr);
   background-image: var(--nav-gradient);
   background-size: 0 2px;
   background-position: center bottom;
@@ -25,6 +25,7 @@
 @media (hover: hover) {
   :is(.nav-links, .menu) a:hover {
     background-size: 100% 2px;
+    color: var(--nav-clr);
   }
 }
 
