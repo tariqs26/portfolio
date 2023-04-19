@@ -96,40 +96,33 @@ code {
   font-family: 'Fira Mono', monospace;
 }
 
-/* Links + Svg's */
-
 a {
-  color: currentColor;
   text-decoration: none;
   background-repeat: no-repeat;
   transition: 250ms ease-in-out;
 }
 
-a:has(> svg) {
+a:has(svg) {
   display: flex;
 }
 
-a > svg {
+svg {
   color: var(--primary-clr);
   transition: 250ms ease-in-out;
 }
 
 @media (hover: hover) {
-  a:hover > svg {
+  svg:hover {
     cursor: pointer;
     color: var(--link-clr);
-    transform: translateY(-0.2rem);
   }
-  .project-links a:hover > svg {
-    transform: none;
+  .hero-links svg:hover {
+    transform: translateY(-0.2rem) scale(1.1);
   }
-  a:hover > .nav-logo {
-    fill: white;
+  .nav-logo:hover {
     filter: brightness(1.2);
   }
 }
-
-/* Headings */
 
 h1 {
   width: -moz-fit-content;
