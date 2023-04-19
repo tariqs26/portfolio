@@ -19,7 +19,7 @@
   width: 70%;
   height: 0.115rem;
   border-radius: 1px;
-  background-color: var(--nav-clr);
+  background-color: var(--primary-clr);
   transition: 300ms ease-in-out;
 }
 .bar:nth-child(2) {
@@ -55,11 +55,7 @@
   box-shadow: 0 4px 0.3rem var(--box-shadow-clr);
   position: absolute;
   top: 3rem;
-  transition: 300ms all ease-in-out;
-}
-
-.menu a {
-  color: var(--nav-clr);
+  transition: 300ms ease-in-out;
 }
 
 .menu.hide {
