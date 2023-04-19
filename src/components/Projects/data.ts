@@ -8,7 +8,7 @@ const netlify = (name: string) => `${start}${name}.netlify.app`;
 export default [
   {
     name: 'YelpCamp',
-    desc: 'Full-stack web application that allows users to create, edit, and delete campgrounds, and leave reviews and ratings for each campground.',
+    desc: 'Full-stack web application that allows users to view, post, and leave reviews on campground locations.',
     tech: ['React', 'TypeScript', 'Node', 'Express', 'MongoDB'],
     imgSrc: p3,
     liveLink: netlify('yelpcamp-campgrounds'),
