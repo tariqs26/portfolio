@@ -17,8 +17,7 @@
 }
 
 .section {
-  width: 100%;
-  max-width: 70rem;
+  width: min(100%, 72rem);
   padding: 3rem min(5vw, 4rem);
 }
 .section-container:last-child .content {
@@ -31,7 +30,7 @@
 }
 
 .hidden {
-  transform: translateY(-1.5rem);
+  transform: translateY(-3rem);
   opacity: 0;
 }
 

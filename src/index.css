@@ -13,7 +13,6 @@
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 5rem;
-  font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -73,25 +72,17 @@ body {
   }
 }
 
-/* Scrollbar */
 body::-webkit-scrollbar {
   width: 0.6rem;
   background-color: #35363a;
 }
-
 body::-webkit-scrollbar-thumb {
   background-color: hsl(240, 63%, 60%);
 }
-
-body::-webkit-scrollbar-track-piece:end {
-  margin-bottom: 1rem;
+body::-webkit-scrollbar-track-piece {
+  margin-block: 1rem;
 }
 
-body::-webkit-scrollbar-track-piece:start {
-  margin-top: 1rem;
-}
-
-/* General Elements */
 p {
   line-height: 1.5;
 }
