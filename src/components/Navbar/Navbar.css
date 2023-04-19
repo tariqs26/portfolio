@@ -1,6 +1,6 @@
 .nav {
-  position: sticky;
-  top: 0;
+  position: fixed;
+  width: 100%;
   display: flex;
   align-items: center;
   padding: 1.25rem 2.5rem;
@@ -60,5 +60,32 @@
   :is(.mode-container, .bar-container):hover {
     cursor: pointer;
     background-color: rgba(163, 163, 219, 0.408);
+  }
+}
+
+.menu {
+  display: none;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1.25rem 0;
+  box-shadow: 0 2px 0.75rem 0.1rem var(--box-shadow-clr);
+  background-color: var(--primary-bg);
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
+  transition: 300ms ease-in-out;
+  clip: rect(auto, auto, 4.5rem, auto);
+  z-index: 1;
+}
+
+.menu.hide {
+  clip: rect(auto, auto, 0, auto);
+  transition: 300ms clip ease-in-out;
+}
+
+@media (max-width: 550px) {
+  .menu {
+    display: flex;
   }
 }

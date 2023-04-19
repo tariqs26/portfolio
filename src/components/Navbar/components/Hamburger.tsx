@@ -1,11 +1,10 @@
 import './Hamburger.css';
 
-type HamburgerProps = {
+type Props = {
   open: boolean;
   setOpen: (open: boolean) => void;
-  menuRef: React.RefObject<HTMLDivElement>;
 };
-export default function Hamburger({ open, setOpen, menuRef }: HamburgerProps) {
+export default function Hamburger({ open, setOpen }: Props) {
   return (
     <div className='hamburger'>
       <div
@@ -18,18 +17,6 @@ export default function Hamburger({ open, setOpen, menuRef }: HamburgerProps) {
         <div className='bar'></div>
         <div className='bar'></div>
         <div className='bar'></div>
-      </div>
-      <div
-        className='menu hide'
-        ref={menuRef}
-        aria-expanded={open}
-        onClick={(e) => {
-          e.target instanceof HTMLAnchorElement && setOpen(false);
-        }}
-      >
-        <a href='#about'>About</a>
-        <a href='#projects'>Projects</a>
-        <a href='#contact'>Contact</a>
       </div>
     </div>
   );

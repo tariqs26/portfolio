@@ -53,6 +53,18 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
           <LightIcon onClick={() => setDarkMode(true)} />
         )}
       </div>
+      <div
+        className='menu hide'
+        ref={menuRef}
+        aria-expanded={open}
+        onClick={(e) => {
+          e.target instanceof HTMLAnchorElement && setOpen(false);
+        }}
+      >
+        <a href='#about'>About</a>
+        <a href='#projects'>Projects</a>
+        <a href='#contact'>Contact</a>
+      </div>
     </nav>
   );
 }

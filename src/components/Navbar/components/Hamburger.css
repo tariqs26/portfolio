@@ -25,9 +25,6 @@
 .bar:nth-child(2) {
   width: 2.1rem;
 }
-.bar:nth-child(3) {
-  width: 70%;
-}
 
 .bar.anim {
   rotate: 135deg;
@@ -42,24 +39,4 @@
 .bar.anim:nth-child(3) {
   rotate: -135deg;
   translate: -0.3px -0.7rem;
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  padding: 1.25rem 0;
-  left: -57.5px;
-  width: 100vw;
-  background-color: var(--primary-bg);
-  box-shadow: 0 4px 0.3rem var(--box-shadow-clr);
-  position: absolute;
-  top: 3rem;
-  transition: 300ms ease-in-out;
-}
-
-.menu.hide {
-  opacity: 0;
-  visibility: collapse;
-  transform: translateY(-1rem);
 }
