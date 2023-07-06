@@ -1,11 +1,11 @@
 import "./Link.css"
 
 export default function Link({
-  href,
   children,
+  ...props
 }: React.ComponentPropsWithoutRef<"a">) {
   return (
-    <a href={href} className="link" target="_blank" rel="noopener noreferrer">
+    <a className="link" target="_blank" rel="noopener noreferrer" {...props}>
       {children}
     </a>
   )
