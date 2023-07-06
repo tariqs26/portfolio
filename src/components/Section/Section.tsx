@@ -1,11 +1,11 @@
-import "./Section.css";
+import "./Section.css"
 
 export default function Section({
   heading,
   children,
 }: {
-  heading: string;
-  children: React.ReactNode;
+  heading: string
+  children: React.ReactNode
 }) {
   return (
     <div className="section-container" id={heading.toLocaleLowerCase()}>
@@ -19,5 +19,5 @@ export default function Section({
         <div className="content hidden">{children}</div>
       </section>
     </div>
-  );
+  )
 }

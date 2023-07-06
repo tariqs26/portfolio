@@ -1,16 +1,16 @@
-import { useEffect } from "react";
-import { LinkedIn, GitHub } from "components/Icons";
-import "./Hero.css";
-import Link from "components/Link/Link";
+import { useEffect } from "react"
+import { LinkedIn, GitHub } from "components/Icons"
+import "./Hero.css"
+import Link from "components/Link/Link"
 
 export default function Hero() {
   useEffect(() => {
     const children = document.querySelectorAll(
-      ".hero > :not(.content), .hero .content :is(p, div)"
-    );
+      ".hero > :not(.content), .hero .content :is(p, div)",
+    )
     for (let i = 0; i < children.length; i++)
-      (children[i] as HTMLElement).style.animationDelay = `${i * 0.1 + 1.1}s`;
-  }, []);
+      (children[i] as HTMLElement).style.animationDelay = `${i * 0.1 + 1.1}s`
+  }, [])
 
   return (
     <div className="section-container" id="hero">
@@ -47,5 +47,5 @@ export default function Hero() {
         </div>
       </section>
     </div>
-  );
+  )
 }

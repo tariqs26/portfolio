@@ -1,9 +1,9 @@
-import "./Hamburger.css";
+import "./Hamburger.css"
 
 type Props = {
-  open: boolean;
-  setOpen: (open: boolean) => void;
-};
+  open: boolean
+  setOpen: (open: boolean) => void
+}
 export default function Hamburger({ open, setOpen }: Props) {
   return (
     <div className="hamburger">
@@ -19,5 +19,5 @@ export default function Hamburger({ open, setOpen }: Props) {
         <div className="bar"></div>
       </div>
     </div>
-  );
+  )
 }

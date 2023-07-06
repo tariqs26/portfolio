@@ -1,33 +1,32 @@
-import { useState, useRef, useEffect } from "react";
-import useNavShadow from "hooks/useNavShadow";
-import { Logo, Dark, Light } from "components/Icons";
-import Hamburger from "./components/Hamburger";
-import NavLinks from "./components/NavLinks";
-import "./Navbar.css";
+import { useState, useRef, useEffect } from "react"
+import useNavShadow from "hooks/useNavShadow"
+import { Logo, Dark, Light } from "components/Icons"
+import Hamburger from "./components/Hamburger"
+import NavLinks from "./components/NavLinks"
+import "./Navbar.css"
 
 type NavbarProps = {
-  darkMode: boolean;
-  setDarkMode: (darkMode: boolean) => void;
-};
+  darkMode: boolean
+  setDarkMode: (darkMode: boolean) => void
+}
 
 export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
-  useNavShadow();
+  useNavShadow()
 
-  const [open, setOpen] = useState<boolean>(false);
-  const menuRef = useRef<HTMLDivElement>(null);
+  const [open, setOpen] = useState<boolean>(false)
+  const menuRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    const menu = menuRef.current as HTMLElement;
-    const arr = menu.parentElement as HTMLElement;
+    const menu = menuRef.current as HTMLElement
+    const arr = menu.parentElement as HTMLElement
     if (open) {
-      menu.classList.remove("hide");
-      for (let bar of arr.querySelectorAll(".bar")) bar.classList.add("anim");
+      menu.classList.remove("hide")
+      for (let bar of arr.querySelectorAll(".bar")) bar.classList.add("anim")
     } else {
-      menu.classList.add("hide");
-      for (let bar of arr.querySelectorAll(".bar"))
-        bar.classList.remove("anim");
+      menu.classList.add("hide")
+      for (let bar of arr.querySelectorAll(".bar")) bar.classList.remove("anim")
     }
-  }, [open]);
+  }, [open])
 
   return (
     <nav className="nav">
@@ -35,7 +34,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
         href="/#hero"
         aria-label="Home"
         onClick={() => {
-          setOpen(false);
+          setOpen(false)
         }}
       >
         <Logo />
@@ -58,7 +57,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
         ref={menuRef}
         aria-expanded={open}
         onClick={(e) => {
-          e.target instanceof HTMLAnchorElement && setOpen(false);
+          e.target instanceof HTMLAnchorElement && setOpen(false)
         }}
       >
         <a href="#about">About</a>
@@ -66,5 +65,5 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
         <a href="#contact">Contact</a>
       </div>
     </nav>
-  );
+  )
 }

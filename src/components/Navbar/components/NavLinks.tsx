@@ -1,4 +1,4 @@
-import "./NavLinks.css";
+import "./NavLinks.css"
 
 export default function NavLinks() {
   return (
@@ -7,5 +7,5 @@ export default function NavLinks() {
       <a href="#projects">Projects</a>
       <a href="#contact">Contact</a>
     </div>
-  );
+  )
 }

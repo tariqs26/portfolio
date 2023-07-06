@@ -1,6 +1,6 @@
-import { GitHub, LinkedIn } from "components/Icons";
+import { GitHub, LinkedIn } from "components/Icons"
 
-import "./Footer.css";
+import "./Footer.css"
 
 export default function Footer() {
   return (
@@ -27,5 +27,5 @@ export default function Footer() {
       </div>
       <p>&copy; {new Date().getFullYear()} Saad Tariq. All rights reserved.</p>
     </footer>
-  );
+  )
 }

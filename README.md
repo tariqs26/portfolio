@@ -5,25 +5,19 @@
 - Personal portfolio to showcase, projects, skills, and contact information.
 - Uses the Intersection Observer API paired with css transitions and animations, to dynamically show sections on scroll.
 
-## To Get Started
+## Installation
 
-### `npm install`
-
-Installs all the dependencies needed to run the app.
+```bash
+npm i
+```
 
 ## Available Scripts
 
-### `npm run dev`
-
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-### `npm run build`
+| Script            | Description                                                  |
+| ----------------- | ------------------------------------------------------------ |
+| `npm run dev`     | Runs the app in the development mode (http://localhost:3000) |
+| `npm run build`   | Builds the app for production to the `build` directory       |
+| `npm run preview` | Preview the production build locally                         |
+| `npm run format`  | Format the code with prettier                                |
 
 <!-- CI = npm run build -->
-
-Build the app for production to the `build` folder.\
-Correctly bundles React in production mode and optimizes the build for the best performance.
-
-### `npm run preview`
-
-Preview the production build locally.
