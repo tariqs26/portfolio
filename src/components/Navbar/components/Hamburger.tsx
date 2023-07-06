@@ -1,4 +1,4 @@
-import './Hamburger.css';
+import "./Hamburger.css";
 
 type Props = {
   open: boolean;
@@ -6,17 +6,17 @@ type Props = {
 };
 export default function Hamburger({ open, setOpen }: Props) {
   return (
-    <div className='hamburger'>
+    <div className="hamburger">
       <div
-        className='bar-container'
+        className="bar-container"
         onClick={() => setOpen(!open)}
-        aria-controls='menu'
-        title='Menu'
-        role='button'
+        aria-controls="menu"
+        title="Menu"
+        role="button"
       >
-        <div className='bar'></div>
-        <div className='bar'></div>
-        <div className='bar'></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
+        <div className="bar"></div>
       </div>
     </div>
   );
