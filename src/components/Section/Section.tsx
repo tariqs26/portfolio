@@ -3,10 +3,10 @@ import "./Section.css"
 export default function Section({
   heading,
   children,
-}: {
+}: Readonly<{
   heading: string
   children: React.ReactNode
-}) {
+}>) {
   return (
     <div className="section-container" id={heading.toLocaleLowerCase()}>
       <section className="section">
