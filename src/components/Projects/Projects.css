@@ -91,7 +91,6 @@
   .project {
     display: flex;
     flex-direction: column;
-    /* max-width: 600px; */
   }
   .project-content {
     padding: clamp(1rem, 3vw, 1.5rem);
