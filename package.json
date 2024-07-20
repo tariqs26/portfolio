@@ -7,7 +7,7 @@
     "dev": "vite",
     "build": "tsc && vite build",
     "preview": "vite preview",
-    "format": "npx prettier --write \"src/**/*.{ts,tsx}\""
+    "format": "npx prettier --write ./src"
   },
   "dependencies": {
     "react": "^18.2.0",
