@@ -14,7 +14,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
   useNavShadow()
 
   const [open, setOpen] = useState<boolean>(false)
-  const menuRef = useRef<HTMLDivElement>(null)
+  const menuRef = useRef<HTMLButtonElement>(null)
 
   useEffect(() => {
     const menu = menuRef.current as HTMLElement
@@ -52,7 +52,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
           <Light onClick={() => setDarkMode(true)} />
         )}
       </div>
-      <div
+      <button
         className="menu hide"
         ref={menuRef}
         aria-expanded={open}
@@ -63,7 +63,7 @@ export default function Navbar({ darkMode, setDarkMode }: NavbarProps) {
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
-      </div>
+      </button>
     </nav>
   )
 }
